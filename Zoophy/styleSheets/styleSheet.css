@@ -1,0 +1,70 @@
+/*universal formatting*/
+body {
+	width:				99%;
+	background-color:	#00ffff;
+}
+
+#nav{
+	clear:				both;
+	background-color:	blue;
+	font-size:			120%;
+	text-align:			center;
+	margin:				auto;
+}
+
+.h0 {
+	border-radius: 		5px;
+	border: 			1px solid lightblue;
+	background-color: 	red;
+	height: 			60px;
+	width: 				120px;
+	margin: 			auto;
+	text-align: 		center;
+}
+
+
+#footer {
+	margin: 			auto;
+	font-size:			60%;
+	text-align:			center;
+	border-top:			1px solid black;
+	margin-top:			10%;
+}
+
+/*home page*/
+
+
+/*sign in*/
+#signupbanner {
+	background-color:	blue;
+	clear:				both;
+	text-align:			center;
+	margin-bottom:		10%;
+}
+
+#userinfo {
+	width:				40%;
+	margin:				auto;
+	text-align:			center;
+	background-color:	lightblue;
+}
+
+/*confirmation*/
+
+
+/*profile*/
+
+
+/*view jobs*/
+
+
+
+
+
+
+
+
+
+
+
+
