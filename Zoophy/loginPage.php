@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+
+<?php
+	// Start a php session_cache_expire
+	session_name("customer");
+	session_start("customer");
+	
+	if(isset($_SESSION["customer"]))
+	{
+		header('Location: welcome.php');
+		exit;
+	}
+?>
+
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -18,8 +31,25 @@
 		</div>
 	
 		<div id="userinfo">
-			<form id="signup" action="#" method="#">
+			<form id="signup" action="process.php" method="post">
 			<p class="fh1">Sign-in:</p>
+			
+			<?php
+			// Check return code from process.php
+			if($_GET["rc"]==1)
+			{
+				echo '<p class="logger">Username not found!</p>';
+			}
+			if($_GET["rc"]==2)
+			{
+				echo '<p class="logger">Password not found!</p>';
+			}
+			if($_GET["rc"]==3)
+			{
+				echo '<p class="logger">Return from process.php...</p>';
+			}
+			?>
+	
 				<p>	
 					<!-- Email -->
 					<label for="email">E-mail address:</label>
