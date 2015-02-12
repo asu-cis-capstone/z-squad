@@ -23,4 +23,18 @@ Visual mockup created. <https://drive.google.com/a/asu.edu/file/d/0B6XMxKdhKp0xN
 
 Waffle.io started. 
 
+v 0.2 
+Current PHP/MySQL framework uploaded to Github. 
+
+Install Instruction:
+
+1. Install WAMP server on local machine
+2.Type localhost into browser to access phpmyadmin
+3. Create DB with name "Users", and table "accounts" table to store user account information
+4. Drop Zoophy folder into c/wamp/www directory in computer
+5. Once table created,  the connect folder connects the front end to DB on local machine
+6. Open localhost, select Zoophy and home page loads
+7. Click "login" and login page accepts account info and logs user in
+
+
 
