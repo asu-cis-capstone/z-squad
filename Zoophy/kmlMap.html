@@ -35,10 +35,12 @@
 			
 			/* Content */
 			#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
-			#content #contentbar { padding:0; float:right; width:200px; background:#d3d3f9; margin-left:10%;}
-			#content #contentbar .currentjobs { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
-			#content #sidebar { padding:0; float:left; width:200px; background:#d3d3f9; margin-left:10%;}
-			#content #sidebar .completedjobs { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
+			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
+			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
+			#content #contentbar #map-canvas { width: 700px; height: 600px; }
+			#content #sidebar { padding:0; float:left; width:200px;}
+			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
+			#content #sidebar .widget h3 a { text-decoration:none;}		
 			
 			/* Footerblurb */
 			#footerblurb { background:#d3d3f9;color:blue;}
@@ -53,16 +55,18 @@
 			/* Clear both sides to assist with div alignment  */
 			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 		</style>
-		<script type="text/javascript">
-			/* =============================
-			This script generates sample text for the body content. 
-			You can remove this script and any reference to it. 
-			 ============================= */
-			var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h2>Heading</h2><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
-			function generateText(sentenceCount){
-				for (var i=0; i<sentenceCount; i++)
-				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize() {
+				var mapCanvas = document.getElementById('map-canvas');
+				var mapOptions = {
+					center: new google.maps.LatLng(44.5403, -78.5463),
+					zoom: 8,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var map = new google.maps.Map(mapCanvas, mapOptions);
 			}
+			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
 	</head>
 	<body>
@@ -98,26 +102,12 @@
 				<div id="content-inner">
 				
 					<main id="contentbar">
-						<div class="currentjobs">
-							<h2>Current Jobs</h2>
-							<ul>
-								<p>
-									<a href="kmlMap.html">A link to a map</a>
-								</p>
-							</ul>
+						<div id="map-canvas">
+						
 						</div>
 					</main>
 					
-					<nav id="sidebar">
-						<div class="completedjobs">
-							<h2>Completed Jobs</h2>
-							<ul>
-								<p>
-									<a href="kmlMap.html">A link to a map</a>
-								</p>
-							</ul>
-						</div>
-					</nav>
+					
 					
 					<div class="clr"></div>
 				</div>
@@ -128,18 +118,16 @@
 				
 					<div class="column">
 						<h2><span>Heading</span></h2>
-						
+						<p><script>generateText(2)</script></p>
 					</div>	
 					<div class="column">
 						<h2><span>Heading</span></h2>
-						
+						<p><script>generateText(2)</script></p>
 					</div>
 					<div class="column">
 						<h2><span>Heading</span></h2>
-						
+						<p><script>generateText(2)</script></p>
 					</div>	
-					
-					
 					
 					<div class="clr"></div>
 				</div>
