@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>View Jobs</title>
+		<title>Map</title>
 		<style type="text/css">
 			html, #page { padding:0; margin:0;}
 			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
@@ -35,12 +35,18 @@
 			
 			/* Content */
 			#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
-			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
-			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
-			#content #contentbar #map-canvas { width: 700px; height: 600px; }
+			#content #content-inner { margin:0; padding:0; float:right; width:760px;}
+			#content #content-inner .article { margin:0 0 24px; padding:0 20px 0 15px; }					
+			#map-canvas { width: 550px; height: 450px; }
 			#content #sidebar { padding:0; float:left; width:200px;}
 			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
-			#content #sidebar .widget h3 a { text-decoration:none;}		
+			#content #sidebar .widget h3 a { text-decoration:none;}
+			#content #sidebar .widget ul { margin:0; padding:0; list-style:none; color:#959595;}
+			#content #sidebar .widget ul li { margin:0;}
+			#content #sidebar .widget ul li { padding:4px 0; width:185px;}
+			#content #sidebar .widget ul li a { color:blue; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
+			#content #sidebar .widget ul li a:hover { color:#d3d3f9; font-weight:bold; text-decoration:none;}
+			#content #sidebar img {opacity: 0.6; float: left}
 			
 			/* Footerblurb */
 			#footerblurb { background:#d3d3f9;color:blue;}
@@ -55,7 +61,9 @@
 			/* Clear both sides to assist with div alignment  */
 			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 		</style>
+		
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		
 		<script>
 			function initialize() {
 				var mapCanvas = document.getElementById('map-canvas');
@@ -73,27 +81,28 @@
 		<div id="page">
 		<!-- header section -->
 			<header id="header">
+				<header id="header">
+			
 				<div id="header-inner">	
-					<div id="logo">	
-					<!-- logo -->
-						<h1><a href="home.html"><img src="imageFolder/logo.png" alt="zoophy" /></a></h1>
+				
+					<div id="logo">
+						 <!-- <h1><a href="#">Cool<span>Logo</span></a></h1> -->
+						<!-- <img src="logo.png" alt="Zoophy" /> -->
 					</div>
 					<div id="top-nav">
-					<!-- site navigation-->
 						<ul>
-						<li><a href="viewJobs.html">View Jobs</a></li>
-						<li><a href="profilePage.html">View Profile</a></li>
-						<li><a href="aboutUs.html">About us</a></li>
-						<li><a href="#">Logout</a></li>
+						<li><a href="aboutUs.html">About</a></li>
+						<li><a href="aboutUs.html">Contact</a></li>
+						<li><a href="aboutUs.html">Logout</a></li> 
 						</ul>
 					</div>
 					<div class="clr"></div>
 				</div>
 			</header>
+			<!-- <img src="logo.png" alt="Zoophy" /> -->
 			<div class="feature">
-			<!-- Company title -->
 				<div class="feature-inner">
-				<h1>Zoophy - Phylogeography for Zoonotic Disease Surveillance</h1>
+				<h1>ZooPhy - Phylogeography for Zoonotic Disease Surveillance</h1>
 				</div>
 			</div>
 		
@@ -101,7 +110,7 @@
 			<div id="content">
 				<div id="content-inner">
 				
-					<main id="contentbar">
+					<main id="article">
 						<div id="map-canvas">
 						
 						</div>
@@ -111,22 +120,37 @@
 					
 					<div class="clr"></div>
 				</div>
+				
+				<nav id="sidebar">
+						<div class="widget">
+							<h3>Links</h3>
+							<ul>
+							<li><a href="zoophyhomepage.html">Home</a></li>
+							<li><a href="profilePage.html">Profile</a></li>
+							<li><a href="viewJobs.html">View Jobs</a></li>
+							<li><a href="welcomePage.html">New Query</a></li>
+							<!-- <li><a href="#">Link 5</a></li> -->
+							</ul>
+						</div>
+						<img src="imageFolder/logo.png" alt="Zoophy" />
+					</nav>
+				
 			</div>
+			
+			<div class="clr"></div>
+				</div>
 		
 			<div id="footerblurb">
 				<div id="footerblurb-inner">
 				
 					<div class="column">
-						<h2><span>Heading</span></h2>
-						<p><script>generateText(2)</script></p>
+						
 					</div>	
 					<div class="column">
-						<h2><span>Heading</span></h2>
-						<p><script>generateText(2)</script></p>
+						
 					</div>
 					<div class="column">
-						<h2><span>Heading</span></h2>
-						<p><script>generateText(2)</script></p>
+						
 					</div>	
 					
 					<div class="clr"></div>
