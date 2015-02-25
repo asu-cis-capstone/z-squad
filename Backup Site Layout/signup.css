@@ -68,7 +68,7 @@ input:-moz-placeholder {
     color:    #b5b5b5;
 }
 
-#signup .inputs input[type=email], input[type=password] {
+#signup .inputs input[type=email], input[type=password], input[type=text] {
     background: #f5f5f5;
     font-size: 0.8rem;
     -moz-border-radius: 3px;
