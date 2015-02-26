@@ -3,18 +3,19 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>View Jobs</title>
+		<title>Zoophy Welcome Page</title>
 		<style type="text/css">
 			html, #page { padding:0; margin:0;}
 			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
 			h1, h2, h3, h4, h5, h6 {color:darkblue;}
 			#page { background:#fff;}
-			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0; }
+			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
 						
 			/* Logo */
-			#logo { padding-top: 0; width:auto; float:left;}
+			#logo { padding:0; width:auto; float:left;}
 			#logo h1 a, h1 a:hover { color:darkblue; text-decoration:none;}
 			#logo h1 span { color:#d3d3f9;}
+
 			/* Header */
 			#header { background:#fff; }
 			#header-inner { margin:0 auto; padding:0; width:970px;}
@@ -30,13 +31,15 @@
 			#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
 			#top-nav ul li a { display:block; margin:0; padding:8px 20px; color:blue; text-decoration:none;}
 			#top-nav ul li.active a, #top-nav ul li a:hover { color:#d3d3f9;}
-			
+
+			/* Search Form */
+			#search { background:#d3d3f9;color:blue; width:750px;margin:auto; text-align:center;}
+			.search { padding-top:10px;}
+
 			/* Content */
 			#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
-			#content #content-inner { margin:0; padding:0; float:right; width:760px;}
-			#content #content-inner #article { margin:0 0 24px; padding:0 20px 0 15px;  border:	thin solid #4169e1;}
-			#daterun {clear:both; float:left}
-			#queryinfo {clear:both; float:right}
+			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
+			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
 			#content #sidebar { padding:0; float:left; width:200px;}
 			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
 			#content #sidebar .widget h3 a { text-decoration:none;}
@@ -45,12 +48,11 @@
 			#content #sidebar .widget ul li { padding:4px 0; width:185px;}
 			#content #sidebar .widget ul li a { color:blue; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
 			#content #sidebar .widget ul li a:hover { color:#d3d3f9; font-weight:bold; text-decoration:none;}
-			#content #sidebar img {opacity: 0.6; float: left}
 			
 			/* Footerblurb */
-			#footerblurb { background:#d3d3f9;color:gray;}
-			#footerblurb-inner { margin:0 auto; width:980px; padding:24px;}
-			#footerblurb .column { margin:0; text-align:left; float:left; width: 197px; padding:0 24px;}
+			#footerblurb { background:#d3d3f9;color:blue;}
+			#footerblurb-inner { margin:0 auto; width:922px; padding:24px;}
+			#footerblurb .column { margin:0; text-align:justify; float:left;width:250px;padding:0 24px;}
 			
 			/* Footer */
 			#footer { background:#fff;}
@@ -60,33 +62,31 @@
 			/* Clear both sides to assist with div alignment  */
 			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 		</style>
-		
+		<script type="text/javascript">
+
+		</script>
 	</head>
 	<body>
 		<div id="page">
-		<!-- header section -->
 			<header id="header">
-			
 				<div id="header-inner">	
-				
 					<div id="logo">
-						 <!-- <h1><a href="#">Cool<span>Logo</span></a></h1> -->
-						<!-- <img src="logo.png" alt="Zoophy" /> -->
+						<p><a href="#"><img src="imageFolder/logo.png" alt="logo" /></a></p>
 					</div>
 					<div id="top-nav">
 						<ul>
-						<li><a href="index.html">About</a></li>
-						<li><a href="index.html">Contact</a></li>
-						<li><a href="index.html">Logout</a></li> 
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="loginPage.html">Login</a></li>
 						</ul>
 					</div>
 					<div class="clr"></div>
 				</div>
 			</header>
-			<!-- <img src="logo.png" alt="Zoophy" /> -->
 			<div class="feature">
 				<div class="feature-inner">
-				<h1>ZooPhy - Phylogeography for Zoonotic Disease Surveillance</h1>
+				<h1>Welcome User</h1>
 				</div>
 			</div>
 		
@@ -94,57 +94,86 @@
 			<div id="content">
 				<div id="content-inner">
 				
-					<main id="article">
-						<div class="currentjobs">
-							<h2>Current Jobs</h2>
-							<div id="daterun">
-							<p>Date Run: 12/24/2014</p>
-							</div>
-							
-							<div id="queryinfo">
-							<p>Status: complete</p>
-							<p>Query Info: </p>
-							<p>Percent complete: 100%</p>
-							<p><a href="kmlMap.html">Phylogeographic Map</a></p>
-							</div>
+					<main id="contentbar">
+						<div class="article">
+							<!-- MAIN/CENTER -->
+			<form id="search" action="#" method="#">
+				<p class="search">
+					<!-- Search Virus Name -->
+					<label for="vName">Virus Name:</label>
+					<input type="text" id="vName" name="vName"
+					required autofocus/>
+
+					<!-- Search Virus Subtype -->
+					<label for="vSubtype">Virus Subtype:</label>
+					<input type="text" id="vSubtype" name="vSubtype"
+					required/>
+
+					<!-- Search Virus Host -->
+					<label for="vHost">Virus Host:</label>
+					<input type="text" id="vHost" name="vHost"
+					required/>
+				</p>
+				<p class="submit">
+					<input type="submit" value="Search Virus" />
+					<span class="reset">
+						<input type="reset" value="Clear Search" onclick="history.go(0)" />
+					</span>
+				</p>
+				<p class="advancedSearch">
+					<a href="#">Advanced Search</a>
+					<br />
+
+					<!-- Geographic Location -->
+					<label for="vGeo">Geographic Location:</label>
+					<input type="text" id="vGeo" name="vGeo" />
+
+					<!-- Time Period -->
+					<label for"vTime">Time Period:</label>
+					<input type="date" id="vStartDate" name="vTime" />
+				</p>
+			</form>
 						</div>
 					</main>
 					
-			
-			<nav id="sidebar">
+					<nav id="sidebar">
 						<div class="widget">
-							<h3>Links</h3>
+							<h3>Left heading</h3>
 							<ul>
-							<li><a href="main.html">Home</a></li>
-							<li><a href="profile.html">Profile</a></li>
-							<li><a href="viewJobs.html">View Jobs</a></li>
-							<li><a href="main.html">New Query</a></li>
-							<!-- <li><a href="#">Link 5</a></li> -->
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+							<li><a href="#">Link 4</a></li>
+							<li><a href="#">Link 5</a></li>
 							</ul>
 						</div>
-						<img src="imageFolder/logo.png" alt="Zoophy" />
 					</nav>
 					
 					<div class="clr"></div>
 				</div>
+			</div>
 		
 			<div id="footerblurb">
 				<div id="footerblurb-inner">
 				
 					<div class="column">
-						
-						
+						<!-- BOTTOM LEFT -->
+						<!-- <h2><span>Heading 1</span></h2>
+						<p> hello world </p> -->
+						<!-- <p><script>generateText(2)</script></p> -->
 					</div>	
 					<div class="column">
-						
-						
+						<!-- BOTTOM MIDDLE -->
+						<!-- <h2><span>Heading 2</span></h2>
+						<p> hello world </p> -->
+						<!-- <p><script>generateText(2)</script></p> -->
 					</div>
 					<div class="column">
-						
-						
+						<!-- BOTTOM RIGHT -->
+						<!-- <h2><span>Heading 3</span></h2>
+						<p> hello world </p> -->
+						<!-- <p><script>generateText(2)</script></p> -->
 					</div>	
-					
-					
 					
 					<div class="clr"></div>
 				</div>
@@ -158,3 +187,4 @@
 		</div>
 	</body>
 </html>
+ No newline at end of file
