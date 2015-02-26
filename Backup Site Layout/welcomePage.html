@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Zoophy - Login</title>
+		<title>Zoophy Welcome Page</title>
 		<style type="text/css">
 			html, #page { padding:0; margin:0;}
 			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
@@ -11,14 +11,14 @@
 			#page { background:#fff;}
 			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
 						
-			<!-- /* Logo */  -->
+			/* Logo */
 			#logo { padding:0; width:auto; float:left;}
 			#logo h1 a, h1 a:hover { color:darkblue; text-decoration:none;}
 			#logo h1 span { color:#d3d3f9;}
 
 			/* Header */
-			#header { background:#fff; padding: 20px}
-			#header-inner { margin:0 auto; padding:0; width:970px;}
+			#header { background:#fff; }
+			#header-inner { margin:0 auto; padding: 20px; width:970px;}
 			
 			/* Feature */
 			.feature { background:blue;padding:18px;}
@@ -35,7 +35,7 @@
 			/* Content */
 			#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
 			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
-			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; color: black; display: inline-block; } <!--  border:	thin solid #4169e1; -->
+			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
 			#content #sidebar { padding:0; float:left; width:200px;}
 			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
 			#content #sidebar .widget h3 a { text-decoration:none;}
@@ -58,6 +58,9 @@
 			/* Clear both sides to assist with div alignment  */
 			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 			
+			/* Search Form */
+			#search { background:#d3d3f9;color:blue; width:750px;margin:auto; text-align:center;}
+			.search { padding-top:10px;}
 			
 		</style>
 		<script type="text/javascript">
@@ -78,14 +81,12 @@
 				<div id="header-inner">	
 					<div id="logo">
 						<!-- <p><a href="#"><img src="imageFolder/logo.png" alt="logo" /></a></p> -->
-						<!-- <h1><a href="#">Cool<span>Logo</span></a></h1> -->
 					</div>
 					<div id="top-nav">
 						<ul>
-						<!-- <li><a href="#">About</a></li> -->
-						<li><a href="#">About Zoophy</a></li>
+						<li><a href="aboutUs.html">About Zoophy</a></li>
 						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Login</a></li>
+						<li><a href="loginPage.html">Logout</a></li>
 						</ul>
 					</div>
 					<div class="clr"></div>
@@ -93,7 +94,7 @@
 			</header>
 			<div class="feature">
 				<div class="feature-inner">
-				<h1>Zoophy - Login</h1>
+				<h1>Zoophy - Welcome User</h1>
 				</div>
 			</div>
 		
@@ -103,25 +104,46 @@
 				
 					<main id="contentbar">
 						<div class="article">
-							<!-- LOGIN BOX -->
-							<form id="loginform" action="welcomePage.html" method="get">
-								<p class="fh1">Login:</p>
-								<p>
-			
-									<label for = "username">Username / email:</label>
-									<input type="text" id="username" name="username" />
-									<br />
+							<!-- MAIN/CENTER -->
+						
+									 <form id="search" action="#" method="#">
+											<p class="search">
+												<!-- Search Virus Name -->
+												<label for="vName">Virus Name:</label>
+												<input type="text" id="vName" name="vName"
+												required autofocus/>
 
-			
-									<label for = "password">Password:</label>
-									<input type="text" id="password" name="password" />
-									<br />
-								</p>
-								<p class="submit">
-								<input type="submit" value="Login" onclick = "../welcomePage.html"/>
-								</p>
-							</form>
-							<!-- <p><script>generateText(12)</script></p> -->
+												<!-- Search Virus Subtype -->
+												<label for="vSubtype">Virus Subtype:</label>
+												<input type="text" id="vSubtype" name="vSubtype"
+												required/>
+
+												<!-- Search Virus Host -->
+												<label for="vHost">Virus Host:</label>
+												<input type="text" id="vHost" name="vHost"
+												required/>
+											</p>
+											<p class="submit">
+												<input type="submit" value="Search Virus" />
+												<span class="reset">
+													<input type="reset" value="Clear Search" onclick="history.go(0)" />
+												</span>
+											</p>
+											<p class="advancedSearch">
+												<a href="#">Advanced Search</a>
+												<br />
+
+												<!-- Geographic Location -->
+												<label for="vGeo">Geographic Location:</label>
+												<input type="text" id="vGeo" name="vGeo" />
+
+												<!-- Time Period -->
+												<label for"vTime">Time Period:</label>
+												<input type="date" id="vStartDate" name="vTime" />
+											</p>
+										</form>
+									
+								
 						</div>
 					</main>
 					
@@ -129,14 +151,16 @@
 						<div class="widget">
 							<!-- <h3>Your Zoophy</h3> -->
 							<ul>
-							<!-- <li><a href="#">View Profile</a></li>
-							<li><a href="#">View Jobs</a></li>
-							<li><a href="#">New Query</a></li> -->
+							<li><a href="viewProfile.html">View Profile</a></li>
+							<li><a href="viewJobs.html">View Jobs</a></li>
+							<li><a href="#">New Query</a></li>
 							</ul>
 						</div>
+						
 						<div>
 						<p><a href="#"><img src="imageFolder/logo.png" alt="logo" /></a></p>
 						</div>
+						
 					</nav>
 					
 					<div class="clr"></div>
@@ -146,18 +170,23 @@
 			<div id="footerblurb">
 				<div id="footerblurb-inner">
 				
-					<!-- BOTTOM HEADINGS AND TEXT -->
 					<div class="column">
-						<!-- <h2><span>Heading</span></h2>
-						<p>blah</p> -->
+						<!-- BOTTOM LEFT -->
+						<!-- <h2><span>Heading 1</span></h2>
+						<p> hello world </p> -->
+						<!-- <p><script>generateText(2)</script></p> -->
 					</div>	
 					<div class="column">
-						<!-- <h2><span>Heading</span></h2>
-						<p><script>generateText(2)</script></p> -->
+						<!-- BOTTOM MIDDLE -->
+						<!-- <h2><span>Heading 2</span></h2>
+						<p> hello world </p> -->
+						<!-- <p><script>generateText(2)</script></p> -->
 					</div>
 					<div class="column">
-						<!-- <h2><span>Heading</span></h2>
-						<p><script>generateText(2)</script></p> -->
+						<!-- BOTTOM RIGHT -->
+						<!-- <h2><span>Heading 3</span></h2>
+						<p> hello world </p> -->
+						<!-- <p><script>generateText(2)</script></p> -->
 					</div>	
 					
 					<div class="clr"></div>
