@@ -18,7 +18,7 @@
 
 			/* Header */
 			#header { background:#fff; }
-			#header-inner { margin:0 auto; padding: 20px; width:970px;}
+			#header-inner { margin:0 auto; padding:0; width:970px;}
 			
 			/* Feature */
 			.feature { background:blue;padding:18px;}
@@ -57,11 +57,6 @@
 			
 			/* Clear both sides to assist with div alignment  */
 			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
-			
-			/* Search Form */
-			#search { background:#d3d3f9;color:blue; width:750px;margin:auto; text-align:center;}
-			.search { padding-top:10px;}
-			
 		</style>
 		<script type="text/javascript">
 			/* =============================
@@ -80,13 +75,14 @@
 			<header id="header">
 				<div id="header-inner">	
 					<div id="logo">
-						<!-- <p><a href="#"><img src="imageFolder/logo.png" alt="logo" /></a></p> -->
+						<p><a href="#"><img src="imageFolder/logo.png" alt="logo" /></a></p>
 					</div>
 					<div id="top-nav">
 						<ul>
-						<li><a href="#">About Zoophy</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="loginPage.html">Logout</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="loginPage.html">Login</a></li>
 						</ul>
 					</div>
 					<div class="clr"></div>
@@ -94,7 +90,7 @@
 			</header>
 			<div class="feature">
 				<div class="feature-inner">
-				<h1>Zoophy - Welcome User</h1>
+				<h1>Welcome User</h1>
 				</div>
 			</div>
 		
@@ -105,62 +101,38 @@
 					<main id="contentbar">
 						<div class="article">
 							<!-- MAIN/CENTER -->
-						
-									 <form id="search" action="#" method="#">
-											<p class="search">
-												<!-- Search Virus Name -->
-												<label for="vName">Virus Name:</label>
-												<input type="text" id="vName" name="vName"
-												required autofocus/>
-
-												<!-- Search Virus Subtype -->
-												<label for="vSubtype">Virus Subtype:</label>
-												<input type="text" id="vSubtype" name="vSubtype"
-												required/>
-
-												<!-- Search Virus Host -->
-												<label for="vHost">Virus Host:</label>
-												<input type="text" id="vHost" name="vHost"
-												required/>
-											</p>
-											<p class="submit">
-												<input type="submit" value="Search Virus" />
-												<span class="reset">
-													<input type="reset" value="Clear Search" onclick="history.go(0)" />
-												</span>
-											</p>
-											<p class="advancedSearch">
-												<a href="#">Advanced Search</a>
-												<br />
-
-												<!-- Geographic Location -->
-												<label for="vGeo">Geographic Location:</label>
-												<input type="text" id="vGeo" name="vGeo" />
-
-												<!-- Time Period -->
-												<label for"vTime">Time Period:</label>
-												<input type="date" id="vStartDate" name="vTime" />
-											</p>
-										</form>
+						<form id="joinform" action="../confirm.htm" method="get">
+							<p class="fh1">Search</p>
+								<p>
 									
-								
+									<label for = "name">Virus Name:</label>
+									<input type="text" id="name" name="name" />
+									<br />
+
+									
+									<label for = "username">Virus Subtype:</label>
+									<input type="text" id="username" name="username" />
+									<br />
+
+									<label for = "password">Virus Host:</label>
+									<input type="password" id="password" name="password" />
+									<br />
+								</p>
+						</form>
 						</div>
 					</main>
 					
 					<nav id="sidebar">
 						<div class="widget">
-							<!-- <h3>Your Zoophy</h3> -->
+							<h3>Left heading</h3>
 							<ul>
-							<li><a href="viewProfile.html">View Profile</a></li>
-							<li><a href="viewJobs.html">View Jobs</a></li>
-							<li><a href="#">New Query</a></li>
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+							<li><a href="#">Link 4</a></li>
+							<li><a href="#">Link 5</a></li>
 							</ul>
 						</div>
-						
-						<div>
-						<p><a href="#"><img src="imageFolder/logo.png" alt="logo" /></a></p>
-						</div>
-						
 					</nav>
 					
 					<div class="clr"></div>
@@ -194,7 +166,7 @@
 			</div>
 			<footer id="footer">
 				<div id="footer-inner">
-					<p>&copy; Copyright <a href="#">Zoophy2015</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p>
+					<p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p>
 					<div class="clr"></div>
 				</div>
 			</footer>

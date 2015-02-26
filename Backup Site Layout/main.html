@@ -1,13 +1,9 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <!-- Template by html.am -->
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-		<!-- Link tags for CSS -->
-		<link type="text/css" rel="stylesheet" href="signup.css" />
-
-		<title>Signup Page</title>
+		<title>Zoophy Welcome Page</title>
 		<style type="text/css">
 			html, #page { padding:0; margin:0;}
 			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
@@ -30,12 +26,16 @@
 			.feature-inner h1 {color:#d3d3f9;font-size:32px;}
 			
 			/* Menu */
-			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right; margin-bottom: 10px;}
+			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
 			#top-nav ul { list-style:none; padding:0; height:37px; float:left;}
 			#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
 			#top-nav ul li a { display:block; margin:0; padding:8px 20px; color:blue; text-decoration:none;}
 			#top-nav ul li.active a, #top-nav ul li a:hover { color:#d3d3f9;}
-			
+
+			/* Search Form */
+			#search { background:#d3d3f9;color:blue; width:750px;margin:auto; text-align:center;}
+			.search { padding-top:10px;}
+
 			/* Content */
 			#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
 			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
@@ -62,18 +62,23 @@
 			/* Clear both sides to assist with div alignment  */
 			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 		</style>
-		
+		<script type="text/javascript">
+
+		</script>
 	</head>
 	<body>
 		<div id="page">
 			<header id="header">
 				<div id="header-inner">	
+					<div id="logo">
+						<p><a href="#"><img src="imageFolder/logo.png" alt="logo" /></a></p>
+					</div>
 					<div id="top-nav">
 						<ul>
-						<li><a href="aboutUs.html">About ZooPhy</a></li>
+						<li><a href="aboutUs.html">About</a></li>
 						<li><a href="aboutUs.html">Contact</a></li>
+						<li><a href="aboutUs.html">FAQ</a></li>
 						<li><a href="loginPage.html">Login</a></li>
-						<li><a href="aboutUs.html">Help</a></li>
 						</ul>
 					</div>
 					<div class="clr"></div>
@@ -81,7 +86,7 @@
 			</header>
 			<div class="feature">
 				<div class="feature-inner">
-				<h1>ZooPhy - Signup Page</h1>
+				<h1>Welcome User</h1>
 				</div>
 			</div>
 		
@@ -91,80 +96,88 @@
 				
 					<main id="contentbar">
 						<div class="article">
-							<div class="container">
+							<!-- MAIN/CENTER -->
+			<form id="search" action="#" method="#">
+				<p class="search">
+					<!-- Search Virus Name -->
+					<label for="vName">Virus Name:</label>
+					<input type="text" id="vName" name="vName"
+					required autofocus/>
 
-							    <form id="signup">
+					<!-- Search Virus Subtype -->
+					<label for="vSubtype">Virus Subtype:</label>
+					<input type="text" id="vSubtype" name="vSubtype"
+					required/>
 
-							        <div class="header">
-							        
-							            <h3>Sign Up</h3>
-							            
-							            <p>You want to fill out this form</p>
-							            
-							        </div>
-							        
-							        <div class="sep"></div>
+					<!-- Search Virus Host -->
+					<label for="vHost">Virus Host:</label>
+					<input type="text" id="vHost" name="vHost"
+					required/>
+				</p>
+				<p class="submit">
+					<input type="submit" value="Search Virus" />
+					<span class="reset">
+						<input type="reset" value="Clear Search" onclick="history.go(0)" />
+					</span>
+				</p>
+				<p class="advancedSearch">
+					<a href="#">Advanced Search</a>
+					<br />
 
-							        <div class="inputs">
-							        
-							            <input type="email" placeholder="e-mail" autofocus />
-							        
-							            <input type="password" placeholder="Password" />
+					<!-- Geographic Location -->
+					<label for="vGeo">Geographic Location:</label>
+					<input type="text" id="vGeo" name="vGeo" />
 
-							            <input type="text" placeholder="Institution" />
-							            
-							            <div class="checkboxy">
-							                <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>
-							            </div>
-							            
-							            <a id="submit" href="signup_confirm.html">SIGN UP NOW</a>
-							        
-							        </div>
-
-							    </form>
-
-							</div>
+					<!-- Time Period -->
+					<label for"vTime">Time Period:</label>
+					<input type="date" id="vStartDate" name="vTime" />
+				</p>
+			</form>
 						</div>
 					</main>
 					
 					<nav id="sidebar">
 						<div class="widget">
-							<h3>Links</h3>
+							<h3>Left heading</h3>
 							<ul>
-							<li><a href="profilePage.html">Profile</a></li>
-							<li><a href="viewJobs.html">View Jobs</a></li>
-							<li><a href="welcomePage.html">New Query</a></li>
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+							<li><a href="#">Link 4</a></li>
+							<li><a href="#">Link 5</a></li>
 							</ul>
-							<img src="../Zoophy/imageFolder/logo.png" alt="Zoophy" />
 						</div>
-
 					</nav>
 					
 					<div class="clr"></div>
 				</div>
 			</div>
 		
-			
 			<div id="footerblurb">
 				<div id="footerblurb-inner">
 				
 					<div class="column">
-						<h2><span>Step 1:</span></h2>
-						<p>Signup by entering your email and password</p>
+						<!-- BOTTOM LEFT -->
+						<!-- <h2><span>Heading 1</span></h2>
+						<p> hello world </p> -->
+						<!-- <p><script>generateText(2)</script></p> -->
 					</div>	
 					<div class="column">
-						<h2><span>Step 2:</span></h2>
-						<p>We'll send you a confirmation email</p>
+						<!-- BOTTOM MIDDLE -->
+						<!-- <h2><span>Heading 2</span></h2>
+						<p> hello world </p> -->
+						<!-- <p><script>generateText(2)</script></p> -->
 					</div>
 					<div class="column">
-						<h2><span>Step 3:</span></h2>
-						<p>Login with your new credentials and start using ZooPhy!</p>
+						<!-- BOTTOM RIGHT -->
+						<!-- <h2><span>Heading 3</span></h2>
+						<p> hello world </p> -->
+						<!-- <p><script>generateText(2)</script></p> -->
 					</div>	
 					
 					<div class="clr"></div>
 				</div>
-			</div> 
-
+			</div>
 			<footer id="footer">
 				<div id="footer-inner">
 					<p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p>
@@ -174,3 +187,4 @@
 		</div>
 	</body>
 </html>
+ No newline at end of file
