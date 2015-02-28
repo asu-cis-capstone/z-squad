@@ -4,10 +4,22 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<!-- CSS Link -->
-		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
 		<title>About Us</title>
+		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
 		
+			
+		</style>
+		<script type="text/javascript">
+			/* =============================
+			This script generates sample text for the body content. 
+			You can remove this script and any reference to it. 
+			 ============================= */
+			var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h2>Heading</h2><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+			function generateText(sentenceCount){
+				for (var i=0; i<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+		</script>
 	</head>
 	<body>
 		<div id="page">
@@ -21,8 +33,6 @@
 					</div>
 					<div id="top-nav">
 						<ul>
-						<li><a href="index.html">About</a></li>
-						<li><a href="index.html">Contact</a></li>
 						<li><a href="loginPage.html">Login</a></li>
 						<li><a href="signup.html">Register</a></li> 
 						</ul>
@@ -33,7 +43,9 @@
 			<!-- <img src="logo.png" alt="Zoophy" /> -->
 			<div class="feature">
 				<div class="feature-inner">
-				<h1>ZooPhy - Phylogeography for Zoonotic Disease Surveillance</h1>
+				<h1>ZooPhy |</h1>
+				
+				<h2>Phylogeography for Zoonotic Disease Surveillance<h2>
 				</div>
 			</div>
 		
@@ -43,30 +55,38 @@
 				
 					<main id="contentbar">
 						<div class="article">
-							<h2>About Zoophy</h2>
-							<p>ZooPhy is a public health informatics application for phylogeography of zoonotic RNA viruses. The intended users of ZooPhy are health agencies, agriculture agencies, wildlife agencies, and any other researcher interested in surveillance of zoonotic diseases in either animals or humans. Phylogeography of viruses, such as zoonotic viruses (animal-human transmission) can support public health and disease surveillance. For example, it can help epidemiologists answer questions such as ‘For a particular geographical area and timeframe:
+							<h1>About Zoophy</h1>
+							<p>ZooPhy is a public health informatics application for phylogeography of zoonotic RNA viruses . The intended users of ZooPhy are health agencies, agriculture agencies, wildlife agencies, and any other researcher interest in surveillance of zoonotic diseases in either animals or humans. Phylogeography of viruses, such as zoonotic viruses (animal-human transmission) can support public health and disease surveillance. For example, it can help epidemiologists answer questions such as ‘For a particular geographical area and timeframe:
 							<br>
 							<ul>
 <li>Which animal hosts most impact virus propagation?</li>
 <li>For a particular virus, what was the migration path?</li>
 <li>Where is it going?</li>
 <li>What was the trend of the estimated viral population within a specific animal host?</li></ul>
-Once it is live, ZooPhy will be freely available to the public with the hope that it will help enhance population surveillance of human and animal zoonotic diseases and aid in public health decision making.
+Once it is live, ZooPhy will be freely available to the public with the hope that it will help enhance population surveillance of human and animal zoonotic diseases and inform public health decision making.
 							</p>
-							<!-- <p><script>generateText(12)</script></p> -->
+							<h1><u>Functions</u></h1>
+							<h3><span>Bayesian phylogeographic trees</span></h3>
+						<p>ZooPhy includes its own webservice for Bayesian Evolutionary Analysis by Sampling Trees (BEAST) to produce different models of evolution.</p>
+							<h3><span>Bayesian skyline plots</span></h3>
+						<p>Through BEAST, ZooPhy can produce Bayesian skyline plots for analysis of population genetics and estimates of viral population over time.</p>
+						<h3><span>Multiple sequence alignment</span></h3>
+						<p>ZooPhy utilizes a webservice to connect to Clustal to perform alignment of nucleotide or amino acid sequences.</p>
+						<h3><span>Evaluation of substitution models</span></h3>
+						<p>Through jModeltest, ZooPhy can evaluate the fit of up to 88 different substitution models for a given input of aligned nucleotide sequences.</p>
 						</div>
 					</main>
 					
 					<nav id="sidebar">
 						<div class="widget">
-							<h3>Links</h3>
+							<!-- <h3>Links</h3>
 							<ul>
-							<li><a href="main.html">Home</a></li>
+							<li><a href="zoophyhomepage.html">Home</a></li>
 							<li><a href="loginPage.html">Login</a></li>
 							<li><a href="signup.html">Sign Up</a></li>
-							<li><a href="index.html">Contact</a></li>
+							<li><a href="aboutUs.html">Contact</a></li>
 							<!-- <li><a href="#">Link 5</a></li> -->
-							</ul>
+							<!-- </ul> -->
 						</div>
 						<img src="../Zoophy/imageFolder/logo.png" alt="Zoophy" />
 					</nav>
@@ -78,28 +98,35 @@ Once it is live, ZooPhy will be freely available to the public with the hope tha
 		
 			<div id="footerblurb">
 				<div id="footerblurb-inner">
-				
-					<div class="column">
+				<div class="column">
+				<a href="aboutUs.html">Contact</a>
+				</div>
+				<div class="column">
+				<span>
+				<a href="aboutUs.html">About</a>
+				</div>
+
+					<!-- <div class="column">
 						<h2><span>Bayesian phylogeographic trees</span></h2>
 						<p>ZooPhy includes its own webservice for Bayesian Evolutionary Analysis by Sampling Trees (BEAST) to produce different models of evolution.</p>
 						<!-- <p><script>generateText(2)</script></p> -->
-					</div>	
+					<!-- </div>	
 					<div class="column">
 						<h2><span>Bayesian skyline plots</span></h2>
 						<p>Through BEAST, ZooPhy can produce Bayesian skyline plots for analysis of population genetics and estimates of viral population over time.</p>
-						<!-- <p><script>generateText(2)</script></p> -->
+						
 					</div>
 					<div class="column">
 						<h2><span>Multiple sequence alignment</span></h2>
 						<p>ZooPhy utilizes a webservice to connect to Clustal to perform alignment of nucleotide or amino acid sequences.</p>
-						<!-- <p><script>generateText(2)</script></p> -->
+						
 					</div>
 					
 					<div class="column">
 						<h2><span>Evaluation of substitution models</span></h2>
 						<p>Through jModeltest, ZooPhy can evaluate the fit of up to 88 different substitution models for a given input of aligned nucleotide sequences.</p>
-						<!-- <p><script>generateText(2)</script></p> -->
-					</div>	
+						
+					</div>	 --> 
 					
 					<div class="clr"></div>
 				</div>
@@ -113,4 +140,3 @@ Once it is live, ZooPhy will be freely available to the public with the hope tha
 		</div>
 	</body>
 </html>
- No newline at end of file
