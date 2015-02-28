@@ -20,6 +20,7 @@
 			.feature-inner { margin:auto;width:970px; }
 			.feature-inner h1 {display: inline; color:#d3d3f9;font-size: 32px; float: left; padding-right: 15px; padding-bottom: 15px; }
 			.feature-innner h2 {padding-top: 25px;}
+			.smallfont {padding-top: 20px;}
 			
 			/* Menu */
 			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right; margin-bottom: 10px;}
