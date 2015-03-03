@@ -36,5 +36,13 @@ Install Instruction:
 6. Open localhost, select Zoophy and home page loads
 7. Click "login" and login page accepts account info and logs user in
 
+v0.3 
+New Release:
+This release includes a new layout and color scheme for the site. Navigation and links are updated and sample pages with dummy data have been used for lgin and view jobs purposes. 
+
+The page also integrates Google Maps to display the desired look for mapping KML files in the future. 
+
+Instructions:
+To view new project, use WAMP server to load index.html and navigate through links form there as you would a regular site. 
 
 
