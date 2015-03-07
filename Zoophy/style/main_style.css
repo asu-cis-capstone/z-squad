@@ -148,7 +148,9 @@
 				color:inherit;
 			}
 
-			#yourMom {display: none;}
+			#advSearchLink {border-bottom: 1px dotted blue; text-decoration: none;}
+
+			#advSearch {display: none;}
 
 
 

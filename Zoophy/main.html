@@ -11,13 +11,15 @@
 		<!-- CSS Link -->
 		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
 		
+		<!-- jQuery Link -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 		</script>
 
+		<!-- jQuery Search Function-->
 		<script>
 			$(document).ready(function(){
-    			$("#advSearch").click(function(){
-        			$("#yourMom").toggle();
+    			$("#advSearchLink").click(function(){
+        			$("#advSearch").toggle();
     			});
 			});
 		</script>
@@ -103,11 +105,8 @@
 												</span>
 											</p>
 
-											<button id="advSearch">Advanced Search</button>
-											<p id="yourMom">
-
-												<!--<a href="#">Advanced Search</a>
-												<br /> -->
+											<a id="advSearchLink" href="#">Advanced Search</a>
+											<p id="advSearch">
 
 												<!-- Geographic Location -->
 												<label for="vGeo">Geographic Location:</label>
