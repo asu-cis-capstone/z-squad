@@ -11,6 +11,17 @@
 		<!-- CSS Link -->
 		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
 		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+		</script>
+
+		<script>
+			$(document).ready(function(){
+    			$("#advSearch").click(function(){
+        			$("#yourMom").toggle();
+    			});
+			});
+		</script>
+
 		<!-- Title -->
 		<title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>	
 	</head>
@@ -91,9 +102,12 @@
 													<input type="reset" value="Clear Search" onclick="history.go(0)" />
 												</span>
 											</p>
-											<p class="advancedSearch">
-												<a href="#">Advanced Search</a>
-												<br />
+
+											<button id="advSearch">Advanced Search</button>
+											<p id="yourMom">
+
+												<!--<a href="#">Advanced Search</a>
+												<br /> -->
 
 												<!-- Geographic Location -->
 												<label for="vGeo">Geographic Location:</label>
