@@ -78,7 +78,7 @@ input:-moz-placeholder {
     padding: 13px 10px;
     width: 330px;
     margin-bottom: 20px;
-    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    /*box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );*/
     clear: both;
 }
 
