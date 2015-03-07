@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<!--
+emform.htm
+CIS-425/78019
+Fall 2014
+Bryan Mercado
+-->
+
+<html lang="en">
+  	
+  <head>
+    <!-- Meta tag -->
+    <meta charset="utf-8" />
+	<meta name="robots" content="noindex,nofollow" />
+
+    <!-- Link tag for CSS -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/css3.css" />
+
+	<!-- JavaScript Tags -->
+	<script type="text/javascript" src="../jscode/msgs.js"></script>
+
+    <!-- Web Page Title -->
+    <title>Mercado Email Form</title>
+
+  </head>
+
+  <body onload="nmsg()">
+	<div id="header">
+		<p class="sh1">Bryan Mercado</p>
+		<p class="sh2">HTML Email Form</p>
+	</div>
+
+	<div id="navigation">
+		<p  class="sh2">Site Navigation</p>
+		<p><a href="../">Home</a></p>
+		<p><a href="../a2/">A2</a></p>
+		<p><a href="../a3/">A3</a></p>
+		<p><a href="../a4/">A4</a></p>
+		<p><a href="../a5/">A5</a></p>
+		<p><a href="../a6/">A6</a></p>
+		<p><a href="../a7/">A7</a></p>
+		<p><a href="../a8/">A8</a></p>
+		<p><a href="../a9/">A9</a></p>
+		<p><a href="../project/">Project</a></p>
+	</div>
+
+	<div id="external">
+		<p class="sh2">External Links</p>
+		<p><a href="http://www.redbull.com">Red Bull</a></p>
+		<p><a href="http://asunews.asu.edu/sports/"
+			onclick="window.open(this.href); return false;">
+			<img src="../images/sparky.gif" alt="Sparky" /></a></p>
+		<p><a href="http://www.kournikova.com"
+			onclick="window.open(this.href); return false;">
+			<img src="../images/anna.jpg" alt="Anna" /></a></p>
+	</div>
+	
+	<div id="main">
+		<p class="bold">Please fill in all the blanks and click the "Send Email" button</p>
+	</div>
+	
+	<form id="joinform" action="https://webapp4.asu.edu/pubtools/Mail" method="post">
+		<p class="fh1">Email Form:</p>
+		<p>
+
+			<!-- 3 hidden elements to process our emails -->
+			<!-- CHANGE THE EMAIL ADDRESS TO TARUN BEFORE SUBMITTING FOR A GRADE! -->
+			<input name="sendto" type="hidden" value="tarun.gorowara@asu.edu" />
+			<input name="subject" type="hidden" value="A5 Contact Request" />
+			<input name="location" type="hidden" value="http://cis425.wpcarey.asu.edu/bamercad/em/emthankyou.htm" />
+
+
+			<!-- Name -->
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"
+			required autofocus
+			pattern="[a-zA-Z-' ]{4,30}"
+			title="Name: 4-30 chars, u/l case letters and - or ' only!"
+			placeholder="Enter your name here..."
+			onfocus="nmsg()" 
+			/>
+			<br />
+
+			<!-- Email -->
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email"
+			title="Valid email address only!" required
+			onfocus="emsg()" 
+			/>
+			<br />
+			
+			<!-- Comments -->
+			Comments:
+			<br />
+			<textarea name="comments" id="comments"
+				rows="2" cols="49" required maxlength="500" title="1-500 chars!"
+				onfocus="commsg()"></textarea>	
+		</p>
+		
+		<p class="submit">
+			<input type="submit" value="Send Email!" 
+			onfocus="sendmsg()" />
+			
+			<span class="reset">
+				<input type="reset" value="Clear Form!" onclick="history.go(0)" 
+				onfocus="cmsg()" />
+			</span>	
+		</p>
+	</form>
+
+	<div id="messages">
+		<p></p>
+	</div>
+	
+		<div id="footer">
+			<p>
+				<img src="../images/html5.png"	alt="Valid HTML5 Icon"	/>
+				<a href="../em/emform.htm">
+					<img src="../images/em3.png"	alt="HTML Email Icon"	/></a>
+				<img src="../images/css3.png"	alt="Valid CSS3 Icon"	/>
+				<br	/>
+				&copy;2014, Bryan Mercado
+			</p>
+		</div>	
+	
+  </body>
+
+</html>
+	

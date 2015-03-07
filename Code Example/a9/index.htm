@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<!--
+A9
+CIS-425/78019
+Fall 2014
+Bryan Mercado
+-->
+
+<html lang="en">
+  	
+  <head>
+    <!-- Meta tag -->
+    <meta charset="utf-8" />
+	<meta name="robots" content="noindex,nofollow" />
+
+    <!-- Link tag for CSS -->
+    <link type="text/css" rel="stylesheet" href="../stylesheets/css3.css" />
+
+	<!-- JavaScript Tags -->
+	<script type="text/javascript" src="../jscode/msgs.js"></script>
+
+    <!-- Web Page Title -->
+    <title>Mercado A9</title>
+
+  </head>
+
+  <body>
+	<div id="header">
+		<p class="sh1">Bryan Mercado</p>
+		<p class="sh2">A9</p>
+	</div>
+
+	<div id="navigation">
+		<p  class="sh2">Site Navigation</p>
+		<p><a href="../">Home</a></p>
+		<p><a href="../a2/">A2</a></p>
+		<p><a href="../a3/">A3</a></p>
+		<p><a href="../a4/">A4</a></p>
+		<p><a href="../a5/">A5</a></p>
+		<p><a href="../a6/">A6</a></p>
+		<p><a href="../a7/">A7</a></p>
+		<p><a href="../a8/">A8</a></p>
+		<p><a href="../a9/">A9</a></p>
+		<p><a href="../project/">Project</a></p>
+	</div>
+
+	<div id="external">
+		<p class="sh2">External Links</p>
+		<p><a href="http://www.redbull.com">Red Bull</a></p>
+		<p><a href="http://asunews.asu.edu/sports/"
+			onclick="window.open(this.href); return false;">
+			<img src="../images/sparky.gif" alt="Sparky" /></a></p>
+		<p><a href="http://www.kournikova.com"
+			onclick="window.open(this.href); return false;">
+			<img src="../images/anna.jpg" alt="Anna" /></a></p>
+	</div>
+	
+	<div id="main">
+		<p>Please sign up below to join my CIS-425 Study Group</p>
+		<p>Your personal information will be treated with respect</p>
+	</div>
+	
+	<div id="registered">
+		<p>Already registered? Click <a href="login.php">here</a> to login!</p>
+
+	</div>
+
+	<form id="joinform" action="confirm9.php" method="post">
+		<p class="fh1">Sign-up Form:</p>
+		<p>
+			<!-- Name -->
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"
+			required autofocus
+			pattern="[a-zA-Z-' ]{4,30}"
+			title="Name: 4-30 chars, u/l case letters and - or ' only!"
+			placeholder="Enter your name here..."
+			onfocus="nmsg()" 
+			/>
+			<br />
+
+			<!-- Username -->
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" 
+			required
+			pattern="[a-zA-Z0-9-_!$]{4,15}"
+			title="Username: 4-15 chars, u/l case letters, 0-9, and - _ or $ only!"
+			placeholder="Username..."
+			onfocus="umsg()" 
+			/>
+			<br />
+			
+			<!-- Password -->
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" 
+			required
+			pattern="[a-zA-Z0-9-_!$]{5,15}"
+			title="Password: 5-15 chars, u/l case letters, 0-9, and - _ or $ only!"
+			placeholder="Password..."
+			onchange="form.reenter.pattern=this.value;"
+			onfocus="pmsg()" 
+			/>
+			<br />
+			
+			<!-- Re-enter -->
+			<label for="reenter">Re-enter Password:</label>
+			<input type="password" id="reenter" name="reenter" 
+			required
+			title="Passwords must match!"
+			placeholder="Re-enter..."
+			onfocus="rmsg()" 
+			/>
+			<br />
+
+			<!-- Email -->
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email"
+			title="Valid email address only!" required
+			placeholder="Email..."
+			onfocus="emsg()" maxlength="50" 
+			/>
+			<br />
+			
+			<!-- Probation -->
+			<label for="probation">Academic Probation?</label>
+			<input type="checkbox" id="probation" 
+			name="probation"
+			onfocus="amsg()" onclick="asmg()" />
+			<br />
+			
+			<!-- Hot or Not? -->
+			<label for="hotornoty">Hot or Not?</label>
+			Yes <input type="radio" id="hotornoty" 
+			name="hotornot" value="yes" required
+			title="Please select an option"
+			onfocus="hymsg()" onclick="hymsg()" />
+			No <input type="radio" id="hotornotn" 
+			name="hotornot" value="no" 
+			onfocus="hnmsg()" onclick="hnmsg()" />
+			<br />
+			
+			<!-- Smart or Not? -->
+			<label for="smartornoty">Smart or Not?</label>
+			Yes <input type="radio" id="smartornoty" 
+			name="smartornot" value="yes" required
+			title="Please select an option"
+			onfocus="symsg()" onclick="symsg()" />
+			No <input type="radio" id="smartornotn" 
+			name="smartornot" value="no"
+			onfocus="snmsg()" onclick="snmsg()" />
+			<br />
+
+			<!-- Favorite Beer -->
+			<label for="beers">Favorite Beer:</label>
+			<select name="beers" id="beers" required 
+			title="Please pick a beer. I suggest Heineken"
+			onfocus="bmsg()"
+			>
+				<option value="">Select a beer...</option>
+				<option value="heineken">Heineken</option>
+				<option value="pbr">PBR</option>
+				<option value="newcastle">New Castle</option>
+				<option value="coorslight">Coors Light</option>				
+			</select>	
+			<br />
+			
+			<!-- Why should I consider you? -->
+			Why should I consider you for my Study Group?
+			<br />
+			<textarea name="consider" id="consider"
+				rows="2" cols="49" required maxlength="500" title="1-500 chars!"
+				onfocus="wmsg()" placeholder="Comments..."></textarea>	
+		</p>
+		
+		<p class="submit">
+			<input type="submit" value="Sign me up!" 
+			onfocus="smsg()" />
+			
+			<span class="reset">
+				<input type="reset" value="Clear Form!" onclick="history.go(0)" 
+				onfocus="cmsg()" />
+			</span>	
+		</p>
+	</form>
+
+	<div id="messages">
+		<p></p>
+	</div>
+	
+		<div id="footer">
+			<p>
+				<img src="../images/html5.png"	alt="Valid HTML5 Icon"	/>
+				<a href="../em/emform.htm">
+					<img src="../images/em3.png"	alt="HTML Email Icon"	/></a>
+				<img src="../images/css3.png"	alt="Valid CSS3 Icon"	/>
+				<br	/>
+				&copy;2014, Bryan Mercado
+			</p>
+		</div>	
+	
+  </body>
+
+</html>
+	
