@@ -1,5 +1,17 @@
  <!DOCTYPE html>
 
+<?php
+	session_name("user");
+	session_start("user");
+
+	if (isset($_SESSION["user"]))
+	{
+		header('Location: profile.html')
+		exit;
+	}
+
+?>
+
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -55,6 +67,21 @@
 							<div class="container">
 
 							    <form id="signup">
+
+							    	<?php
+							    		if ($_GET["rc"] == 1)
+							    		{
+							    			echo '<p class="logerr">Username not found</p>';
+							    		}
+							    		if ($_GET["rc"] == 2)
+							    		{
+							    			echo '<p class="logerr">Password not found</p>';
+							    		}
+							    		if ($_GET["rc"] == 3)
+							    		{
+							    			echo '<p class="logerr">Returned from previous</p>';
+							    		}
+							    	?>
 
 							        <div class="header">
 							        
