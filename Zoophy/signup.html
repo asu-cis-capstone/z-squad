@@ -65,11 +65,19 @@
 
 							        <div class="inputs">
 							        
-							            <input type="email" placeholder="e-mail" autofocus />
+							            <input type="email" placeholder="e-mail" 
+										autofocus 
+										required
+										pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"
+										maxlength="50" />
 							        
-							            <input type="password" placeholder="Password" />
+							            <input type="password" placeholder="Password" 
+										required
+										pattern="[a-zA-Z0-9-_!$]{5,15}"/>
 
-							            <input type="text" placeholder="Institution" />
+							            <input type="text" placeholder="Institution" 
+										required
+										pattern="[a-zA-Z]" />
 							            
 							            <div class="checkboxy">
 							                <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>
