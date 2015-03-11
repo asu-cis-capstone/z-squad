@@ -4,7 +4,7 @@
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 
-	$login = "SELECT * FROM users WHERE email = '$email'";
+	$login = "SELECT * FROM user WHERE email = '$email'";
 
 	$result = mysqli_query($dbc, $login) or die('Email read error');
 
@@ -14,7 +14,7 @@
 		exit;
 	}
 
-	$login = "SELECT * FROM users WHERE email = '$email' AND pword = '$password'";
+	$login = "SELECT * FROM user WHERE email = '$email' AND pword = '$password'";
 
 	$result = mysqli_query($dbc, $login) or die ('Password read error!');
 
