@@ -6,7 +6,7 @@
 
 	if (isset($_SESSION["user"]))
 	{
-		header('Location: profile.html')
+		header('Location: profile.html');
 		exit;
 	}
 
