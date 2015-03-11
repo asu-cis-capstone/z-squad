@@ -93,9 +93,9 @@
 
 							        <div class="inputs">
 							        
-							            <input type="email" placeholder="e-mail" autofocus />
+							            <input type="email" id="email" placeholder="e-mail" autofocus />
 							        
-							            <input type="password" placeholder="Password" />
+							            <input type="password" id="password" placeholder="Password" />
 							            							            
 							            <a id="submit" href="main.html">LOG IN</a>
 							        
