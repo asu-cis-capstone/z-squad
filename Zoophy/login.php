@@ -66,7 +66,7 @@
 						<div class="article">
 							<div class="container">
 
-							    <form id="signup">
+							    <form id="signup" action="process.php" method="post">
 
 							    	<?php
 							    		if ($_GET["rc"] == 1)
