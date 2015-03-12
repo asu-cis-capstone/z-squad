@@ -116,7 +116,7 @@
 					<nav id="sidebar">
 						<div class="widget">
 							
-							<img src="../Zoophy/imageFolder/logo.png" alt="Zoophy" />
+							<img src="imageFolder/logo.png" alt="Zoophy" />
 						</div>
 
 					</nav>
