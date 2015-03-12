@@ -1,5 +1,5 @@
 <?php
-	include('../connect/dbConnect.php');
+	include('connect/dbConnect.php');
 
 	$email = $_POST['email'];
 	$password = $_POST['password'];
