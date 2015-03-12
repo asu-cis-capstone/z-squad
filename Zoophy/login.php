@@ -1,5 +1,3 @@
- <!DOCTYPE html>
-
 <?php
 	session_name("user");
 	session_start("user");
@@ -11,6 +9,8 @@
 	}
 
 ?>
+
+ <!DOCTYPE html>
 
 <html>
 	<head>
@@ -103,7 +103,7 @@
 										required
 										pattern="[a-zA-Z0-9-_!$]{5,15}"/>
 							            							            
-							            <a id="submit" href="main.html">LOG IN</a>
+							            <input type="submit" id="submit" value="LOG IN">
 							        
 							        </div>
 
