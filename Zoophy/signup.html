@@ -3,7 +3,8 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+		<!-- Icon Link -->
+		<link rel="icon" href="imageFolder/zoophy.ico" />
 		<!-- Link tags for CSS -->
 		<link type="text/css" rel="stylesheet" href="style/signup_form.css" />
 		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
@@ -51,7 +52,7 @@
 						<div class="article">
 							<div class="container">
 
-							    <form id="signup">
+							    <form id="signup" action="signupConfirm.php" method="post">
 
 							        <div class="header">
 							        
@@ -64,26 +65,29 @@
 							        <div class="sep"></div>
 
 							        <div class="inputs">
-							        
-							            <input type="email" placeholder="e-mail" 
-										autofocus 
+							        	<!-- First Name -->
+							            <input type="text" id="fName" name="fName" placeholder="First Name" autofocus required pattern="[a-zA-Z-' ]{1,25}" />
+							            <!-- Last Name -->
+							            <input type="text" id="lName" name="lName" placeholder="Last Name" required pattern="[a-zA-Z-' ]{2,30}"/>
+							            <!-- Email -->
+							            <input type="email" id="email" name="email" placeholder="Email" 
+										required maxlength="50" />
+							        	<!-- Password -->
+							            <input type="password" id="password" name="password" placeholder="Password" 
 										required
-										pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"
-										maxlength="50" />
-							        
-							            <input type="password" placeholder="Password" 
+										pattern="[a-zA-Z0-9-_!$]{5,20}" onchange="form.reenter.pattern=this.value;" />
+										<!-- Re-enter -->
+										<input type="password" id="reenter" name="reenter" required placeholder="Verify Password" />
+										<!-- Institution -->
+							            <input type="text" id="institution" name="institution" placeholder="Institution" 
 										required
-										pattern="[a-zA-Z0-9-_!$]{5,15}"/>
-
-							            <input type="text" placeholder="Institution" 
-										required
-										pattern="[a-zA-Z]" />
+										pattern="[a-zA-Z0-9]{2,25}" />
 							            
 							            <div class="checkboxy">
-							                <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>
+							                <input name="cecky" id="checky" value="1" type="checkbox" required /><label class="terms">I accept the <a href="terms.html" onclick="window.open(this.href); return false">Terms of Use</a></label>
 							            </div>
 							            
-							            <a id="submit" href="signupconfirm.html">SIGN UP NOW</a>
+							            <input type="submit" id="submit" value="REGISTER" />
 							        
 							        </div>
 

@@ -23,7 +23,7 @@
 		<link type="text/css" rel="stylesheet" href="style/signup_form.css" />
 		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
 
-		<title>Signup Page</title>
+		<title>ZooPhy | Login</title>
 		
 	</head>
 	<body>
@@ -54,7 +54,7 @@
 			</header>
 			<div class="feature">
 				<div class="feature-inner">
-				<h1>ZooPhy - Signup Page</h1>
+				<h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
 				</div>
 			</div>
 		
@@ -93,7 +93,7 @@
 
 							        <div class="inputs">
 							        
-							            <input type="email" id="email" placeholder="e-mail" 
+							            <input type="email" id="email" placeholder="Email" 
 										autofocus 
 										required
 										pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"
