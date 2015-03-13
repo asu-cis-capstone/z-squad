@@ -71,7 +71,7 @@
 							    	<?php
 							    		if ($_GET["rc"] == 1)
 							    		{
-							    			echo '<p class="logerr">Username not found</p>';
+							    			echo '<p class="logerr">Email Address not found</p>';
 							    		}
 							    		if ($_GET["rc"] == 2)
 							    		{
@@ -103,7 +103,7 @@
 										required
 										pattern="[a-zA-Z0-9-_!$]{5,15}"/>
 							            							            
-							            <input type="submit" id="submit" value="LOG IN">
+							            <input type="submit" id="submit" value="LOG IN" />
 							        
 							        </div>
 
