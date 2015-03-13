@@ -30,7 +30,7 @@
 	session_start('user');
 
 	$row = mysqli_fetch_array($result);
-	$_SESSION['user'] = $row['name'];
+	$_SESSION['user'] = $row['fName'.'lName'];
 	header('Location: main.html');
 	exit;
 
