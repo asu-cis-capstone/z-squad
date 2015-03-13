@@ -20,29 +20,6 @@
 
 	$result = mysqli_query($dbc, $register) or die ('Unable to Register User');
 
-	if($result)
-	{
-		$to=$email;
-		$subject="ZooPhy Registration Confirmation";
-		$header="From: ZooPhy | Phylogeography for Zoonotic Disease Surveillance <support@bamercado.com>";
-		$message="Your ZooPhy Confirmation Link \r\n";
-		$message.="Click on this link to activate your account \r\n";
-		$message.="http://www.bamercado.com/confirmation.php?passkey=$confirm_code";
-		$sentmail=mail($to, $subject, $message, $header);
-	}
-	else
-	{
-		echo "User Email not found.";
-	}
-
-	if($sentmail)
-	{
-		echo "Your Confirmation Link has been sent to your Email Address.";
-	}
-	else
-	{
-		echo "Cannot Send Confirmation Link to your Email Address.";
-	}
 	mysqli_close($dbc);
  ?>
 
