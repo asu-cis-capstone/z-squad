@@ -34,8 +34,8 @@
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="login.html"><li>Login</li></a>
-							  <a href="signup.html"><li>Register</li></a>
+							  <a href="login.php"><li>Login</li></a>
+							  <a href="signup.php"><li>Register</li></a>
 							</ul>
 						  </li>
 						  <li>
@@ -46,7 +46,7 @@
 							</ul>
 						  </li>
 						  <a href="index.html"><li>About</li></a>
-						  <a href="login.html"><li>Contact</li></a>
+						  <a href="contact.html"><li>Contact</li></a>
 						</ul>
 					</div>
 					<div class="clr"></div>
