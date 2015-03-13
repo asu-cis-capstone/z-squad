@@ -1,3 +1,51 @@
+ <?php
+	include('connect/dbConnect.php');
+
+	//Confirmation Code
+	$confirm_code=md5(uniqid(rand()));
+
+	//Values from Sign Up Form
+	$oFName = $_POST['fName'];
+	$fName = mysqli_real_escape_string($dbc, $oFName);
+	$oLName = $_POST['lName'];
+	$lName = mysqli_real_escape_string($dbc, $oLName);
+	$email = mysqli_real_escape_string($dbc, $_POST['email']);
+	$pword = $_POST['password'];
+	$oInstit = $_POST['institution'];
+	$instit = mysqli_real_escape_string($dbc, $oInstit);
+
+	//Insert into temp_user table
+	$register = "INSERT INTO temp_user(confirmation, lastName, firstName, email, pword, institution)"
+	. "VALUES('$confirm_code', '$lName', '$fName', '$email', '$pword', '$instit')";
+
+	$result = mysqli_query($dbc, $register) or die ('Unable to Register User');
+
+	if($result)
+	{
+		$to=$email;
+		$subject="ZooPhy Registration Confirmation";
+		$header="From: ZooPhy | Phylogeography for Zoonotic Disease Surveillance <support@bamercado.com>";
+		$message="Your ZooPhy Confirmation Link \r\n";
+		$message.="Click on this link to activate your account \r\n";
+		$message.="http://www.bamercado.com/confirmation.php?passkey=$confirm_code";
+		$sentmail=mail($to, $subject, $message, $header);
+	}
+	else
+	{
+		echo "User Email not found.";
+	}
+
+	if($sentmail)
+	{
+		echo "Your Confirmation Link has been sent to your Email Address.";
+	}
+	else
+	{
+		echo "Cannot Send Confirmation Link to your Email Address.";
+	}
+	mysqli_close($dbc);
+ ?>
+
  <!DOCTYPE html>
 <html>
 	<head>
