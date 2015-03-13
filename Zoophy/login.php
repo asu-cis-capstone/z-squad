@@ -93,13 +93,13 @@
 
 							        <div class="inputs">
 							        
-							            <input type="email" id="email" placeholder="Email" 
+							            <input type="email" id="email" name="email" placeholder="Email" 
 										autofocus 
 										required
 										pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"
 										maxlength="50" />
 							        
-							            <input type="password" id="password" placeholder="Password" 
+							            <input type="password" id="password" name="email" placeholder="Password" 
 										required
 										pattern="[a-zA-Z0-9-_!$]{5,15}"/>
 							            							            
