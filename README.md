@@ -45,4 +45,10 @@ The page also integrates Google Maps to display the desired look for mapping KML
 Instructions:
 To view new project, use WAMP server to load index.html and navigate through links form there as you would a regular site. 
 
+v0.4
+Video Demo done. Note that not all features work. Still trying to get bugs out, but this gives a simple rundown of the service and how it will work. 
+Address is below:
+
+http://youtu.be/e-vd6ZP917w
+
 
