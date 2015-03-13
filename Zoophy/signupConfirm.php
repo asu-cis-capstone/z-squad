@@ -96,8 +96,34 @@
 					<main id="contentbar">
 						<div class="article">
 							<div class="container">
-								<p>Thank you for registering!</p>
-								<p>We have sent you a confirmation email.</p>
+								<?php
+									if($result)
+									{
+										$to=$email;
+										$subject="ZooPhy Registration Confirmation";
+										$header="From: ZooPhy | Phylogeography for Zoonotic Disease Surveillance <support@bamercado.com>";
+										$message="Your ZooPhy Confirmation Link \r\n";
+										$message.="Click on this link to activate your account \r\n";
+										$message.="http://www.bamercado.com/confirmation.php?passkey=$confirm_code";
+										$sentmail=mail($to, $subject, $message, $header);
+									}
+									else
+									{
+										echo "<p>User Email not found.</p>";
+									}
+
+									if($sentmail)
+									{
+										echo "<p>Thank you for registering!</p>
+										<p>We have sent you a confirmation email.</p>";
+									}
+									else
+									{
+										echo "Cannot Send Confirmation Link to your Email Address.";
+									}
+								?>
+
+								
 							    
 
 							</div>
