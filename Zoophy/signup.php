@@ -90,7 +90,7 @@
 										<!-- Institution -->
 							            <input type="text" id="institution" name="institution" placeholder="Institution" 
 										required
-										pattern="[a-zA-Z0-9]{2,25}" />
+										pattern="[a-zA-Z0-9 ]{2,25}" />
 							            
 							            <div class="checkboxy">
 							                <input name="cecky" id="checky" value="1" type="checkbox" required /><label class="terms">I accept the <a href="terms.html" onclick="window.open(this.href); return false">Terms of Use</a></label>
