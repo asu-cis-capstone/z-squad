@@ -41,8 +41,8 @@
 						  <li>
 							Queries
 							<ul>
-							  <a href="login.php"><li>New Query</li></a>
-							  <a href="login.php"><li>View Queries</li></a>
+							  <a href="login.html"><li>New Query</li></a>
+							  <a href="login.html"><li>View Queries</li></a>
 							</ul>
 						  </li>
 						  <a href="index.html"><li>About</li></a>
@@ -67,7 +67,6 @@
 							<div class="container">
 
 							    <form id="signup" action="process.php" method="post">
-
 							    	<?php
 							    		if ($_GET["rc"] == 1)
 							    		{
