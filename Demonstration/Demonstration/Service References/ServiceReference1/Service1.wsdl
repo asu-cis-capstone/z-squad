@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://microsoft.com/webservices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://microsoft.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/webservices/">
+      <s:element name="getSequences_runZooPhy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="disease" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="region" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hosts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gene" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartEnd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sModel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserSpcdId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mcmc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sampleFreq" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSequences_runZooPhyResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSequences_Unaligned">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="disease" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="region" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hosts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gene" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartEnd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSequences_UnalignedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSequences_UnalignedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getGeoSequences_Unaligned">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="disease" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="region" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hosts" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gene" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StartEnd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getGeoSequences_UnalignedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getGeoSequences_UnalignedResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDescendantA">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hosts" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDescendantAResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDescendantAResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDescendant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hosts" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDescendantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDescendantResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="locs" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="intLoc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLocationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="runBeast_">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newDir0" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="runBeast_Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="runBeast_Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogComp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JobId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="eMail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CompuType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SearchCR" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogCompResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LogCompResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ownSequences_runZooPhy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strInputFasta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sModel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserSpcdId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mcmc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logfr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ownSequences_runZooPhyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ownSequences_runZooPhyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getSequences_runZooPhySoapIn">
+    <wsdl:part name="parameters" element="tns:getSequences_runZooPhy" />
+  </wsdl:message>
+  <wsdl:message name="getSequences_runZooPhySoapOut">
+    <wsdl:part name="parameters" element="tns:getSequences_runZooPhyResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSequences_UnalignedSoapIn">
+    <wsdl:part name="parameters" element="tns:getSequences_Unaligned" />
+  </wsdl:message>
+  <wsdl:message name="getSequences_UnalignedSoapOut">
+    <wsdl:part name="parameters" element="tns:getSequences_UnalignedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getGeoSequences_UnalignedSoapIn">
+    <wsdl:part name="parameters" element="tns:getGeoSequences_Unaligned" />
+  </wsdl:message>
+  <wsdl:message name="getGeoSequences_UnalignedSoapOut">
+    <wsdl:part name="parameters" element="tns:getGeoSequences_UnalignedResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDescendantASoapIn">
+    <wsdl:part name="parameters" element="tns:getDescendantA" />
+  </wsdl:message>
+  <wsdl:message name="getDescendantASoapOut">
+    <wsdl:part name="parameters" element="tns:getDescendantAResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDescendantSoapIn">
+    <wsdl:part name="parameters" element="tns:getDescendant" />
+  </wsdl:message>
+  <wsdl:message name="getDescendantSoapOut">
+    <wsdl:part name="parameters" element="tns:getDescendantResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:getLocation" />
+  </wsdl:message>
+  <wsdl:message name="getLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:getLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="runBeast_SoapIn">
+    <wsdl:part name="parameters" element="tns:runBeast_" />
+  </wsdl:message>
+  <wsdl:message name="runBeast_SoapOut">
+    <wsdl:part name="parameters" element="tns:runBeast_Response" />
+  </wsdl:message>
+  <wsdl:message name="LogCompSoapIn">
+    <wsdl:part name="parameters" element="tns:LogComp" />
+  </wsdl:message>
+  <wsdl:message name="LogCompSoapOut">
+    <wsdl:part name="parameters" element="tns:LogCompResponse" />
+  </wsdl:message>
+  <wsdl:message name="ownSequences_runZooPhySoapIn">
+    <wsdl:part name="parameters" element="tns:ownSequences_runZooPhy" />
+  </wsdl:message>
+  <wsdl:message name="ownSequences_runZooPhySoapOut">
+    <wsdl:part name="parameters" element="tns:ownSequences_runZooPhyResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="getSequences_runZooPhy">
+      <wsdl:input message="tns:getSequences_runZooPhySoapIn" />
+      <wsdl:output message="tns:getSequences_runZooPhySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSequences_Unaligned">
+      <wsdl:input message="tns:getSequences_UnalignedSoapIn" />
+      <wsdl:output message="tns:getSequences_UnalignedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getGeoSequences_Unaligned">
+      <wsdl:input message="tns:getGeoSequences_UnalignedSoapIn" />
+      <wsdl:output message="tns:getGeoSequences_UnalignedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDescendantA">
+      <wsdl:input message="tns:getDescendantASoapIn" />
+      <wsdl:output message="tns:getDescendantASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDescendant">
+      <wsdl:input message="tns:getDescendantSoapIn" />
+      <wsdl:output message="tns:getDescendantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocation">
+      <wsdl:input message="tns:getLocationSoapIn" />
+      <wsdl:output message="tns:getLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="runBeast_">
+      <wsdl:input message="tns:runBeast_SoapIn" />
+      <wsdl:output message="tns:runBeast_SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LogComp">
+      <wsdl:input message="tns:LogCompSoapIn" />
+      <wsdl:output message="tns:LogCompSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ownSequences_runZooPhy">
+      <wsdl:input message="tns:ownSequences_runZooPhySoapIn" />
+      <wsdl:output message="tns:ownSequences_runZooPhySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSequences_runZooPhy">
+      <soap:operation soapAction="http://microsoft.com/webservices/getSequences_runZooPhy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSequences_Unaligned">
+      <soap:operation soapAction="http://microsoft.com/webservices/getSequences_Unaligned" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGeoSequences_Unaligned">
+      <soap:operation soapAction="http://microsoft.com/webservices/getGeoSequences_Unaligned" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDescendantA">
+      <soap:operation soapAction="http://microsoft.com/webservices/getDescendantA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDescendant">
+      <soap:operation soapAction="http://microsoft.com/webservices/getDescendant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocation">
+      <soap:operation soapAction="http://microsoft.com/webservices/getLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="runBeast_">
+      <soap:operation soapAction="http://microsoft.com/webservices/runBeast_" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogComp">
+      <soap:operation soapAction="http://microsoft.com/webservices/LogComp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ownSequences_runZooPhy">
+      <soap:operation soapAction="http://microsoft.com/webservices/ownSequences_runZooPhy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSequences_runZooPhy">
+      <soap12:operation soapAction="http://microsoft.com/webservices/getSequences_runZooPhy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSequences_Unaligned">
+      <soap12:operation soapAction="http://microsoft.com/webservices/getSequences_Unaligned" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGeoSequences_Unaligned">
+      <soap12:operation soapAction="http://microsoft.com/webservices/getGeoSequences_Unaligned" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDescendantA">
+      <soap12:operation soapAction="http://microsoft.com/webservices/getDescendantA" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDescendant">
+      <soap12:operation soapAction="http://microsoft.com/webservices/getDescendant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocation">
+      <soap12:operation soapAction="http://microsoft.com/webservices/getLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="runBeast_">
+      <soap12:operation soapAction="http://microsoft.com/webservices/runBeast_" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LogComp">
+      <soap12:operation soapAction="http://microsoft.com/webservices/LogComp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ownSequences_runZooPhy">
+      <soap12:operation soapAction="http://microsoft.com/webservices/ownSequences_runZooPhy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://localhost:49773/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://localhost:49773/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
