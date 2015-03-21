@@ -40,19 +40,19 @@
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="profile.html"><li>Profile</li></a>
-							  <a href="index.html"><li>Logout</li></a>
+							  <a href="profile.aspx"><li>Profile</li></a>
+							  <a href="about.aspx"><li>Logout</li></a>
 							</ul>
 						  </li>
 						  <li>
 							Queries
 							<ul>
-							  <a href="main.html"><li>New Query</li></a>
-							  <a href="viewjobs.html"><li>View Queries</li></a>
+							  <a href="search.aspx"><li>New Query</li></a>
+							  <a href="viewjobs.aspx"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="index.html"><li>About</li></a>
-						  <a href="contact.html"><li>Contact</li></a>
+						  <a href="index.aspx"><li>About</li></a>
+						  <a href="contact.aspx"><li>Contact</li></a>
 						</ul>
 					
 					

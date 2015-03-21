@@ -26,19 +26,19 @@
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="login.html"><li>Login</li></a>
-							  <a href="signup.html"><li>Register</li></a>
+							  <a href="login.aspx"><li>Login</li></a>
+							  <a href="signup.aspx"><li>Register</li></a>
 							</ul>
 						  </li>
 						  <li>
 							Queries
 							<ul>
-							  <a href="login.html"><li>New Query</li></a>
-							  <a href="login.html"><li>View Queries</li></a>
+							  <a href="login.aspx"><li>New Query</li></a>
+							  <a href="login.aspx"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="index.html"><li>About</li></a>
-						  <a href="contact.html"><li>Contact</li></a>
+						  <a href="about.aspx"><li>About</li></a>
+						  <a href="contact.aspx"><li>Contact</li></a>
 						</ul>
 					</div>
 					<div class="clr"></div>
@@ -76,7 +76,7 @@
 							            <!-- Last Name -->
 							            <input type="text" id="lName" name="lName" placeholder="Last Name" required pattern="[a-zA-Z-' ]{2,30}"/>
 							            <!-- Email -->
-							            <input type="email" id="email" name="email" placeholder="Email" 
+							            <input type="text" id="email" name="email" placeholder="Email" 
 										required maxlength="50" />
 							        	<!-- Password -->
 							            <input type="password" id="password" name="password" placeholder="Password" 
@@ -106,7 +106,7 @@
 					<nav id="sidebar">
 						<div class="widget">
 							
-							<img src="imageFolder/logo.png" alt="Zoophy" />
+							<img src="imageFolder/zoophy.ico" alt="Zoophy" />
 						</div>
 
 					</nav>
