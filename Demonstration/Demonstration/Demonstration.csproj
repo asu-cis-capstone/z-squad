@@ -96,6 +96,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </Content>
     <Content Include="main_style.css" />
+    <Content Include="SignUpConfirm.aspx" />
     <Content Include="Web.config" />
     <Content Include="about.aspx" />
     <Content Include="ViewJobs.aspx" />
@@ -120,6 +121,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpConfirm.aspx.cs">
+      <DependentUpon>SignUpConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUpConfirm.aspx.designer.cs">
+      <DependentUpon>SignUpConfirm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

@@ -4,17 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <!-- Meta Tag -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-	<!-- Icon Link -->
-	<link rel="icon" href="imageFolder/zoophy.ico" />
-		
-	<!-- CSS Link -->
-	<link type="text/css" rel="stylesheet" href="Style/main_style.css" />
+	<!-- Link tags for CSS -->
+	<link type="text/css" rel="stylesheet" href="style/main_style.css" />
 
-    <!-- Title -->
-    <title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>
+	<title>Signup Confirmation</title>
 </head>
 <body>
     <form id="form1" runat="server">
