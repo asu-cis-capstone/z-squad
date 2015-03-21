@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="KmlMap.aspx" />
     <Content Include="login.aspx" />
     <Content Include="main_style.css" />
     <Content Include="Profile.aspx" />
@@ -98,6 +99,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </Content>
     <Content Include="Terms.aspx" />
+    <Content Include="ViewJobs.aspx" />
     <Content Include="Web.config" />
     <Content Include="about.aspx" />
     <Content Include="contact.aspx" />
@@ -110,6 +112,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KmlMap.aspx.cs">
+      <DependentUpon>KmlMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KmlMap.aspx.designer.cs">
+      <DependentUpon>KmlMap.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -165,6 +174,13 @@
     </Compile>
     <Compile Include="Terms.aspx.designer.cs">
       <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJobs.aspx.cs">
+      <DependentUpon>ViewJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewJobs.aspx.designer.cs">
+      <DependentUpon>ViewJobs.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
