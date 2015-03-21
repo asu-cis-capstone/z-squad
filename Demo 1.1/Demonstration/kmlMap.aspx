@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <!-- Meta Tag -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<!-- Icon Link -->
 	<link rel="icon" href="imageFolder/zoophy.ico" />
@@ -34,7 +34,6 @@
     <div id="page">
 		<!-- header section -->
 			<header id="header">
-				<header id="header">
 			
 				<div id="header-inner">	
 				
