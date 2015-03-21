@@ -1,0 +1,11 @@
+C:\Users\cgpuglie\Documents\Visual Studio 2012\Projects\SDFC\Demonstration\Demonstration\bin\Demonstration.dll
+C:\Users\cgpuglie\Documents\Visual Studio 2012\Projects\SDFC\Demonstration\Demonstration\bin\Demonstration.pdb
+C:\Users\cgpuglie\Documents\Visual Studio 2012\Projects\SDFC\Demonstration\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\cgpuglie\Documents\Visual Studio 2012\Projects\SDFC\Demonstration\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\cgpuglie\Documents\Visual Studio 2012\Projects\SDFC\Demonstration\Demonstration\obj\Debug\Demonstration.pdb
+C:\Users\Administrator\Desktop\Demonstration\Demonstration\bin\Demonstration.dll.config
+C:\Users\Administrator\Desktop\Demonstration\Demonstration\bin\Demonstration.dll
+C:\Users\Administrator\Desktop\Demonstration\Demonstration\bin\Demonstration.pdb
+C:\Users\Administrator\Desktop\Demonstration\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Demonstration\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\Administrator\Desktop\Demonstration\Demonstration\obj\Debug\Demonstration.pdb
