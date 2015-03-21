@@ -9,3 +9,8 @@ C:\Users\Administrator\Desktop\Demonstration\Demonstration\bin\Demonstration.pdb
 C:\Users\Administrator\Desktop\Demonstration\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\Demonstration\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\Administrator\Desktop\Demonstration\Demonstration\obj\Debug\Demonstration.pdb
+C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.1\Demonstration\bin\Demonstration.dll
+C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.1\Demonstration\bin\Demonstration.pdb
+C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.1\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.1\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.1\Demonstration\obj\Debug\Demonstration.pdb

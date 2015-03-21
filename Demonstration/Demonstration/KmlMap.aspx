@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <!-- Meta Tag -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<!-- Icon Link -->
 	<link rel="icon" href="imageFolder/zoophy.ico" />
@@ -33,8 +33,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="page">
-		<!-- header section -->
+        <div id="page">
+		    <!-- header section -->
 			<header id="header">
 				<header id="header1">
 			
