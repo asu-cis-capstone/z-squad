@@ -39,7 +39,7 @@
 							</ul>
 						  </li>
 						  <a href="index.html"><li>About</li></a>
-						  <a href="contact.html"><li>Contact</li></a>
+						  <a href="contact.aspx"><li>Contact</li></a>
 						</ul>
 					</div>
 					</div>
