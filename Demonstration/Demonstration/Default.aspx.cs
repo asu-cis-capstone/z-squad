@@ -15,7 +15,7 @@ namespace Demonstration
 {
     public partial class Default : System.Web.UI.Page
     {
-
+        
         //Here, I will encapsulate the object given to us by the web service.
         //You will notice a handful of methods in there, but the ones we
         //are interested in are in the Service1SoapClient object.
@@ -51,6 +51,7 @@ namespace Demonstration
                 //here, we will instantiate our soapclient object
                 //this will only be done once, then the instance will be stored in the session
                 myWebServObject = new ServiceReference1.Service1SoapClient();
+                
             }
             else //is a postback
             {

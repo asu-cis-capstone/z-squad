@@ -17,4 +17,5 @@
     This event is utilizing your web service. 
     It is supplying it with generic strings, so it WILL NOT work
     <asp:Button ID="callService" runat="server" OnClick="callService_Click" Text="Execute Some Code" />
+    <asp:HyperLink ID="something" runat="server"></asp:HyperLink>
 </asp:Content>
