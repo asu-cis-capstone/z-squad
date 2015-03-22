@@ -27,7 +27,7 @@
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="profile.aspx><li>Profile</li></a>
+							  <a href="profile.aspx"><li>Profile</li></a>
 							  <a href="about.aspx"><li>Logout</li></a>
 							</ul>
 						  </li>
