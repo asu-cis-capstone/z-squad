@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Demonstration.Site1" %>
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <%--this is a master page
+        It serves to provide sort of a template for your site.
+        It makes it much easier to keep the UX consistent throughout your site.
+    --%>
+    <form id="myForm" runat="server"> <%--Note that this form will be used by all content pages--%>
+    <div>
+        <%--This will serve as the 'Page Title'.
+            
+            It is an h1 element with a 'Literal' in it.
+            Literals don't convert to html objects, but instead plain text
+            They are useful for putting text inside normal html elements and
+            adding scripts dynamically to a page to help communicate with 
+            Javascript from the Code behind.
+            EG Script.Text = "<script> alert('Error!'); </script>
+            
+            I will be encapsulating this element in a property so that
+            it can be refered to from the content page.--%>
+
+        <h1><asp:Literal ID="lTitle" runat="server"></asp:Literal></h1>
+        <asp:ContentPlaceHolder ID="myContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

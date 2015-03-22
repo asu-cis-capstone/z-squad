@@ -106,7 +106,7 @@
 		
 			<footer id="footer">
 				<div id="footer-inner">
-					<p>&copy; Copyright Zoophy &#124; <a href="terms.html">Terms of Use</a> &#124; <a href="privacy.html">Privacy Policy</a></p>
+					<p>&copy; Copyright Zoophy &#124; <a href="terms.aspx">Terms of Use</a> &#124; <a href="privacy.aspx">Privacy Policy</a></p>
 					<div class="clr">
 					</div>
 				</div>
