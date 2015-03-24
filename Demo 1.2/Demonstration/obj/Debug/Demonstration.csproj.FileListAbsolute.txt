@@ -15,3 +15,8 @@ C:\Users\Administrator\Desktop\TEST\Demonstration\Demonstration\bin\Demonstratio
 C:\Users\Administrator\Desktop\TEST\Demonstration\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\TEST\Demonstration\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\Administrator\Desktop\TEST\Demonstration\Demonstration\obj\Debug\Demonstration.pdb
+C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll
+C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.pdb
+C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb

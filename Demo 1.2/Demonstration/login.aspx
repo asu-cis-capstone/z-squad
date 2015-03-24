@@ -67,7 +67,7 @@
 
 							        <div class="inputs">
 							        
-							            <input type="email" id="email" name="email" placeholder="Email" 
+							            <input type="text" id="email" name="email" placeholder="Email" 
 										autofocus 
 										required
 										pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"

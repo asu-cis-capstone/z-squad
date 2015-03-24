@@ -76,7 +76,7 @@
 							            <!-- Last Name -->
 							            <input type="text" id="lName" name="lName" placeholder="Last Name" required pattern="[a-zA-Z-' ]{2,30}"/>
 							            <!-- Email -->
-							            <input type="email" id="email" name="email" placeholder="Email" 
+							            <input type="text" id="email" name="email" placeholder="Email" 
 										required maxlength="50" />
 							        	<!-- Password -->
 							            <input type="password" id="password" name="password" placeholder="Password" 
