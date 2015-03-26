@@ -26,3 +26,4 @@ C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demon
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
+C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
