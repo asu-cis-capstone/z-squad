@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <!-- Meta Tag -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<!-- Icon Link -->
 	<link rel="icon" href="imageFolder/zoophy.ico" />
@@ -90,15 +90,43 @@
 												<input type="text" id="vName" name="vName"
 												required autofocus/>
 
-												<!-- Search Virus Subtype -->
-												<label for="vSubtype">Virus Subtype:</label>
-												<input type="text" id="vSubtype" name="vSubtype"
+												<!-- Search gene -->
+												<label for="vGene">Gene:</label>
+												<input type="text" id="vGene" name="vGene"
 												required/>
 
-												<!-- Search Virus Host -->
+												<!-- Search Host -->
 												<label for="vHost">Virus Host:</label>
 												<input type="text" id="vHost" name="vHost"
 												required/>
+
+                                                <!-- Time frame -->
+												<label for="vTime">Years:</label>
+												<input type="text" id="VtimeStart" name="vTime"
+												required autofocus/>
+												<input type="text" id="VTimeEnd" name="vTime"
+												required autofocus/>
+
+                                                <!-- Geography -->
+												<label for="vGeo">Geography:</label>
+                                                <label for="vGeo">Continent</label>
+												<input type="text" id="vContinent" name="vContinent"
+												required autofocus/>
+                                                
+												<label for="vCountry">Country</label>
+												<input type="text" id="vCountry" name="vCountry"
+												required autofocus/>
+                                              
+												<label for="vState">States</label>
+												<input type="text" id="vState" name="vState"
+												required autofocus/>
+
+                                                <!-- MCMC chain length -->
+												<label for="vChain">Virus Name:</label>
+												<input type="text" id="vChain" name="vChain"
+												required autofocus/>
+
+
 											</p>
 											<p class="submit">
 												<input type="submit" value="Search Virus" />
