@@ -33,3 +33,10 @@ C:\Users\hgbryan\Desktop\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.
 C:\Users\hgbryan\Desktop\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\hgbryan\Desktop\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
 >>>>>>> origin/master
+C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll.config
+C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll
+C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.pdb
+C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
+C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
