@@ -26,4 +26,10 @@ C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demon
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
+<<<<<<< HEAD
 C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
+=======
+C:\Users\hgbryan\Desktop\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\hgbryan\Desktop\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\hgbryan\Desktop\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
+>>>>>>> origin/master
