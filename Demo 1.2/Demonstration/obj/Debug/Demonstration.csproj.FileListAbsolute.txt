@@ -26,3 +26,9 @@ C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demon
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
+C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
+C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\bin\Demonstration.dll
+C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\bin\Demonstration.pdb
+C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\bin\MySql.Data.dll

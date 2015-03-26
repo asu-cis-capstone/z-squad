@@ -82,7 +82,7 @@ input:-moz-placeholder {
     clear: both;
 }
 
-#signup .inputs input[type=email]:focus, input[type=password]:focus {
+#signup .inputs input[type=email]:focus, input[type=password]:focus, input[type=text]:focus{
     background: #fff;
     box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
     outline: none;   
