@@ -51,4 +51,8 @@ Address is below:
 
 http://youtu.be/e-vd6ZP917w
 
-
+v0.5
+DEMO 1.2 folder is the current updated project. Things need to be done:
+-Connect back end (signup/login)
+-fix CSS styling 
+-get web app to send/recieve correct data from web service
