@@ -23,7 +23,7 @@ namespace Demonstration
 
             if (query.)
             {
-                
+                 
             }
 
             try
