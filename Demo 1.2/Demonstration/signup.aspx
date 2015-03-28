@@ -11,12 +11,12 @@
 	<link rel="icon" href="imageFolder/zoophy.ico" />
 
 	<!-- Link tags for CSS -->
-	<link type="text/css" rel="stylesheet" href="style/signup_form.css" />
-	<link type="text/css" rel="stylesheet" href="style/main_style.css" />
+	<link type="text/css" rel="stylesheet" href="Style/signup_form.css" />
+	<link type="text/css" rel="stylesheet" href="Style/main_style.css" />
 
     <!-- Title -->
 	<title>Signup Page</title>
-\</head>
+</head>
 <body>
     <div id="page">
 		<header id="header">
