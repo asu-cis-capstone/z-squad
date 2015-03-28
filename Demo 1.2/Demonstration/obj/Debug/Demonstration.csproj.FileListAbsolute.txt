@@ -46,3 +46,16 @@ C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.
 C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
 C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll.config
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.pdb
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
+C:\Users\hgbryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll
+C:\Users\hgbryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.pdb
+C:\Users\hgbryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
+C:\Users\hgbryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\hgbryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\hgbryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb

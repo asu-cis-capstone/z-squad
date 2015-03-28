@@ -78,7 +78,7 @@
 							<p>Status: complete</p>
 							<p>Query Info: </p>
 							<p>Percent complete: 100%</p>
-							<p><a href="kmlMap.html">Phylogeographic Map</a></p>
+							<p><a href="kmlMap.aspx">Phylogeographic Map</a></p>
 							</div>
 						</div>
 						
