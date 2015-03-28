@@ -42,7 +42,9 @@
 			#content #sidebar .widget ul li { padding:4px 0; width:185px;}
 			#content #sidebar .widget ul li a { color:blue; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
 			#content #sidebar .widget ul li a:hover { color:#d3d3f9; font-weight:bold; text-decoration:none;}
+			#content #sidebar .widget img { opacity: 0.6;}
 			.container {font-size: 1.5em; text-align: center;} /* Specific to signupConfirm */
+			
 
 			/* For the view Jobs page */
 			#content #content-inner-jobs { margin:auto; padding:0; width:760px;}

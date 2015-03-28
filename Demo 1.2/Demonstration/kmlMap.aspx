@@ -77,23 +77,22 @@
 				
 					<main id="article">
 						<div id="map-canvas">
-						
 						</div>
 					</main>
 					
 					<div class="clr"></div>
 				</div>
-				
-			</div>
-			
-			<div class="clr"></div>
-					<nav id="sidebar">
-						<div class="widget">							
+
+				<nav id="sidebar">
+						<div class="widget">
+                            <img src="imageFolder/zoophy.ico" alt="Zoophy" />							
 						</div>
-						 <img src="imageFolder/zoophy.ico" alt="Zoophy" /> 
+						  
 					</nav>	
-				</div>
-		
+			</div>
+
+			<div class="clr"></div>
+					
 			<div id="footerblurb">
 				<div id="footerblurb-inner">
 				
