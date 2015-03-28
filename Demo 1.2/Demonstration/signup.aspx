@@ -89,7 +89,7 @@
                                             These aren't asp.net properties, so it will leave them as is when it generates the html5
                                             Therefore, they will still work as originially intended
                                         ****************--%>
-                                    <asp:TextBox ID="fName" runat="server" placeholder="First Name" autofocus required pattern="[a-zA-Z-' ]{1,25}"></asp:TextBox>
+                                    <asp:TextBox ID="fName" runat="server" placeholder="First Name" autofocus required pattern="[a-zA-Z-' ]{1,25}" CssClass="textbox"></asp:TextBox>
 							            
                                     <!-- Last Name -->
 							        <%--<input type="text" id="lName" name="lName" placeholder="Last Name" required pattern="[a-zA-Z-' ]{2,30}"/>--%>

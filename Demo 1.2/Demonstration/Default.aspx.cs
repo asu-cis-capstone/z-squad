@@ -52,6 +52,7 @@ namespace Demonstration
                 //this will only be done once, then the instance will be stored in the session
                 myWebServObject = new ServiceReference1.Service1SoapClient();
                 
+                
             }
             else //is a postback
             {
