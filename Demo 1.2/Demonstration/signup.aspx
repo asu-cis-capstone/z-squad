@@ -11,12 +11,12 @@
 	<link rel="icon" href="imageFolder/zoophy.ico" />
 
 	<!-- Link tags for CSS -->
-	<link type="text/css" rel="stylesheet" href="Style/signup_form.css" />
-	<link type="text/css" rel="stylesheet" href="Style/main_style.css" />
+	<link type="text/css" rel="stylesheet" href="style/signup_form.css" />
+	<link type="text/css" rel="stylesheet" href="style/main_style.css" />
 
     <!-- Title -->
 	<title>Signup Page</title>
-</head>
+\</head>
 <body>
     <div id="page">
 		<header id="header">
@@ -74,9 +74,9 @@
                                         
                                         You will have to fill out your form to allow HTML5 to post back: your validation will block
                                         this postback otherwise, as it happens client-side--%>
-                                    <!--<asp:Button ID="randomButton" runat="server" Text="Random button" OnClick="randomButton_Click" />
+                                    <asp:Button ID="randomButton" runat="server" Text="Random button" OnClick="randomButton_Click" />
                                     <asp:Label ID="randomLabel" runat="server" Text="This will change when you click the above button" />
-							            -->
+							            
 							    </div>
 							        
 							    <div class="sep"></div>
@@ -89,7 +89,7 @@
                                             These aren't asp.net properties, so it will leave them as is when it generates the html5
                                             Therefore, they will still work as originially intended
                                         ****************--%>
-                                    <asp:TextBox ID="fName" runat="server" placeholder="First Name" autofocus required pattern="[a-zA-Z-' ]{1,25}" CssClass="textbox"></asp:TextBox>
+                                    <asp:TextBox ID="fName" runat="server" placeholder="First Name" autofocus required pattern="[a-zA-Z-' ]{1,25}"></asp:TextBox>
 							            
                                     <!-- Last Name -->
 							        <%--<input type="text" id="lName" name="lName" placeholder="Last Name" required pattern="[a-zA-Z-' ]{2,30}"/>--%>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net.Mail;
 
 //Added the following references:
 using System.Data; //Allows for use of DataTable object, will be used for managing data
@@ -65,8 +66,8 @@ namespace Demonstration
             //build the insert statement: note, these values are unescaped
             //this statement is given to the cmd object
             //the object will need the statement, and the connection created above to execute it
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO user(lastName, firstName, email, pword, institution)"+
-	            "VALUES("+lName.Text+"', '"+fName.Text+"', '"+email.Text+"', '"+password.Text+"', '"+institution.Text+"'));");
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO temp_user(confirmation, lastName, firstName, email, pword, institution)"+
+	            "VALUES("+GetRandomInteger()+", '"+lName.Text+"', '"+fName.Text+"', '"+email.Text+"', '"+password.Text+"', '"+institution.Text+"');");
 
             //give connection to cmd
             //This will allow the MySqlCommend object to connect to your database
@@ -93,7 +94,7 @@ namespace Demonstration
                 //  EG MySqlDataReader myReader = cmd.ExecuteReader(); 
 
                 //redirect them to the "thank you page" or something.
-                Response.Redirect("signup_confirm.aspx");
+                //Response.Redirect("Someotherpage.aspx");
             }
             catch (Exception ex)
             {
