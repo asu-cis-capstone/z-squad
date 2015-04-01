@@ -73,10 +73,10 @@
                                         will be executed in this event when it is clicked
                                         
                                         You will have to fill out your form to allow HTML5 to post back: your validation will block
-                                        this postback otherwise, as it happens client-side--%>
+                                        this postback otherwise, as it happens client-side
                                     <asp:Button ID="randomButton" runat="server" Text="Random button" OnClick="randomButton_Click" />
                                     <asp:Label ID="randomLabel" runat="server" Text="This will change when you click the above button" />
-							            
+							            --%>
 							    </div>
 							        
 							    <div class="sep"></div>

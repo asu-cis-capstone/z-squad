@@ -68,7 +68,7 @@ input:-moz-placeholder {
     color:    #b5b5b5;
 }
 
-#signup .inputs input[type=email], input[type=password] {
+#signup .inputs #fname{
     background: #f5f5f5;
     font-size: 0.8rem;
     -moz-border-radius: 3px;
@@ -94,6 +94,8 @@ input:-moz-placeholder {
     height: 25px;
     margin-top: 10px;
     clear: both;
+    background: blue;
+
 }
 
 #signup .inputs input[type=checkbox] {
