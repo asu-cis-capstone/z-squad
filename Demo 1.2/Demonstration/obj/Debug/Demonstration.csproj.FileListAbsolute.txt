@@ -53,3 +53,10 @@ C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demon
 C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
 >>>>>>> 980679d4d87015aff6a595c38650e841917c444d
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll.config
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.pdb
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
