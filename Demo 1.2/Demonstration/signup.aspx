@@ -16,7 +16,7 @@
 
     <!-- Title -->
 	<title>Signup Page</title>
-</head>
+\</head>
 <body>
     <div id="page">
 		<header id="header">
