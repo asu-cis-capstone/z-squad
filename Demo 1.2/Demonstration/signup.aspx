@@ -66,7 +66,7 @@
 							        
 							        <h3>Sign Up</h3>
 							            
-							        <p>You want to fill out this form</p>
+							        <p>Please fill out this form</p>
 
                                     <%--Added a random button here to demonstrate how to alter what displays
                                         Notice the Onclick event, look in the code behind for the code that 
