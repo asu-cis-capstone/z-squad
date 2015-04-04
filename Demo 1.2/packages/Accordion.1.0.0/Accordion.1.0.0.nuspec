@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Accordion</id>
+    <version>1.0.0</version>
+    <title>Accordion</title>
+    <authors>Sebastian Burgstaller</authors>
+    <owners>Sebastian Burgstaller</owners>
+    <licenseUrl>https://github.com/seburgi/Accordion/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/seburgi/Accordion</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Includes only the parts of the original Accordion control in the Microsoft WPF toolkit for use with .NET 4.0 and later.</description>
+    <summary>Includes only the parts of the original Accordion control in the Microsoft WPF toolkit for use with .NET 4.0 and later.</summary>
+    <copyright />
+    <tags>wpftoolkit wpf control accordion</tags>
+  </metadata>
+</package>
