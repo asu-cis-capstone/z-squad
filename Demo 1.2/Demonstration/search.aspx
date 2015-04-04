@@ -144,8 +144,12 @@
  
                                                  <!-- Geography -->
  												<label for="vGeo">Geography:</label>
-                                                <!-- Continent -->
                                                  <label for="vGeo">Continent</label>
+                                                 <label for="vCountry">Country</label>
+                                                 <label for="vState">States</label>
+                                                 <br />
+                                                <!-- Continent -->
+                                             
 												<asp:ListBox ID="continentLstBox" runat="server" Height="138px">
                                                     <asp:ListItem Selected="True" Value="6295630">All</asp:ListItem>
                                                     <asp:ListItem Value="6255146">Africa</asp:ListItem>
@@ -157,7 +161,7 @@
                                                     <asp:ListItem Value="6255150">South America</asp:ListItem>
                                                 </asp:ListBox>
                                                 <!-- Country -->
- 												<label for="vCountry">Country</label>
+ 												
 												<asp:ListBox ID="countryLstBox" runat="server" Height="138px" SelectionMode="Multiple">
                                                     <asp:ListItem Value="6255152">Afghanistan</asp:ListItem>
                                                     <asp:ListItem Value="783754">Albania</asp:ListItem>
@@ -339,7 +343,7 @@
                                                     <asp:ListItem Value="878675">Zimbabwe</asp:ListItem>
                                                 </asp:ListBox>
                                                 <!-- States if in united States -->
-												<label for="vState">States</label>
+												
                                                     <asp:ListBox ID="stateLstBox" runat="server" Height="138px" 
                                                         SelectionMode="Multiple">
                                                         <asp:ListItem Value="4829764">Alabama</asp:ListItem>
@@ -394,13 +398,18 @@
                                                         <asp:ListItem Value="5279468">Wisconsin</asp:ListItem>
                                                         <asp:ListItem Value="5843591">Wyoming</asp:ListItem>
                                                     </asp:ListBox>
-                                                    
+                                                    <br />
 
-                                                <!-- MCMC chain length -->
-												
+                                                 <a id="advSearchLink" href="#">Advanced Search</a>
+											<p id="advSearch">
+
+												<!-- MCMC chain length -->
 												<asp:Label ID="lblSamp" runat="server" Text="MCMC Sampling Frequency" ToolTip="Number of steps per sample in Markov chain Monte Carlo simulation. Min is 1,000."></asp:Label></td>
                                                 <asp:TextBox ID="sampTxtBox" runat="server" Text="1,000"></asp:TextBox>
 
+											</p>
+										</form>
+                                                
 
 											</p>
 											<p class="submit">
@@ -410,18 +419,7 @@
 												</span>
 											</p>
 
-											<a id="advSearchLink" href="#">Advanced Search</a>
-											<p id="advSearch">
-
-												<!-- Geographic Location -->
-												<label for="vGeo">Geographic Location:</label>
-												<input type="text" id="vGeo" name="vGeo" />
-
-												<!-- Time Period -->
-												<label for"vTime">Time Period:</label>
-												<input type="date" id="vStartDate" name="vTime" />
-											</p>
-										</form>
+											
 									
 								
 						</div>
