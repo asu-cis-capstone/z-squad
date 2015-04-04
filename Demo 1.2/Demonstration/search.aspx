@@ -25,6 +25,14 @@
  		        });
  		    });
  		</script>
+
+     	<script>
+     		 $(document).ready(function () {
+     		     $("#advSearchLink").click(function () {
+     		         $("#advSearch").toggle();
+     		     });
+     		});
+ 		</script>
  
      <!-- Title -->
      <title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>
@@ -88,7 +96,7 @@
 
  												<!-- Search Virus Name -->
                                                 <label for="vHost">Virus:</label>
-												<asp:ListBox ID="VirusLstBox" runat="server" AutoPostBack="false" Height="85px">
+												<asp:ListBox ID="VirusLstBox" runat="server" AutoPostBack="false" Height="85px" OnSelectedIndexChanged="VirusLstBox_SelectedIndexChanged">
                                                     <asp:ListItem Selected="True" Value="119210">H3N2 Influenza A</asp:ListItem>
                                                     <asp:ListItem Value="114727">H1N1 pdm09 Influenza A</asp:ListItem>
                                                     <asp:ListItem Value="102793">H5N1 Influenza A</asp:ListItem>
@@ -100,7 +108,7 @@
  
  												<!-- Search gene -->
                                                 <label for="vHost">Gene:</label>
-												<asp:ListBox ID="GeneLstBox" runat="server" Height="150px" Width="118px" SelectionMode="Multiple">
+												<asp:ListBox ID="GeneLstBox" runat="server" Height="150px" Width="118px" SelectionMode="Multiple" OnSelectedIndexChanged="GeneLstBox_SelectedIndexChanged">
                                                     <asp:ListItem Selected="True">PB2</asp:ListItem>
                                                     <asp:ListItem>PB1</asp:ListItem>
                                                     <asp:ListItem>PA</asp:ListItem>
@@ -115,7 +123,7 @@
  
  												<!-- Search Host -->
  												<label for="vHost">Virus Host:</label>
-												<asp:ListBox ID="hostLst" runat="server" Height="150px" Width="118px" SelectionMode="Multiple">
+												<asp:ListBox ID="hostLst" runat="server" Height="150px" Width="118px" SelectionMode="Multiple" OnSelectedIndexChanged="hostLst_SelectedIndexChanged">
                                                     <asp:ListItem Selected="True" Value="32523">All</asp:ListItem>
                                                     <asp:ListItem Value="8782">Avian</asp:ListItem>
                                                     <asp:ListItem Value="9397">Bat</asp:ListItem>
