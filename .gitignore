@@ -1,2 +1,5 @@
 Demo 1.2/Demonstration/obj/Debug/Demonstration.csproj.FileListAbsolute.txt
 *.cache
+*.suo
+*.cache
+Demonstration/Demonstration/obj/Debug/Demonstration.csproj.FileListAbsolute.txt
