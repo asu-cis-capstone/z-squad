@@ -67,7 +67,7 @@ namespace Demonstration
             //this statement is given to the cmd object
             //the object will need the statement, and the connection created above to execute it
             MySqlCommand cmd = new MySqlCommand("INSERT INTO user(lastName, firstName, email, pword, institution)"+
-	            "VALUES('"+lName.Text+"', '"+fName.Text+"', '"+email.Text+"', '"+password.Text+"', '"+institution.Text+"');");
+	            "VALUES("+lName.Text+"', '"+fName.Text+"', '"+email.Text+"', '"+password.Text+"', '"+institution.Text+"');");
 
             //give connection to cmd
             //This will allow the MySqlCommend object to connect to your database
@@ -94,7 +94,7 @@ namespace Demonstration
                 //  EG MySqlDataReader myReader = cmd.ExecuteReader(); 
 
                 //redirect them to the "thank you page" or something.
-                Response.Redirect("signup_confirm.aspx");
+                //Response.Redirect("Someotherpage.aspx");
             }
             catch (Exception ex)
             {
@@ -111,7 +111,6 @@ namespace Demonstration
             }
         }
         
-        /*
         protected void randomButton_Click(object sender, EventArgs e)
         {
             //This, in a nutshell, is how you will dynamically change what is displayed to a user.
@@ -127,6 +126,5 @@ namespace Demonstration
 
             //feel free to delete this button, label, and event when you feel you understand how to alter your page dynamically
         }
-         */
     }
 }
