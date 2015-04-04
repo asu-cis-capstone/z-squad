@@ -146,8 +146,8 @@
  
                                                  <!-- Time frame -->
                                                 <asp:Label ID="YearsLbl" runat="server" style="font-weight: 700" Text="Years"></asp:Label>
-                                                <asp:TextBox ID="fromTxtBox" runat="server" MaxLength="4">YYYY</asp:TextBox>
-                                                <asp:TextBox ID="toTxtBox" runat="server" MaxLength="4">YYYY</asp:TextBox>
+                                                <asp:TextBox ID="fromTxtBox" runat="server" MaxLength="4" OnTextChanged="fromTxtBox_TextChanged">YYYY</asp:TextBox>
+                                                <asp:TextBox ID="toTxtBox" runat="server" MaxLength="4" OnTextChanged="toTxtBox_TextChanged">YYYY</asp:TextBox>
                                                   <br />
  
                                                  <!-- Geography -->
@@ -158,7 +158,7 @@
                                                  <br />
                                                 <!-- Continent -->
                                              
-												<asp:ListBox ID="continentLstBox" runat="server" Height="138px">
+												<asp:ListBox ID="continentLstBox" runat="server" Height="138px" OnSelectedIndexChanged="continentLstBox_SelectedIndexChanged">
                                                     <asp:ListItem Selected="True" Value="6295630">All</asp:ListItem>
                                                     <asp:ListItem Value="6255146">Africa</asp:ListItem>
                                                     <asp:ListItem Value="6255152">Antarctica</asp:ListItem>
@@ -170,7 +170,7 @@
                                                 </asp:ListBox>
                                                 <!-- Country -->
  												
-												<asp:ListBox ID="countryLstBox" runat="server" Height="138px" SelectionMode="Multiple">
+												<asp:ListBox ID="countryLstBox" runat="server" Height="138px" SelectionMode="Multiple" OnSelectedIndexChanged="countryLstBox_SelectedIndexChanged">
                                                     <asp:ListItem Value="6255152">Afghanistan</asp:ListItem>
                                                     <asp:ListItem Value="783754">Albania</asp:ListItem>
                                                     <asp:ListItem Value="2589581">Algeria</asp:ListItem>
@@ -353,7 +353,7 @@
                                                 <!-- States if in united States -->
 												
                                                     <asp:ListBox ID="stateLstBox" runat="server" Height="138px" 
-                                                        SelectionMode="Multiple">
+                                                        SelectionMode="Multiple" OnSelectedIndexChanged="stateLstBox_SelectedIndexChanged">
                                                         <asp:ListItem Value="4829764">Alabama</asp:ListItem>
                                                         <asp:ListItem Value="5879092">Alaska</asp:ListItem>
                                                         <asp:ListItem Value="5551752">Arizona</asp:ListItem>
