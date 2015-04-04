@@ -1,9 +1,8 @@
 Demo 1.2/Demonstration/obj/Debug/Demonstration.csproj.FileListAbsolute.txt
 *.cache
-<<<<<<< HEAD
 *.suo
-*.cache
-Demonstration/Demonstration/obj/Debug/Demonstration.csproj.FileListAbsolute.txt
-=======
+*.pdb
 *.dll
->>>>>>> ecaf6906d82a7250cc6c374df06692dbfe02aa7f
+!/Demo 1.2/packages/*/lib/*.dll
+!/Demo 1.2/packages/*/lib/*/*.dll
+
