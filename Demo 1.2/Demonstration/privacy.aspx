@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="privacy.aspx.cs" Inherits="Demonstration.privacy" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="privacy.aspx.cs" Inherits="Demonstration.privacy" %>
 
 <!DOCTYPE html>
 
