@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signup_confirm.aspx.cs" Inherits="Demonstration.signup_confirm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="signup_confirm.aspx.cs" Inherits="Demonstration.signup_confirm" %>
 
 <!DOCTYPE html>
 
