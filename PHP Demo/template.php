@@ -1,3 +1,7 @@
+<?php
+	session_name("user");
+	session_start("user");
+?>
 
 <!DOCTYPE html>
 <html>
@@ -10,7 +14,18 @@
 		
 		<!-- CSS Link -->
 		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
-		
+
+		<!-- Java Sript -->
+		<script>
+			function confLogout()
+			{
+				var href="logout.php";
+				if (confirm("Are you sure you want to Logout of ZooPhy?") == true)
+				{
+					window.location=href;
+				}
+			}
+		</script>
 		<!-- Title -->
 		<title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>	
 	</head>
@@ -25,19 +40,37 @@
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="login.php"><li>Login</li></a>
-							  <a href="signup.php"><li>Register</li></a>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='login.php'><li>Login</li></a>";
+							  	}
+							  ?>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='signup.php'><li>Register</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='profile.php'><li>My Account</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a onclick='confLogout()'><li>Logout</li></a>"
+							  	}	
+							  ?>							  			
 							</ul>
 						  </li>
 						  <li>
 							Queries
 							<ul>
-							  <a href="main.html"><li>New Query</li></a>
-							  <a href="viewJobs.html"><li>View Queries</li></a>
+							  <a href="main.php"><li>New Query</li></a>
+							  <a href="viewJobs.php"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="index.html"><li>About</li></a>
-						  <a href="contact.html"><li>Contact</li></a>
+						  <a href="index.php"><li>About</li></a>
+						  <a href="contact.php"><li>Contact</li></a>
 						</ul>
 					</div>
 					</div>
@@ -47,14 +80,18 @@
 				</div>
 			</header>
 			
-			<div class="feature">
+			<!-- <div class="feature">
 				<div class="feature-inner">
 					<span class="maintext">
-						<h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
+
+						 <h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
 					</span>
 				</div>
+			</div> -->
+			<div id="banner">
+				<a href="index.html"><img src="imageFolder/zoophy.png"></a>	
 			</div>
-	
+
 			<div id="content">
 				<div id="content-inner">	
 					<main id="contentbar">
@@ -68,17 +105,16 @@
 									<li>Where is it going?</li>
 									<li>What was the trend of the estimated viral population within a specific animal host?</li>
 								</ul>
-								<br />
 								Once it is live, ZooPhy will be freely available to the public with the hope that it will help enhance population surveillance of human and animal zoonotic diseases and inform public health decision making.
 							</p>
 						</div>
 					</main>
 					
-					<nav id="sidebar">
+					<!-- <nav id="sidebar">
 						<div class="widget">						
 						</div>
 						<img src="imageFolder/logo.png" alt="Zoophy" />
-					</nav>			
+					</nav> -->
 					
 					<div class="clr">
 					</div>
@@ -89,16 +125,18 @@
 				<div id="footerblurb-inner">			
 					<!-- <div class="column">
 						<h2><span>Bayesian phylogeographic trees</span></h2>
-						<p>ZooPhy includes its own webservice for Bayesian Evolutionary Analysis by Sampling Trees (BEAST) to produce different models of evolution.</p>
-						</div>
+					</div>
 										
 					<div class="column">
 						<h2><span>Bayesian skyline plots</span></h2>
-						<p>Through BEAST, ZooPhy can produce Bayesian skyline plots for analysis of population genetics and estimates of viral population over time.</p>
 					</div>
-					 -->
+					
+					<div class="column">
+						<h2><span>Multiple sequence alignment</span></h2>
+					</div>
+					
 					<div class="clr">
-					</div>
+					</div> -->
 				</div>
 			</div>
 		

@@ -26,12 +26,16 @@
 
 	mysqli_close($dbc);
 
-	session_name('user');
-	session_start('user');
+	session_name("user");
+	session_start("user");
 
 	$row = mysqli_fetch_array($result);
-	$_SESSION['user'] = $row['fName'.' '.'lName'];
-	header('Location: main.html');
+	$_SESSION["loggedIn"] = $row['id'];	
+	$fullName = $row['firstName'] . " " . $row['lastName'];
+	$_SESSION["name"] = $fullName;
+	$_SESSION["email"] = $row['email'];
+	$_SESSION["institution"] = $row['institution'];
+	header('Location: main.php');
 	exit;
 
 	header('Location: login.php?rc=3');

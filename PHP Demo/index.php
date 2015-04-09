@@ -1,3 +1,7 @@
+<?php
+	session_name("user");
+	session_start("user");
+?>
 
 <!DOCTYPE html>
 <html>
@@ -25,19 +29,37 @@
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="login.php"><li>Login</li></a>
-							  <a href="signup.html"><li>Register</li></a>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='login.php'><li>Login</li></a>";
+							  	}
+							  ?>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='signup.php'><li>Register</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='profile.php'><li>My Account</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='logout.php'><li>Logout</li></a>";
+							  	}	
+							  ?>							  			
 							</ul>
 						  </li>
 						  <li>
 							Queries
 							<ul>
-							  <a href="main.html"><li>New Query</li></a>
-							  <a href="viewJobs.html"><li>View Queries</li></a>
+							  <a href="main.php"><li>New Query</li></a>
+							  <a href="viewJobs.php"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="index.html"><li>About</li></a>
-						  <a href="contact.html"><li>Contact</li></a>
+						  <a href="index.php"><li>About</li></a>
+						  <a href="contact.php"><li>Contact</li></a>
 						</ul>
 					</div>
 					</div>
@@ -88,9 +110,9 @@
 				</div>
 			</div>
 		
-			<div id="footerblurb">
+			<!-- <div id="footerblurb">
 				<div id="footerblurb-inner">			
-					<!-- <div class="column">
+					<div class="column">
 						<h2><span>Bayesian phylogeographic trees</span></h2>
 					</div>
 										
@@ -103,9 +125,9 @@
 					</div>
 					
 					<div class="clr">
-					</div> -->
+					</div>
 				</div>
-			</div>
+			</div> -->
 		
 			<footer id="footer">
 				<div id="footer-inner">

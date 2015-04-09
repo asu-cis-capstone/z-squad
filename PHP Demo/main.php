@@ -1,3 +1,13 @@
+<?php
+	session_name("user");
+	session_start("user");
+	
+	if (!isset($_SESSION["loggedIn"]))
+	{
+		header('Location: login.php');
+		exit;
+	}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -38,28 +48,39 @@
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="profile.html"><li>Profile</li></a>
-							  <a href="index.html"><li>Logout</li></a>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='login.php'><li>Login</li></a>";
+							  	}
+							  ?>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='signup.php'><li>Register</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='profile.php'><li>My Account</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='logout.php'><li>Logout</li></a>";
+							  	}	
+							  ?>							  			
 							</ul>
 						  </li>
 						  <li>
 							Queries
 							<ul>
-							  <a href="main.html"><li>New Query</li></a>
-							  <a href="viewjobs.html"><li>View Queries</li></a>
+							  <a href="main.php"><li>New Query</li></a>
+							  <a href="viewJobs.php"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="index.html"><li>About</li></a>
-						  <a href="contact.html"><li>Contact</li></a>
+						  <a href="index.php"><li>About</li></a>
+						  <a href="contact.php"><li>Contact</li></a>
 						</ul>
-					
-					
-						<!-- <ul>
-						<li><a href="login.html">Profile</a></li>
-						<li><a href="main.html">Queries</a></li> 
-						<li><a href="about.html">About</a></li> 
-						<li><a href="contact.html">Contact</a></li> 
-						</ul> -->
+					</div>
 					</div>
 					<!-- Header Spacing -->
 					<div class="clr">
@@ -67,12 +88,16 @@
 				</div>
 			</header>
 			
-			<div class="feature">
+			<!-- <div class="feature">
 				<div class="feature-inner">
 					<span class="maintext">
-						<h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
+
+						 <h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
 					</span>
 				</div>
+			</div> -->
+			<div id="banner">
+				<a href="index.html"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 	
 			<div id="content">
@@ -82,6 +107,9 @@
 							<!-- MAIN/CENTER -->
 						
 									 <form id="search" action="#" method="#">
+											<?php
+												echo "<p>Welcome," . " " . $_SESSION["name"] . ".</p>";
+											?>											
 											<p class="search">
 												<!-- Search Virus Name -->
 												<label for="vName">Virus Name:</label>
@@ -122,44 +150,38 @@
 						</div>
 					</main>
 					
-					<nav id="sidebar">
+<!-- 					<nav id="sidebar">
 						<div class="widget">						
 						</div>
 						<img src="imageFolder/logo.png" alt="Zoophy" />
-					</nav>			
+					</nav>	 -->		
 					
 					<div class="clr">
 					</div>
 				</div>
 			</div>
 		
-			<div id="footerblurb">
+<!-- 			<div id="footerblurb">
 				<div id="footerblurb-inner">
 				
 					<div class="column">
-						<!-- BOTTOM LEFT -->
 						<h2><span>Search</span></h2>
 						<p>Use Zoophy to query multiple databases 
 							of virus genomes across the nation.</p> 
-						<!-- <p><script>generateText(2)</script></p> -->
 					</div>	
 					<div class="column">
-						<!-- BOTTOM MIDDLE -->
 						<h2><span>Find</span></h2>
 						<p>Find virus trajectory by selecting specific RNA sequences.</p> 
-						<!-- <p><script>generateText(2)</script></p> -->
 					</div>
 					<div class="column">
-						<!-- BOTTOM RIGHT -->
 						<h2><span>Map It</span></h2>
 						<p>Once complete, recceive a map over 
 							Google Earth of your queries results.</p> 
-						<!-- <p><script>generateText(2)</script></p> -->
 					</div>	
 					
 					<div class="clr"></div>
 				</div>
-			</div>
+			</div> -->
 		
 			<footer id="footer">
 				<div id="footer-inner">

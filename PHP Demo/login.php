@@ -2,60 +2,91 @@
 	session_name("user");
 	session_start("user");
 
-	if (isset($_SESSION["user"]))
+	if (isset($_SESSION["loggedIn"]))
 	{
-		header('Location: profile.html');
+		header('Location: profile.php');
 		exit;
 	}
 
 ?>
 
- <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
 	<head>
+		<!-- Meta Tag -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 		<!-- Icon Link -->
 		<link rel="icon" href="imageFolder/zoophy.ico" />
-
-		<!-- Link tags for CSS -->
-		<link type="text/css" rel="stylesheet" href="style/signup_form.css" />
-		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
-
-		<title>ZooPhy | Login</title>
 		
+		<!-- CSS Link -->
+		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
+		<link type="text/css" rel="stylesheet" href="style/signup_form.css" />
+		
+		<!-- Title -->
+		<title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>	
 	</head>
+	
 	<body>
 		<div id="page">
 			<header id="header">
 				<div id="header-inner">	
+					<div id="logo">	
+					</div>
 					<div id="top-nav">
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="login.php"><li>Login</li></a>
-							  <a href="signup.php"><li>Register</li></a>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='login.php'><li>Login</li></a>";
+							  	}
+							  ?>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='signup.php'><li>Register</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='profile.php'><li>My Account</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='logout.php'><li>Logout</li></a>";
+							  	}	
+							  ?>							  			
 							</ul>
 						  </li>
 						  <li>
 							Queries
 							<ul>
-							  <a href="login.html"><li>New Query</li></a>
-							  <a href="login.html"><li>View Queries</li></a>
+							  <a href="main.php"><li>New Query</li></a>
+							  <a href="viewJobs.php"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="index.html"><li>About</li></a>
-						  <a href="contact.html"><li>Contact</li></a>
+						  <a href="index.php"><li>About</li></a>
+						  <a href="contact.php"><li>Contact</li></a>
 						</ul>
 					</div>
-					<div class="clr"></div>
+					</div>
+					<!-- Header Spacing -->
+					<div class="clr">
+					</div>
 				</div>
 			</header>
-			<div class="feature">
+			
+			<!-- <div class="feature">
 				<div class="feature-inner">
-				<h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
+					<span class="maintext">
+
+						 <h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
+					</span>
 				</div>
+			</div> -->
+			<div id="banner">
+				<a href="index.html"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 		
 	
@@ -70,15 +101,11 @@
 							    	<?php
 							    		if ($_GET["rc"] == 1)
 							    		{
-							    			echo '<p class="logerr">Email Address not found</p>';
+							    			echo '<p class="logerr">Invalid Email Address</p>';
 							    		}
 							    		if ($_GET["rc"] == 2)
 							    		{
-							    			echo '<p class="logerr">Password not found</p>';
-							    		}
-							    		if ($_GET["rc"] == 3)
-							    		{
-							    			echo '<p class="logerr">Returned from previous</p>';
+							    			echo '<p class="logerr">Invalid Password</p>';
 							    		}
 							    	?>
 
@@ -112,20 +139,20 @@
 						</div>
 					</main>
 					
-					<nav id="sidebar">
+<!-- 					<nav id="sidebar">
 						<div class="widget">
 							
 							<img src="imageFolder/logo.png" alt="Zoophy" />
 						</div>
 
-					</nav>
+					</nav> -->
 					
 					<div class="clr"></div>
 				</div>
 			</div>
 		
 			
-			<div id="footerblurb">
+<!-- 			<div id="footerblurb">
 				<div id="footerblurb-inner">
 				
 					<div class="column">
@@ -143,7 +170,7 @@
 					
 					<div class="clr"></div>
 				</div>
-			</div> 
+			</div>  -->
 
 			<footer id="footer">
 				<div id="footer-inner">
