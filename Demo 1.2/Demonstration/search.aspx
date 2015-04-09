@@ -92,9 +92,11 @@
  							<!-- MAIN/CENTER -->
  						
  									 <form id="search" action="#" method="#">
- 											<p class="search">
+ 											<div class="search">
+
 
  												<!-- Search Virus Name -->
+                                                
                                                 <label for="vHost">Virus:</label>
 												<asp:ListBox ID="VirusLstBox" runat="server" AutoPostBack="false" Height="85px" OnSelectedIndexChanged="VirusLstBox_SelectedIndexChanged">
                                                     <asp:ListItem Selected="True" Value="119210">H3N2 Influenza A</asp:ListItem>
@@ -145,7 +147,10 @@
                                                   <br />
  
                                                  <!-- Time frame -->
-                                                <asp:Label ID="YearsLbl" runat="server" style="font-weight: 700" Text="Years"></asp:Label>
+                                                <asp:Label ID="YearsLbl" runat="server" style="font-weight: 700" Text="Years:"></asp:Label>
+                                                 <asp:Label ID="Label1" runat="server" style="font-weight: 700" Text="From"></asp:Label>
+                                                 <asp:Label ID="Label2" runat="server" style="font-weight: 700" Text="To"></asp:Label>
+                                                 <br />
                                                 <asp:TextBox ID="fromTxtBox" runat="server" MaxLength="4" OnTextChanged="fromTxtBox_TextChanged">YYYY</asp:TextBox>
                                                 <asp:TextBox ID="toTxtBox" runat="server" MaxLength="4" OnTextChanged="toTxtBox_TextChanged">YYYY</asp:TextBox>
                                                   <br />
@@ -419,7 +424,7 @@
 										</form>
                                                 
 
-											</p>
+											</div>
 											<p class="submit">
 												<input type="submit" value="Search Virus" />
 												<span class="reset">
@@ -469,17 +474,17 @@
  					</div>	
  					
  					<div class="clr"></div>
- 				</div>
- 			</div>
+ 				    </div>
+ 			    </div>
  		
- 			<footer id="footer">
- 				<div id="footer-inner">
- 					<p>&copy; Copyright Zoophy &#124; <a href="terms.aspx">Terms of Use</a> &#124; <a href="privacy.aspx">Privacy Policy</a></p>
- 					<div class="clr">
- 					</div>
- 				</div>
- 			</footer>
- 		</div>
-     </form>
- </body>
+ 			    <footer id="footer">
+ 				    <div id="footer-inner">
+ 					    <p>&copy; Copyright Zoophy &#124; <a href="terms.aspx">Terms of Use</a> &#124; <a href="privacy.aspx">Privacy Policy</a></p>
+ 					        <div class="clr">
+ 				            </div>
+ 			        </div>
+ 			    </footer>
+ 		    </div>
+        </form>
+    </body>
  </html>

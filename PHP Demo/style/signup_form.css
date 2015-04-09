@@ -1,8 +1,7 @@
 body {
-    
+    background-image: url(http://kreativo.se/backlogin.jpg);
     font-family: "Helvetica Neue", Helvetica, Arial;
     padding-top: 20px;
-	
 }
 
 .container {
@@ -14,9 +13,9 @@ body {
 #signup {
     padding: 0px 25px 25px;
     background: #fff;
-    box-shadow: 
+    /*box-shadow: 
         0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
-        0px 4px 20px rgba( 0,0,0,0.33 );
+        0px 4px 20px rgba( 0,0,0,0.33 );*/
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -69,7 +68,7 @@ input:-moz-placeholder {
     color:    #b5b5b5;
 }
 
-#signup .inputs #fname{
+#signup .inputs input[type=email], input[type=password], input[type=text] {
     background: #f5f5f5;
     font-size: 0.8rem;
     -moz-border-radius: 3px;
@@ -83,7 +82,7 @@ input:-moz-placeholder {
     clear: both;
 }
 
-#signup .inputs input[type=email]:focus, input[type=password]:focus, input[type=text]:focus{
+#signup .inputs input[type=email]:focus, input[type=password]:focus {
     background: #fff;
     box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
     outline: none;   
@@ -95,8 +94,6 @@ input:-moz-placeholder {
     height: 25px;
     margin-top: 10px;
     clear: both;
-    background: blue;
-
 }
 
 #signup .inputs input[type=checkbox] {
