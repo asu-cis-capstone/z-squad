@@ -7,3 +7,7 @@ Instructions for using the automated test cases:
 3. after installing there should be a button on the top right of your web browser to pull up the interface
 4. open up the .html files in this folder through the IDE
 5. Enjoy the show
+
+notes:
+
+-redundantRegistration.html may fail due to the presence of macros attempting to move to login after registration.
