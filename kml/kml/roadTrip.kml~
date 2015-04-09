@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 https://developers.google.com/kml/schema/kml22gx.xsd http://www.w3.org/2005/Atom http://schemas.opengis.net/kml/2.2.0/atom-author-link.xsd">
+  <Document id="caRoadtrip">
+    <name>California Roadtrip</name>
+    <atom:author>
+      <atom:name>Bryan Mercado</atom:name>
+    </atom:author>
+    <atom:link href="http://bamercado.com/kml/roadTrip.kml" rel="related" />
+
+    <Style id="roadTrip">
+      <IconStyle>
+        <Icon>
+          <href>http://bamercado.com/imageFolder/convertible.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+
+    <Placemark id="phoenix">
+      <name>Phoenix, AZ</name>
+      <snippet></snippet>
+      <description><![CDATA[Starting Location]]></description>
+      <styleUrl>#roadTrip</styleUrl>
+      <Point>
+        <coordinates>-112.074,33.448,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="sanDiego">
+      <name>San Diego, CA</name>
+      <snippet></snippet>
+      <description><![CDATA[First Stop]]></description>
+      <styleUrl>#roadTrip</styleUrl>
+      <Point>
+        <coordinates>-117.161,32.716,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="losAngeles">
+      <name>Los Angeles, CA</name>
+      <snippet></snippet>
+      <description><![CDATA[Second Stop]]></description>
+      <styleUrl>#roadTrip</styleUrl>
+      <Point>
+        <coordinates>-118.250,34.050,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="sanFrancisco">
+      <name>San Francisco, CA</name>
+      <snippet></snippet>
+      <description><![CDATA[Final Stop]]></description>
+      <styleUrl>#roadTrip</styleUrl>
+      <Point>
+        <coordinates>-122.419,37.775,0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>

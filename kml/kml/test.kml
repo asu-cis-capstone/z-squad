@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 https://developers.google.com/kml/schema/kml22gx.xsd http://www.w3.org/2005/Atom http://schemas.opengis.net/kml/2.2.0/atom-author-link.xsd">
+  <Document id="test">
+    <name>Test Map</name>
+    <atom:author>
+      <atom:name>Bryan Mercado</atom:name>
+    </atom:author>
+    <atom:link href="http://bamercado.com/kml/test.kml" rel="related" />
+
+    <Style id="style_favorites">
+      <IconStyle>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/shapes/cycling.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+
+    <Placemark id="point_01">
+      <name>My Favorite Place</name>
+      <snippet></snippet>
+      <description><![CDATA[Hello World!]]></description>
+      <styleUrl>#style_favorites</styleUrl>
+      <Point>
+        <coordinates>12.345,67.890,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="point_02">
+      <name>My Second Favorite Place</name>
+      <snippet></snippet>
+      <description><![CDATA[Goodbye World!]]></description>
+      <styleUrl>#style_favorites</styleUrl>
+      <Point>
+        <coordinates>98.765,43.21,0</coordinates>
+      </Point>
+    </Placemark>
+
+  </Document>
+</kml>

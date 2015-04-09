@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+
+	<Document>
+		<name>California Roadtrip</name>
+		<description>Stopping Locations for California Roadtrip</description>
+
+		<Style id="roadTrip">
+			<LineStyle>
+        		<color>ffff0000</color>
+        		<width>4</width>
+      		</LineStyle>
+    	</Style>
+
+		<Placemark>
+			<name>roadTrip</name>
+			<styleUrl>#roadTrip</styleUrl>
+		    <LineString>
+		        <coordinates>
+		        	-112.0740373,33.4483771,0
+		        	-117.1610838,32.715738,0
+		        	-118.250000,34.050000,0
+		        	-122.4194155,37.7749295,0
+		        </coordinates>
+		    </LineString>		
+		</Placemark>		
+	
+	</Document>	
+</kml>
