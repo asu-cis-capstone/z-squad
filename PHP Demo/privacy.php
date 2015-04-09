@@ -1,3 +1,7 @@
+<?php
+	session_name("user");
+	session_start("user");
+?>
 
 <!DOCTYPE html>
 <html>
@@ -25,20 +29,39 @@
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="login.php"><li>Login</li></a>
-							  <a href="signup.php"><li>Register</li></a>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='login.php'><li>Login</li></a>";
+							  	}
+							  ?>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='signup.php'><li>Register</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='profile.php'><li>My Account</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='logout.php'><li>Logout</li></a>";
+							  	}	
+							  ?>							  			
 							</ul>
 						  </li>
 						  <li>
 							Queries
 							<ul>
-							  <a href="login.php"><li>New Query</li></a>
-							  <a href="login.php"><li>View Queries</li></a>
+							  <a href="main.php"><li>New Query</li></a>
+							  <a href="viewJobs.php"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="index.html"><li>About</li></a>
-						  <a href="contact.html"><li>Contact</li></a>
+						  <a href="index.php"><li>About</li></a>
+						  <a href="contact.php"><li>Contact</li></a>
 						</ul>
+					</div>
 					</div>
 					<!-- Header Spacing -->
 					<div class="clr">
@@ -46,19 +69,23 @@
 				</div>
 			</header>
 			
-			<div class="feature">
+			<!-- <div class="feature">
 				<div class="feature-inner">
 					<span class="maintext">
-						<h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
+
+						 <h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
 					</span>
 				</div>
+			</div> -->
+			<div id="banner">
+				<a href="index.php"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 	
 			<div id="content">
 				<div id="content-inner">	
 					<main id="contentbar">
 						<div class="article">
-														
+							
 							<h2>
 								Web Site Terms and Conditions of Use
 							</h2>
@@ -191,31 +218,33 @@
 							<p>
 								We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. 
 							</p>		
+
+										
 						</div>
 					</main>
 					
-					<nav id="sidebar">
+<!-- 					<nav id="sidebar">
 						<div class="widget">						
 						</div>
 						<img src="imageFolder/logo.png" alt="Zoophy" />
-					</nav>			
+					</nav>	 -->		
 					
 					<div class="clr">
 					</div>
 				</div>
 			</div>
 		
-			<div id="footerblurb">
+<!-- 			<div id="footerblurb">
 				<div id="footerblurb-inner">			
 					
 					<div class="clr">
 					</div>
 				</div>
-			</div>
+			</div> -->
 		
 			<footer id="footer">
 				<div id="footer-inner">
-					<p>&copy; Copyright Zoophy &#124; <a href="terms.html">Terms of Use</a> &#124; <a href="privacy.html">Privacy Policy</a></p>
+					<p>&copy; Copyright Zoophy &#124; <a href="terms.php">Terms of Use</a> &#124; <a href="privacy.php">Privacy Policy</a></p>
 					<div class="clr">
 					</div>
 				</div>

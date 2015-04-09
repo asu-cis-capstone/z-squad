@@ -7,7 +7,6 @@
 		header('Location: profile.php');
 		exit;
 	}
-
 ?>
 
 <!DOCTYPE html>
@@ -174,7 +173,7 @@
 
 			<footer id="footer">
 				<div id="footer-inner">
-					<p>&copy; Copyright Zoophy &#124; <a href="terms.html">Terms of Use</a> &#124; <a href="privacy.html">Privacy Policy</a></p>
+					<p>&copy; Copyright Zoophy &#124; <a href="terms.php">Terms of Use</a> &#124; <a href="privacy.php">Privacy Policy</a></p>
 					<div class="clr"></div>
 				</div>
 			</footer>

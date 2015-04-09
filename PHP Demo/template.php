@@ -89,7 +89,7 @@
 				</div>
 			</div> -->
 			<div id="banner">
-				<a href="index.html"><img src="imageFolder/zoophy.png"></a>	
+				<a href="index.php"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 
 			<div id="content">
@@ -109,7 +109,7 @@
 							</p>
 						</div>
 					</main>
-					
+					</div>
 					<!-- <nav id="sidebar">
 						<div class="widget">						
 						</div>
@@ -121,9 +121,9 @@
 				</div>
 			</div>
 		
-			<div id="footerblurb">
+<!-- 			<div id="footerblurb">
 				<div id="footerblurb-inner">			
-					<!-- <div class="column">
+					<div class="column">
 						<h2><span>Bayesian phylogeographic trees</span></h2>
 					</div>
 										
@@ -136,13 +136,13 @@
 					</div>
 					
 					<div class="clr">
-					</div> -->
+					</div>
 				</div>
-			</div>
+			</div> -->
 		
 			<footer id="footer">
 				<div id="footer-inner">
-					<p>&copy; Copyright Zoophy &#124; <a href="terms.html">Terms of Use</a> &#124; <a href="privacy.html">Privacy Policy</a></p>
+					<p>&copy; Copyright Zoophy &#124; <a href="terms.php">Terms of Use</a> &#124; <a href="privacy.php">Privacy Policy</a></p>
 					<div class="clr">
 					</div>
 				</div>

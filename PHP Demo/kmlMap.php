@@ -1,5 +1,15 @@
+<?php
+	session_name("user");
+	session_start("user");
+	
+	if (!isset($_SESSION["loggedIn"]))
+	{
+		header('Location: login.php');
+		exit;
+	}
+?>
+
 <!DOCTYPE html>
-<!-- Template by html.am -->
 <html>
 	<head>
 		<!-- Meta Tag -->
@@ -10,8 +20,7 @@
 		
 		<!-- CSS link -->
 		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
-		<title>Map</title>
-		
+
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 		
 		<script>
@@ -26,47 +35,69 @@
 			}
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
+		<title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>	
 	</head>
+	
 	<body>
 		<div id="page">
-		<!-- header section -->
 			<header id="header">
-				<header id="header">
-			
 				<div id="header-inner">	
-				
-					<div id="logo">
-						 <!-- <h1><a href="#">Cool<span>Logo</span></a></h1> -->
-						<!-- <img src="logo.png" alt="Zoophy" /> -->
+					<div id="logo">	
 					</div>
 					<div id="top-nav">
 						<ul><li>
 							Profile
 							<ul>
-							  <a href="profile.html"><li>Profile</li></a>
-							  <a href="index.html"><li>Logout</li></a>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='login.php'><li>Login</li></a>";
+							  	}
+							  ?>
+							  <?php
+							  	if(!isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='signup.php'><li>Register</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='profile.php'><li>My Account</li></a>";
+							  	}	
+							  ?>
+							  <?php
+							  	if(isset($_SESSION["loggedIn"])) {
+							  		echo "<a href='logout.php'><li>Logout</li></a>";
+							  	}	
+							  ?>							  			
 							</ul>
 						  </li>
 						  <li>
 							Queries
 							<ul>
-							  <a href="main.html"><li>New Query</li></a>
-							  <a href="viewjobs.html"><li>View Queries</li></a>
+							  <a href="main.php"><li>New Query</li></a>
+							  <a href="viewJobs.php"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="index.html"><li>About</li></a>
-						  <a href="contact.html"><li>Contact</li></a>
+						  <a href="index.php"><li>About</li></a>
+						  <a href="contact.php"><li>Contact</li></a>
 						</ul>
 					</div>
-					<div class="clr"></div>
-						
+					</div>
+					<!-- Header Spacing -->
+					<div class="clr">
+					</div>
 				</div>
 			</header>
-			<!-- <img src="logo.png" alt="Zoophy" /> -->
-			<div class="feature">
+			
+			<!-- <div class="feature">
 				<div class="feature-inner">
-				<h1>ZooPhy - Phylogeography for Zoonotic Disease Surveillance</h1>
+					<span class="maintext">
+
+						 <h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
+					</span>
 				</div>
+			</div> -->
+			<div id="banner">
+				<a href="index.php"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 		
 			<div id="content">
@@ -84,14 +115,14 @@
 			</div>
 			
 			<div class="clr"></div>
-					<nav id="sidebar">
+<!-- 					<nav id="sidebar">
 						<div class="widget">							
 						</div>
 						 <img src="imageFolder/logo.png" alt="Zoophy" /> 
-					</nav>	
+					</nav>	 -->
 				</div>
 		
-			<div id="footerblurb">
+<!-- 			<div id="footerblurb">
 				<div id="footerblurb-inner">
 				
 					<div class="column">
@@ -100,10 +131,10 @@
 					
 					<div class="clr"></div>
 				</div>
-			</div>
+			</div> -->
 			<footer id="footer">
 				<div id="footer-inner">
-					<p>&copy; Copyright Zoophy &#124; <a href="terms.html">Terms of Use</a> &#124; <a href="privacy.html">Privacy Policy</a></p>
+					<p>&copy; Copyright Zoophy &#124; <a href="terms.php">Terms of Use</a> &#124; <a href="privacy.php">Privacy Policy</a></p>
 					<div class="clr"></div>
 				</div>
 			</footer>

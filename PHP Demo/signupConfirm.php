@@ -1,4 +1,4 @@
- <?php
+<?php
 	session_name("user");
 	session_start("user");
 
@@ -41,9 +41,9 @@
 	$result = mysqli_query($dbc, $register) or die ('Unable to Register User');
 
 	mysqli_close($dbc);
- ?>
+?>
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -192,8 +192,9 @@
 
 			<footer id="footer">
 				<div id="footer-inner">
-					<p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p>
-					<div class="clr"></div>
+					<p>&copy; Copyright Zoophy &#124; <a href="terms.php">Terms of Use</a> &#124; <a href="privacy.php">Privacy Policy</a></p>
+					<div class="clr">
+					</div>
 				</div>
 			</footer>
 		</div>

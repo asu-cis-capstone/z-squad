@@ -1,7 +1,7 @@
 <?php
 	session_name("user");
 	session_start("user");
-	
+
 	if (!isset($_SESSION["loggedIn"]))
 	{
 		header('Location: login.php');
@@ -20,20 +20,8 @@
 		
 		<!-- CSS Link -->
 		<link type="text/css" rel="stylesheet" href="style/main_style.css" />
+		<link type="text/css" rel="stylesheet" href="style/signup_form.css" />
 		
-		<!-- jQuery Link -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-		</script>
-
-		<!-- jQuery Search Function-->
-		<script>
-			$(document).ready(function(){
-    			$("#advSearchLink").click(function(){
-        			$("#advSearch").toggle();
-    			});
-			});
-		</script>
-
 		<!-- Title -->
 		<title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>	
 	</head>
@@ -103,51 +91,52 @@
 			<div id="content">
 				<div id="content-inner">	
 					<main id="contentbar">
-						<div class="article">
-							<!-- MAIN/CENTER -->
-						
-									 <form id="search" action="#" method="#">
-											<?php
-												echo "<p>Welcome," . " " . $_SESSION["name"] . ".</p>";
-											?>											
-											<p class="search">
-												<!-- Search Virus Name -->
-												<label for="vName">Virus:</label>
-												<input type="text" id="vName" name="vName"
-												required autofocus/>
 
-												<!-- Search Virus Subtype -->
-												<label for="vSubtype">Gene:</label>
-												<input type="text" id="vSubtype" name="vSubtype"
-												required/>
+<!-- 					        <div class="inputs">
 
-												<!-- Search Virus Host -->
-												<label for="vHost">Virus Host:</label>
-												<input type="text" id="vHost" name="vHost"
-												required/>
-											</p>
-											<p class="submit">
-												<input type="submit" value="Search Virus" />
-												<span class="reset">
-													<input type="reset" value="Clear Search" onclick="history.go(0)" />
-												</span>
-											</p>
+					        	<h3><?php echo $_SESSION["name"] ?></h3>
+					        	<h3><?php echo $_SESSION["email"] ?></h3>					        	
+					        	<label for="institution"><?php echo $_SESSION["institution"] ?></label>
 
-											<a id="advSearchLink" href="#">Advanced Search</a>
-											<p id="advSearch">
+					            <div class="checkboxy">
+					                <input name="cecky" id="checky" value="1" type="checkbox" required /><label class="terms">I accept the <a href="terms.html" onclick="window.open(this.href); return false">Terms of Use</a></label>
+					            </div>
+					            Comments:
+					            <br />
+					            <textarea name="comments" id="comments" rows="2" cols="49" required maxlength "500" title="500 character limit.."></textarea>
 
-												<!-- Geographic Location -->
-												<label for="vGeo">Geographic Location:</label>
-												<input type="text" id="vGeo" name="vGeo" />
+					            <input type="submit" id="submit" value="REGISTER" />
+					        
+					        </div>
 
-												<!-- Time Period -->
-												<label for"vTime">Time Frame:</label>
-												<input type="date" id="vStartDate" name="vTime" />
-											</p>
-										</form>
-									
-								
-						</div>
+					    </form> -->
+
+					    <form id="signup" action="support@asu" method="post">
+					        <div class="header">
+					        
+					            <h3>Comments? Questions? Feedback?</h3>
+					            
+					        </div>
+					        
+					        <div class="sep"></div>
+
+
+					        <div class="inputs">
+					        	<h3><?php echo $_SESSION["name"] ?></h3>
+					        	<h3><?php echo $_SESSION["email"] ?></h3>					        	
+					        	<label for="institution"><?php echo $_SESSION["institution"] ?></label>
+
+					            <div class="checkboxy">
+					                <input name="cecky" id="checky" value="1" type="checkbox" required /><label class="terms">I accept the <a href="terms.html" onclick="window.open(this.href); return false">Terms of Use</a></label>
+					            </div>
+					            <br />
+					            <textarea name="comments" id="comments" rows="5" cols="50" required maxlength "500" placeholder="Comments (500 word max)..."></textarea>
+					            <br />
+					            <input type="submit" id="submit" value="Submit" />					            
+					        </div>
+					        </div>
+
+					    </form>
 					</main>
 					
 <!-- 					<nav id="sidebar">
@@ -162,24 +151,10 @@
 			</div>
 		
 <!-- 			<div id="footerblurb">
-				<div id="footerblurb-inner">
-				
-					<div class="column">
-						<h2><span>Search</span></h2>
-						<p>Use Zoophy to query multiple databases 
-							of virus genomes across the nation.</p> 
-					</div>	
-					<div class="column">
-						<h2><span>Find</span></h2>
-						<p>Find virus trajectory by selecting specific RNA sequences.</p> 
-					</div>
-					<div class="column">
-						<h2><span>Map It</span></h2>
-						<p>Once complete, recceive a map over 
-							Google Earth of your queries results.</p> 
-					</div>	
+				<div id="footerblurb-inner">			
 					
-					<div class="clr"></div>
+					<div class="clr">
+					</div>
 				</div>
 			</div> -->
 		
