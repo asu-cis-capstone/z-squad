@@ -23,6 +23,17 @@
 	$oInstit = $_POST['institution'];
 	$instit = mysqli_real_escape_string($dbc, $oInstit);
 
+	//Check for existing email
+	$query = "SELECT * FROM user WHERE email = '$email'";
+
+	$result = mysqli_query($dbc, $query) or die('Email write error');
+
+	if(mysqli_num_rows($result) != 0)
+	{
+		header('Location: signup.php?sc=1');
+		exit;
+	}
+
 	//Insert into temp_user table
 	$register = "INSERT INTO temp_user(confirmation, lastName, firstName, email, pword, institution)"
 	. "VALUES('$confirm_code', '$lName', '$fName', '$email', '$pword', '$instit')";
@@ -103,7 +114,7 @@
 				</div>
 			</div> -->
 			<div id="banner">
-				<a href="index.html"><img src="imageFolder/zoophy.png"></a>	
+				<a href="index.php"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 	
 			<div id="content">

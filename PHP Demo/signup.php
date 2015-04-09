@@ -82,7 +82,7 @@
 				</div>
 			</div> -->
 			<div id="banner">
-				<a href="index.html"><img src="imageFolder/zoophy.png"></a>	
+				<a href="index.php"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 			<div id="content">
 				<div id="content-inner">
@@ -95,7 +95,7 @@
 							    	<?php
 							    		if ($_GET["sc"] ==1)
 							    		{
-							    			echo '<p class"logerr">Email Address already Registered.</p>';
+							    			echo '<p class"logerr">The Email Address you entered has already been registered with another user.</p>';
 							    		}
 							    	?>
 							        <div class="header">
