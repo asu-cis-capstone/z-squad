@@ -10,4 +10,5 @@ Instructions for using the automated test cases:
 
 notes:
 
--redundantRegistration.html may fail due to the presence of macros attempting to move to login after registration.
+-redundantRegistration.html will login after failing to register because the account has already been created.
+-be sure to manually logout after tests if you run into an issue with sessions.
