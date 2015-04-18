@@ -116,6 +116,7 @@
     <Content Include="Profile.aspx" />
     <Content Include="README.txt" />
     <None Include="Scripts\jquery-2.1.3-vsdoc.js" />
+    <Content Include="Sample Page.aspx" />
     <Content Include="Scripts\jquery-2.1.3.js" />
     <Content Include="Scripts\jquery-2.1.3.min.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
@@ -222,6 +223,13 @@
       <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sample Page.aspx.cs">
+      <DependentUpon>Sample Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample Page.aspx.designer.cs">
+      <DependentUpon>Sample Page.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
