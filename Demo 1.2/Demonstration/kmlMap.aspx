@@ -57,7 +57,7 @@
 							  <a href="viewjobs.aspx"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="about.aspx"><li>About</li></a>
+						  <a href="Default.aspx"><li>About</li></a>
 						  <a href="contact.aspx"><li>Contact</li></a>
 						</ul>
 					</div>
