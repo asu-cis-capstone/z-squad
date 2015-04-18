@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Demonstration
 {
-    public partial class WebForm3 : System.Web.UI.Page
+    public partial class search : System.Web.UI.Page // changed from WebForm3 to search, that solved the Parse error
     {
         string virus;
         string gene;
