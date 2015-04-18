@@ -46,7 +46,7 @@ namespace Demonstration
                 //This code is accessing a property on the master page
                 //the property will set the text given to it into an asp:literal
                 //see master page for more detail, or step through code
-                this.Master.Title = "Sample of what can be done with asp.net";
+                //this.Master.Title = "Sample of what can be done with asp.net";
 
                 //here, we will instantiate our soapclient object
                 //this will only be done once, then the instance will be stored in the session

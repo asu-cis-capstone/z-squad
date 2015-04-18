@@ -38,7 +38,8 @@ namespace Demonstration {
         /// </remarks>
         public new Demonstration.Site1 Master {
             get {
-                return ((Demonstration.Site1)(base.Master));
+              //return ((Demonstration.Site1)(base.Master)); 
+                return ((Demonstration.Site1)(Master));
             }
         }
     }
