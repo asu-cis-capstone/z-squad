@@ -72,7 +72,7 @@ namespace Demonstration
             //the object will need the statement, and the connection created above to execute it
 
           
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO user(confirmation, lastName, firstName, email, pword, institution)"+
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO temp_user(confirmation, lastName, firstName, email, pword, institution)"+
 	            "VALUES('"+g+"','"+lName.Text+"', '"+fName.Text+"', '"+email.Text+"', '"+password.Text+"', '"+institution.Text+"');");
 
             //give connection to cmd
