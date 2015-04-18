@@ -63,11 +63,17 @@ namespace Demonstration
             //create db connection using the connection string
             MySqlConnection myConnection = new MySqlConnection(connectionString);
 
+            //generate confirmation code
+            Guid g;
+            g = Guid.NewGuid();
+
             //build the insert statement: note, these values are unescaped
             //this statement is given to the cmd object
             //the object will need the statement, and the connection created above to execute it
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO user(lastName, firstName, email, pword, institution)"+
-	            "VALUES('"+lName.Text+"', '"+fName.Text+"', '"+email.Text+"', '"+password.Text+"', '"+institution.Text+"');");
+
+          
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO user(confirmation, lastName, firstName, email, pword, institution)"+
+	            "VALUES('"+g+"','"+lName.Text+"', '"+fName.Text+"', '"+email.Text+"', '"+password.Text+"', '"+institution.Text+"');");
 
             //give connection to cmd
             //This will allow the MySqlCommend object to connect to your database
