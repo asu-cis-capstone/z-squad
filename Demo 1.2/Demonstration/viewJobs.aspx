@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <!-- Meta Tag -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<!-- Icon Link -->
 	<link rel="icon" href="imageFolder/zoophy.ico" />
@@ -24,22 +24,21 @@
 					<div id="logo">	
 					</div>
 					<div id="top-nav">
-						<ul><li>
-							Profile
+						<ul id="top-right-nav">
+						<li>Profile
 							<ul>
-							  <a href="profile.aspx"><li>Profile</li></a>
-							  <a href="about.aspx"><li>Logout</li></a>
+								<li><a href="profile.aspx">Profile</a></li>
+								<li><a href="about.aspx">Logout</a></li>
 							</ul>
-						  </li>
-						  <li>
-							Queries
+						</li>
+						<li>Queries
 							<ul>
-							  <a href="search.aspx"><li>New Query</li></a>
-							  <a href="viewJobs.aspx"><li>View Queries</li></a>
+								<li><a href="search.aspx">New Query</a></li>
+								<li><a href="viewJobs.aspx">View Queries</a></li>
 							</ul>
-						  </li>
-						  <a href="Default.aspx"><li>About</li></a>
-						  <a href="contact.aspx"><li>Contact</li></a>
+						</li>
+						  	<li><a href="Default.aspx">About</a></li>
+						  	<li><a href="contact.aspx">Contact</a></li>
 						</ul>
 					
 					
