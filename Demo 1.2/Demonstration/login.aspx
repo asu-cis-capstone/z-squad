@@ -5,14 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <!-- Meta Tag -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<!-- Icon Link -->
 	<link rel="icon" href="imageFolder/zoophy.ico" />
 
     <!-- Link tags for CSS -->
-	<link type="text/css" rel="stylesheet" href="Style/signup_form.css" />
 	<link type="text/css" rel="stylesheet" href="Style/main_style.css" />
+	<link type="text/css" rel="stylesheet" href="Style/signup_form.css" />
 
     <title>ZooPhy | Login</title>
 </head>
@@ -22,22 +22,21 @@
 			<header id="header">
 				<div id="header-inner">	
 					<div id="top-nav">
-						<ul><li>
-							Profile
-							<ul>
-							  <a href="login.aspx"><li>Login</li></a>
-							  <a href="signup.aspx"><li>Register</li></a>
-							</ul>
-						  </li>
-						  <li>
-							Queries
-							<ul>
-							  <a href="login.aspx"><li>New Query</li></a>
-							  <a href="login.aspx"><li>View Queries</li></a>
-							</ul>
-						  </li>
-						  <a href="Default.aspx"><li>About</li></a>
-						  <a href="contact.aspx"><li>Contact</li></a>
+						<ul id="top-right-nav">
+							<li>Profile
+								<ul>
+							  		<li><a href="login.aspx">Login</a></li>
+							  		<li><a href="signup.aspx">Register</a></li>
+								</ul>
+						  	</li>
+						  	<li>Queries
+								<ul>
+									<li><a href="login.aspx">New Query</a></li>
+									<li><a href="login.aspx">View Queries</a></li>
+								</ul>
+							</li>
+							<li><a href="Default.aspx">About</a></li>
+							<li><a href="contact.aspx">Contact</a></li>
 						</ul>
 					</div>
 					<div class="clr"></div>
@@ -70,11 +69,13 @@
 							            <input type="text" id="email" name="email" placeholder="Email" 
 										autofocus 
 										required
+										title=""
 										pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"
 										maxlength="50" />
 							        
 							            <input type="password" id="password" name="email" placeholder="Password" 
 										required
+										title=""
 										pattern="[a-zA-Z0-9-_!$]{5,15}"/>
 							            							            
 							            <input type="submit" id="submit" value="LOG IN" />
