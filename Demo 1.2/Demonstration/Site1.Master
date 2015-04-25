@@ -64,6 +64,17 @@
 
             </asp:Contentplaceholder>
 		
+            <nav id="sidebar">
+						<div class="widget">						
+						</div>
+						<img src="imageFolder/zoophy.ico" alt="Zoophy" />
+					</nav>			
+					
+					<div class="clr">
+					</div>
+				</div>
+			</div>
+
 			<div id="footerblurb">
 				<div id="footerblurb-inner">			
 					<div class="clr">
