@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="kmlMap.aspx.cs" Inherits="Demonstration.kmlMap" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="kmlMap.aspx.cs" Inherits="Demonstration.kmlMap" %>
 
 <!DOCTYPE html>
 

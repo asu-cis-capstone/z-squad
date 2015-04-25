@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="viewJobs.aspx.cs" Inherits="Demonstration.viewJobs" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="viewJobs.aspx.cs" Inherits="Demonstration.viewJobs" %>
 
 <!DOCTYPE html>
 
