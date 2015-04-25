@@ -15,6 +15,8 @@ namespace Demonstration
             {
                 Response.Redirect("login.aspx");
             }
+
+            label.Text = Page.Session["id"].ToString();
         }
     }
 }

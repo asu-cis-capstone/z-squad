@@ -73,6 +73,7 @@
 				<span class="profPic"><img src="imageFolder/defaultProfile.jpg" alt=""/></span>
 				<span class="profHead"><h2>Batman</h2></span>
 				<br/>
+                <asp:Label ID="label" Text="" runat="server" />
 				<p>
 				Institution: Justice League of America (JLA)
 				<br/>

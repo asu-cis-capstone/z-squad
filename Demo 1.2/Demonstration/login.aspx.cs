@@ -52,9 +52,10 @@ namespace Demonstration
                 if (result)
                 {
                     Page.Session["email"] = email.Text;
+                    Page.Session["id"] = reader.GetInt32(1);
 
                     //login successful
-                    Response.Redirect("http://www.google.com");
+                    Response.Redirect("Profile.aspx");
                 }
                 else
                 {
