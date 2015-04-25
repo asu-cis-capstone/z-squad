@@ -26,19 +26,16 @@ C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demon
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
-<<<<<<< HEAD
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\bin\Demonstration.dll
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\bin\Demonstration.pdb
 C:\Users\cgpuglie\Documents\Projects\Capstone\zoophyBallz\Demo 1.2\Demonstration\bin\MySql.Data.dll
-=======
 C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.dll
 C:\Users\hgbryan\Desktop\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
 C:\Users\hgbryan\Desktop\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\hgbryan\Desktop\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
->>>>>>> origin/master
 C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll.config
 C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll
 C:\Users\Bryan\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.pdb
@@ -52,7 +49,6 @@ C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\MySql.Data.
 C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
 C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
 C:\Users\Mustafa\Documents\GitHub\z-squad\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
->>>>>>> 980679d4d87015aff6a595c38650e841917c444d
 C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll.config
 C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.dll
 C:\Users\Administrator\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Demonstration.pdb
@@ -166,3 +162,77 @@ C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Microsoft.Data
 C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Microsoft.Data.OData.xml
 C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Storage.xml
 C:\Users\Jeff\Documents\GitHub\z-squad\Demo 1.2\Demonstration\bin\System.Spatial.xml
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Demonstration.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Demonstration.pdb
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Accordion.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\AjaxControlToolkit.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\AjaxMin.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\HtmlAgilityPack.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Microsoft.Data.Edm.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Microsoft.Data.OData.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\MySql.Data.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\System.Spatial.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Accordion.xml
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\HtmlAgilityPack.xml
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Microsoft.Data.Edm.xml
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Microsoft.Data.OData.xml
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\bin\System.Spatial.xml
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
+C:\Users\Kevin Galati\Documents\School\Spring 2015\CIS 440\Zoophy\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Demonstration.dll.config
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Demonstration.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Demonstration.pdb
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Accordion.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\AjaxControlToolkit.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\AjaxMin.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\HtmlAgilityPack.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Microsoft.Data.Edm.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Microsoft.Data.OData.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\MySql.Data.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\System.Spatial.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Accordion.xml
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\HtmlAgilityPack.xml
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Microsoft.Data.Edm.xml
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Microsoft.Data.OData.xml
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\bin\System.Spatial.xml
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\Administrator\Downloads\z-squad-master\z-squad-master\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Demonstration.dll.config
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Demonstration.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Demonstration.pdb
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Accordion.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\AjaxControlToolkit.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\AjaxMin.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\HtmlAgilityPack.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Microsoft.Data.Edm.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Microsoft.Data.OData.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\MySql.Data.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\System.Spatial.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Accordion.xml
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\HtmlAgilityPack.xml
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Microsoft.Data.Edm.xml
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Microsoft.Data.OData.xml
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\bin\System.Spatial.xml
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\obj\Debug\Demonstration.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\obj\Debug\Demonstration.dll
+C:\Users\Administrator\Desktop\Demo 1.2\Demonstration\obj\Debug\Demonstration.pdb

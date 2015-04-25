@@ -76,12 +76,9 @@
     <Reference Include="Microsoft.WindowsAzure.Storage">
       <HintPath>..\packages\WindowsAzure.Storage.2.1.0.4\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>..\packages\MySql.Data.6.9.6\lib\net45\MySql.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="SdlDotNet, Version=6.1.0.0, Culture=neutral, PublicKeyToken=26ad4f7e10c61408, processorArchitecture=MSIL">
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Visual Studio 2012\Projects\ConsoleApplication1\ConsoleApplication1\SDL\SdlDotNet.dll</HintPath>
+      <HintPath>..\packages\MySql.Data.6.9.6\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Runtime.Serialization" />
@@ -112,6 +109,7 @@
     <Content Include="kmlMap.aspx" />
     <Content Include="login.aspx" />
     <Content Include="main_style.css" />
+    <Content Include="Master_Page.aspx" />
     <Content Include="privacy.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="README.txt" />
@@ -177,6 +175,7 @@
     <Content Include="signup_confirm.aspx" />
     <Content Include="Style\main_style.css" />
     <Content Include="Style\signup_form.css" />
+    <Content Include="temp_Search.aspx" />
     <Content Include="terms.aspx" />
     <Content Include="viewJobs.aspx" />
     <Content Include="Web.config">
@@ -206,6 +205,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Page.aspx.cs">
+      <DependentUpon>Master_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Page.aspx.designer.cs">
+      <DependentUpon>Master_Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="privacy.aspx.cs">
       <DependentUpon>privacy.aspx</DependentUpon>
@@ -268,6 +274,13 @@
     </Compile>
     <Compile Include="search.aspx.designer.cs">
       <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="temp_Search.aspx.cs">
+      <DependentUpon>temp_Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temp_Search.aspx.designer.cs">
+      <DependentUpon>temp_Search.aspx</DependentUpon>
     </Compile>
     <Compile Include="terms.aspx.cs">
       <DependentUpon>terms.aspx</DependentUpon>

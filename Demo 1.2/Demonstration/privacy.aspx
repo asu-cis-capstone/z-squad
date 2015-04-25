@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <!-- Meta Tag -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 	<!-- Icon Link -->
 	<link rel="icon" href="imageFolder/zoophy.ico" />
@@ -24,21 +24,22 @@
 					<div id="logo">	
 					</div>
 					<div id="top-nav">
-						<ul id="top-right-nav">
-						<li>Profile
+						<ul><li>
+							Profile
 							<ul>
-							  <li><a href="login.aspx">Login</a></li>
-							  <li><a href="signup.aspx">Register</a></li>
+							  <a href="login.aspx"><li>Login</li></a>
+							  <a href="signup.aspx"><li>Register</li></a>
 							</ul>
 						  </li>
-						  <li>Queries
+						  <li>
+							Queries
 							<ul>
-							  <li><a href="login.aspx">New Query</a></li>
-							  <li><a href="login.aspx">View Queries</a></li>
+							  <a href="login.aspx"><li>New Query</li></a>
+							  <a href="login.aspx"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <li><a href="Default.aspx">About</a></li>
-						  <li><a href="contact.aspx">Contact</a></li>
+						  <a href="Default.aspx"><li>About</li></a>
+						  <a href="contact.aspx"><li>Contact</li></a>
 						</ul>
 					</div>
 					<!-- Header Spacing -->

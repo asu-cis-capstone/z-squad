@@ -20,7 +20,10 @@ namespace Demonstration
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Page.Session["email"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
         }
 
         protected void VirusLstBox_SelectedIndexChanged(object sender, EventArgs e)

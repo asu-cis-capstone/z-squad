@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Demonstration
 {
-    public partial class kmlMap : System.Web.UI.Page
+    public partial class Master_Page : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page.Session["email"] == null)
-            {
-                Response.Redirect("login.aspx");
-            }
+
         }
     }
 }
