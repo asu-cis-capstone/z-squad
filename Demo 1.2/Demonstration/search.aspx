@@ -24,7 +24,8 @@
 
     <title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="myContent" runat="server">
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Contentplaceholder1" runat="server">
     <div id="content">
  				<div id="content-inner">	
  					<main id="contentbar">
