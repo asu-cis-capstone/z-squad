@@ -66,7 +66,7 @@
 	
 			<div id="content">
 				<div id="content-inner-jobs">
-				
+				To view Phylogenic Tree, please click <a href="http://tree.bio.ed.ac.uk/software/figtree/" onclick="window.open(this.href); return false;">here</a> to download FigTree.
 					<main id="article">
 						<div class="currentjobs">
 							<h2>Current Jobs</h2>
