@@ -23,8 +23,9 @@
 							<p>Status: complete</p>
 							<p>Query Info: </p>
 							<p>Percent complete: 100%</p>
-							<p>KML Map: <a href="ftp://bamercad@50.31.160.250/public_html/kml/output.kml" download>Download /</a><a href="#" onclick="window.open(this.href); return false;"> View</a></p>
-                            <p>Phylogenic Tree: <a href="#" download>Download</a></p>
+                            <!--Hard coded links must be editted for ASP sessions -->
+							<p>KML Map: <a href="http://bamercado.com/public_html/kml/output.kml" download>Download /</a><a href="kmlMap.aspx" onclick="window.open(this.href); return false;"> View</a></p>
+                            <p>Phylogenic Tree: <a href="http://bamercado.com/public_html/tree/carnivore.tree" download>Download</a></p>
 							</div>
 						</div>
 						
