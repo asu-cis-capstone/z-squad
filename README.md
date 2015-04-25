@@ -1,4 +1,4 @@
-# z-squad
+﻿# z-squad
 repo for project zoophy
 
 ZooPhy README
@@ -56,3 +56,9 @@ DEMO 1.2 folder is the current updated project. Things need to be done:
 -Connect back end (signup/login)
 -fix CSS styling 
 -get web app to send/recieve correct data from web service
+
+v0.6
+Current iteration of Zoophy on our test site. Automated testing recorded. Things to be done:
+-double check link locations
+-get search function operational
+-hook up to web service
