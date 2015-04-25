@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="contact.aspx.cs" Inherits="Demonstration.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contact.aspx.cs" Inherits="Demonstration.WebForm2" %>
 
 <!DOCTYPE html>
 
@@ -62,7 +62,15 @@
 						<div class="article">
 							<h1>Questions?</h1>
 							<br />
-							<p>Contact us at: <a href="#">ZooPhy@asu.edu</a></p>
+                            <p><b><u>Mailing Adress</u></b>:</p>
+                            <p class="address">ASU Department of Biomedical Informatics<br />
+                                13212 East Shea Blvd<br />
+                                Scottsdale, AZ 85259 <br />
+                            </p>
+                            
+                            <p><b>Phone</b>: 480-884-0220<br />
+                             <b>Fax</b>: 480-884-0239</p>
+							<p>Email us at: <a href="#"><b>ZooPhy@asu.edu</b></a></p>
 						</div>
 					</main>
 					
