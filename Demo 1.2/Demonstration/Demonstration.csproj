@@ -109,6 +109,7 @@
     <Content Include="kmlMap.aspx" />
     <Content Include="login.aspx" />
     <Content Include="main_style.css" />
+    <Content Include="Master_Page.aspx" />
     <Content Include="privacy.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="README.txt" />
@@ -204,6 +205,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Page.aspx.cs">
+      <DependentUpon>Master_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Page.aspx.designer.cs">
+      <DependentUpon>Master_Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="privacy.aspx.cs">
       <DependentUpon>privacy.aspx</DependentUpon>
