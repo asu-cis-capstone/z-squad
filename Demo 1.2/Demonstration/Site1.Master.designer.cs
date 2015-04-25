@@ -13,6 +13,15 @@ namespace Demonstration {
     public partial class Site1 {
         
         /// <summary>
+        /// Head1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
+        
+        /// <summary>
         /// head control.
         /// </summary>
         /// <remarks>
@@ -22,30 +31,21 @@ namespace Demonstration {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
-        /// myForm control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm myForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lTitle control.
+        /// Contentplaceholder1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal lTitle;
-        
-        /// <summary>
-        /// myContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder myContent;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Contentplaceholder1;
     }
 }

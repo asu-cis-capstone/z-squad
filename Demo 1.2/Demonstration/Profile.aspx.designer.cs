@@ -11,6 +11,7 @@ namespace Demonstration {
     
     
     public partial class Profile {
+<<<<<<< HEAD
         
         /// <summary>
         /// form1 control.
@@ -29,5 +30,7 @@ namespace Demonstration {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label label;
+=======
+>>>>>>> origin/master
     }
 }

@@ -2,38 +2,94 @@
 
 <!DOCTYPE html>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+<head id="Head1" runat="server">
+    <!-- Meta Tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Icon Link -->
+	<link rel="icon" href="imageFolder/zoophy.ico" />
+
+	<!-- Link tags for CSS -->
+	<link type="text/css" rel="stylesheet" href="style/main_style.css" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
+        
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <form id="form1" runat="server">
+        <div id="page">
+			<header id="header">
+				<div id="header-inner">	
+					<div id="logo">	
+					</div>
+					<div id="top-nav">
+						<ul>
+                            <li>
+							Profile
+							<ul>
+							  <a href="login.aspx"><li>Login</li></a>
+							  <a href="signup.aspx"><li>Register</li></a>
+							</ul>
+						  </li>
+						  <li>
+							Queries
+							<ul>
+							  <a href="search.aspx"><li>New Query</li></a>
+							  <a href="viewJobs.aspx"><li>View Queries</li></a>
+							</ul>
+						  </li>
+						  <a href="about.aspx"><li>About</li></a>
+						  <a href="contact.aspx"><li>Contact</li></a>
+						</ul>
+					</div>
+					</div>
+					<!-- Header Spacing -->
+					<div class="clr">
+					</div>
+				</div>
+			</header>
+			
+			<div class="feature">
+				<div class="feature-inner">
+					<span class="maintext">
+						<h1>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</h1>
+					</span>
+				</div>
+			</div>
 
-    <%--this is a master page
-        It serves to provide sort of a template for your site.
-        It makes it much easier to keep the UX consistent throughout your site.
-    --%>
-    <form id="myForm" runat="server"> <%--Note that this form will be used by all content pages--%>
-    <div>
-        <%--This will serve as the 'Page Title'.
-            
-            It is an h1 element with a 'Literal' in it.
-            Literals don't convert to html objects, but instead plain text
-            They are useful for putting text inside normal html elements and
-            adding scripts dynamically to a page to help communicate with 
-            Javascript from the Code behind.
-            EG Script.Text = "<script> alert('Error!'); </script>
-            
-            I will be encapsulating this element in a property so that
-            it can be refered to from the content page.--%>
+            <!-- Your content from the other pages will propegate here -->
+            <asp:Contentplaceholder ID="Contentplaceholder1" runat="server">
 
-        <h1><asp:Literal ID="lTitle" runat="server"></asp:Literal></h1>
-        <asp:ContentPlaceHolder ID="myContent" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
+            </asp:Contentplaceholder>
+		
+            <nav id="sidebar">
+						<div class="widget">						
+						</div>
+						<img src="imageFolder/zoophy.ico" alt="Zoophy" />
+					</nav>			
+					
+					<div class="clr">
+					</div>
+				</div>
+			</div>
+
+			<div id="footerblurb">
+				<div id="footerblurb-inner">			
+					<div class="clr">
+					</div>
+				</div>
+			</div>
+		
+			<footer id="footer">
+				<div id="footer-inner">
+					<p>&copy; Copyright Zoophy &#124; <a href="terms.aspx">Terms of Use</a> &#124; <a href="privacy.aspx">Privacy Policy</a></p>
+					<div class="clr">
+					</div>
+				</div>
+			</footer>
+		</div>
     </form>
 </body>
 </html>
