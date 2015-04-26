@@ -26,6 +26,7 @@
             var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
             var ctaLayer = new google.maps.KmlLayer({
+                //Hard coded links must be editted for ASP sessions
                 url: 'http://bamercado.com/kml/output.kml'
             });
             ctaLayer.setMap(map);
