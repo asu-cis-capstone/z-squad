@@ -19,9 +19,9 @@
 			#header-inner { margin:0 auto; padding:0; width:970px;}
 			
 			/* Feature */
-			.feature { background:#3385FF;padding:18px;}
+			.feature {padding:18px;}
 			.feature-inner { margin:auto;width:970px; }
-			.feature-inner h1 {color:#d3d3f9;font-size:32px;}
+			.feature-inner a {text-align: center; height: 108px;}
 			
 			/* Menu */
 		    /* #top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right; margin-bottom: 10px;}
