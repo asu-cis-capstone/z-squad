@@ -11,6 +11,7 @@ namespace Demonstration
     {
         //property for 'lTitle' on Master page.
         //this element is a literal, explanation is on Site1.Master
+       /*
         public string Title
         {
             get
@@ -23,7 +24,7 @@ namespace Demonstration
                 //set text to value supplied
                 lTitle.Text = value;
             }
-        }
+        } */
         protected void Page_Load(object sender, EventArgs e)
         {
 

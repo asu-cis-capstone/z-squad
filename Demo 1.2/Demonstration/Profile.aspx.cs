@@ -16,7 +16,10 @@ namespace Demonstration
                 Response.Redirect("login.aspx");
             }
 
-            label.Text = Page.Session["id"].ToString();
+            user_id.Text = Page.Session["user_id"].ToString();
+            institution.Text = Page.Session["user_inst"].ToString(); //ohhh lol wrong name lol
+            user_name.Text = Page.Session["user_name"].ToString();
+            email.Text = Page.Session["email"].ToString();
         }
     }
 }

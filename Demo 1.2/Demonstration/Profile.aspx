@@ -15,15 +15,13 @@
 							<!-- MAIN/CENTER -->
 			<div id="profile">
 				<span class="profPic"><img src="imageFolder/defaultProfile.jpg" alt=""/></span>
-				<span class="profHead"><h2>Batman</h2></span>
+				<span class="profHead"><h2><asp:Label ID="user_name" Text="" runat="server" /></h2></span>
 				<br/>
-                <asp:Label ID="label" Text="" runat="server" />
-				<p>
-				Institution: Justice League of America (JLA)
+                <asp:Label ID="user_id" Text="" runat="server" />
+                <br />
+				<asp:Label ID="email" Text="" runat="server" />
 				<br/>
-				Member Since: 1939
-				<br/>
-				Queries Run: 27
+				<asp:Label ID="institution" Text="" runat="server" />
 				<br/>
 				Open Queries: 2
 				</br>

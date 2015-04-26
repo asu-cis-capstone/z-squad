@@ -28,7 +28,7 @@ namespace Demonstration
 
 
 
-            MySqlCommand cmd = new MySqlCommand("SELECT id from user WHERE email = '"+ email.Text + "' and pword = '" + password.Text + "'");
+            MySqlCommand cmd = new MySqlCommand("SELECT id, institution, firstName FROM user WHERE email = '"+ email.Text + "' and pword = '" + password.Text + "'");
 
             cmd.Connection = myConnection;
 
@@ -51,11 +51,22 @@ namespace Demonstration
 
                 if (result)
                 {
-                    Page.Session["email"] = email.Text;
-                    Page.Session["id"] = reader.GetInt32(1);
+                    if (reader.Read())
+                    {
+                        if (reader[0] != DBNull.Value)
+                        {
+                            Page.Session["user_id"] = reader.GetInt32(0);
+                            Page.Session["email"] = email.Text;
+                            Page.Session["user_inst"] = reader.GetString(1);
+                            Page.Session["user_name"] = reader.GetString(2);
+                            Response.Redirect("Profile.aspx", false); 
+                        }
+                    }
+                    
+
 
                     //login successful
-                    Response.Redirect("Profile.aspx");
+                    
                 }
                 else
                 {
