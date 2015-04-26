@@ -17,8 +17,6 @@
 				<span class="profPic"><img src="imageFolder/defaultProfile.jpg" alt=""/></span>
 				<span class="profHead"><h2><asp:Label ID="user_name" Text="" runat="server" /></h2></span>
 				<br/>
-                <asp:Label ID="user_id" Text="" runat="server" />
-                <br />
 				<asp:Label ID="email" Text="" runat="server" />
 				<br/>
 				<asp:Label ID="institution" Text="" runat="server" />
