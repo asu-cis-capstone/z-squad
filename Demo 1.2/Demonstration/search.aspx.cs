@@ -66,7 +66,6 @@ namespace Demonstration
             state = stateLstBox.SelectedItem.ToString();
         }
 
-        
 
     }
 }

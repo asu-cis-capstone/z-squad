@@ -1,10 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="search.aspx.cs" Inherits="Demonstration.search" %>
 
+<%@ Register TagPrefix="asp" Namespace="Saplin.Controls" Assembly="DropDownCheckBoxes" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- jQuery Link -->
- 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+ 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" >
  		</script>
  
+    
+
  	<!-- jQuery Search Function-->
  		<script>
  		    $(document).ready(function () {
@@ -21,6 +25,7 @@
      	        });
      	    });
  		</script>
+
 
     <title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>
 </asp:Content>
@@ -39,20 +44,22 @@
  												<!-- Search Virus Name -->
                                                 
                                                 <label for="vHost">Virus:</label>
-												<asp:ListBox ID="VirusLstBox" runat="server" AutoPostBack="false" Height="85px" OnSelectedIndexChanged="VirusLstBox_SelectedIndexChanged">
+												<asp:DropDownList ID="VirusLstBox" runat="server" AutoPostBack="false" OnSelectedIndexChanged="VirusLstBox_SelectedIndexChanged">
                                                     <asp:ListItem Selected="True" Value="119210">H3N2 Influenza A</asp:ListItem>
                                                     <asp:ListItem Value="114727">H1N1 pdm09 Influenza A</asp:ListItem>
                                                     <asp:ListItem Value="102793">H5N1 Influenza A</asp:ListItem>
                                                     <asp:ListItem Value="11292">Rabies</asp:ListItem>
                                                     <asp:ListItem Value="11082">West Nile Virus</asp:ListItem>
                                                     <asp:ListItem Value="11081">Zombie Virus</asp:ListItem>
-                                                </asp:ListBox>
+                                                </asp:DropDownList>
                                                  <br />
  
  												<!-- Search gene -->
                                                 <label for="vHost">Gene:</label>
-												<asp:ListBox ID="GeneLstBox" runat="server" Height="150px" Width="118px" SelectionMode="Multiple" OnSelectedIndexChanged="GeneLstBox_SelectedIndexChanged">
-                                                    <asp:ListItem Selected="True">PB2</asp:ListItem>
+												<asp:DropDownCheckBoxes ID="GeneLstBox" runat="server"  SelectionMode="Multiple" OnSelectedIndexChanged="GeneLstBox_SelectedIndexChanged">
+                                                   <Style SelectBoxWidth="195" DropDownBoxBoxWidth="160" DropDownBoxBoxHeight="230px" />
+                                                    <Items>
+                                                    <asp:ListItem>PB2</asp:ListItem>
                                                     <asp:ListItem>PB1</asp:ListItem>
                                                     <asp:ListItem>PA</asp:ListItem>
                                                     <asp:ListItem>HA</asp:ListItem>
@@ -60,14 +67,17 @@
                                                     <asp:ListItem>NA</asp:ListItem>
                                                     <asp:ListItem>M</asp:ListItem>
                                                     <asp:ListItem>NS</asp:ListItem>
-                                                    <asp:ListItem>Whole Genome</asp:ListItem>
-                                                </asp:ListBox>
+                                                        </Items>
+                                                </asp:DropDownCheckBoxes>
+                                                 
                                                   <br />
+
  
  												<!-- Search Host -->
  												<label for="vHost">Virus Host:</label>
-												<asp:ListBox ID="hostLst" runat="server" Height="150px" Width="118px" SelectionMode="Multiple" OnSelectedIndexChanged="hostLst_SelectedIndexChanged">
-                                                    <asp:ListItem Selected="True" Value="32523">All</asp:ListItem>
+												<asp:DropDownCheckBoxes ID="hostLst" runat="server" Height="150px" Width="118px" SelectionMode="Multiple" OnSelectedIndexChanged="hostLst_SelectedIndexChanged">
+                                                     <Style SelectBoxWidth="195" DropDownBoxBoxWidth="160" DropDownBoxBoxHeight="650px" />
+                                                    <Items>
                                                     <asp:ListItem Value="8782">Avian</asp:ListItem>
                                                     <asp:ListItem Value="9397">Bat</asp:ListItem>
                                                     <asp:ListItem Value="9913">Bovine</asp:ListItem>
@@ -84,7 +94,8 @@
                                                     <asp:ListItem Value="212257">Panda</asp:ListItem>
                                                     <asp:ListItem Value="9654">Raccoon</asp:ListItem>
                                                     <asp:ListItem Value="9823">Swine</asp:ListItem>
-                                                </asp:ListBox>
+                                                        </Items>
+                                                </asp:DropDownCheckBoxes>
                                                   <br />
  
                                                  <!-- Time frame -->
@@ -104,7 +115,7 @@
                                                  <br />
                                                 <!-- Continent -->
                                              
-												<asp:ListBox ID="continentLstBox" runat="server" Height="138px" OnSelectedIndexChanged="continentLstBox_SelectedIndexChanged">
+												<asp:DropDownList ID="continentLstBox" runat="server" OnSelectedIndexChanged="continentLstBox_SelectedIndexChanged">
                                                     <asp:ListItem Selected="True" Value="6295630">All</asp:ListItem>
                                                     <asp:ListItem Value="6255146">Africa</asp:ListItem>
                                                     <asp:ListItem Value="6255152">Antarctica</asp:ListItem>
@@ -113,10 +124,12 @@
                                                     <asp:ListItem Value="6255149">North America</asp:ListItem>
                                                     <asp:ListItem Value="6255151">Oceania</asp:ListItem>
                                                     <asp:ListItem Value="6255150">South America</asp:ListItem>
-                                                </asp:ListBox>
+                                                </asp:DropDownList>
                                                 <!-- Country -->
  												
-												<asp:ListBox ID="countryLstBox" runat="server" Height="138px" SelectionMode="Multiple" OnSelectedIndexChanged="countryLstBox_SelectedIndexChanged">
+												<asp:DropDownCheckBoxes ID="countryLstBox" runat="server" Height="138px" SelectionMode="Multiple" OnSelectedIndexChanged="countryLstBox_SelectedIndexChanged">
+                                                     <Style SelectBoxWidth="195" DropDownBoxBoxWidth="160" DropDownBoxBoxHeight="650px" />
+                                                    <Items>
                                                     <asp:ListItem Value="6255152">Afghanistan</asp:ListItem>
                                                     <asp:ListItem Value="783754">Albania</asp:ListItem>
                                                     <asp:ListItem Value="2589581">Algeria</asp:ListItem>
@@ -295,11 +308,14 @@
                                                     <asp:ListItem Value="69543">Yemen</asp:ListItem>
                                                     <asp:ListItem Value="895949">Zambia</asp:ListItem>
                                                     <asp:ListItem Value="878675">Zimbabwe</asp:ListItem>
-                                                </asp:ListBox>
+                                                        </Items>
+                                                </asp:DropDownCheckBoxes>
                                                 <!-- States if in united States -->
 												
-                                                    <asp:ListBox ID="stateLstBox" runat="server" Height="138px" 
+                                                    <asp:DropDownCheckBoxes ID="stateLstBox" runat="server" Height="138px" 
                                                         SelectionMode="Multiple" OnSelectedIndexChanged="stateLstBox_SelectedIndexChanged">
+                                                         <Style SelectBoxWidth="195" DropDownBoxBoxWidth="160" DropDownBoxBoxHeight="650px" />
+                                                    <Items>
                                                         <asp:ListItem Value="4829764">Alabama</asp:ListItem>
                                                         <asp:ListItem Value="5879092">Alaska</asp:ListItem>
                                                         <asp:ListItem Value="5551752">Arizona</asp:ListItem>
@@ -351,7 +367,8 @@
                                                         <asp:ListItem Value="4826850">West Virginia</asp:ListItem>
                                                         <asp:ListItem Value="5279468">Wisconsin</asp:ListItem>
                                                         <asp:ListItem Value="5843591">Wyoming</asp:ListItem>
-                                                    </asp:ListBox>
+                                                        </Items>
+                                                    </asp:DropDownCheckBoxes>
                                                     <br />
 
                                                  <a id="advSearchLink" href="#">Advanced Search</a>

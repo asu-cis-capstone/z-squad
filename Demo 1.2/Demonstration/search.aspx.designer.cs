@@ -19,7 +19,7 @@ namespace Demonstration {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox VirusLstBox;
+        protected global::System.Web.UI.WebControls.DropDownList VirusLstBox;
         
         /// <summary>
         /// GeneLstBox control.
@@ -28,7 +28,7 @@ namespace Demonstration {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox GeneLstBox;
+        protected global::Saplin.Controls.DropDownCheckBoxes GeneLstBox;
         
         /// <summary>
         /// hostLst control.
@@ -37,7 +37,7 @@ namespace Demonstration {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox hostLst;
+        protected global::Saplin.Controls.DropDownCheckBoxes hostLst;
         
         /// <summary>
         /// YearsLbl control.
@@ -91,7 +91,7 @@ namespace Demonstration {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox continentLstBox;
+        protected global::System.Web.UI.WebControls.DropDownList continentLstBox;
         
         /// <summary>
         /// countryLstBox control.
@@ -100,7 +100,7 @@ namespace Demonstration {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox countryLstBox;
+        protected global::Saplin.Controls.DropDownCheckBoxes countryLstBox;
         
         /// <summary>
         /// stateLstBox control.
@@ -109,7 +109,7 @@ namespace Demonstration {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox stateLstBox;
+        protected global::Saplin.Controls.DropDownCheckBoxes stateLstBox;
         
         /// <summary>
         /// lblSamp control.
