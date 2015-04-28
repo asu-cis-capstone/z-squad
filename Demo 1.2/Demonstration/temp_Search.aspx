@@ -818,8 +818,14 @@ function clearMCMC()//clear default MCMC '10,000'
                                     <li>
 							        Profile
 							        <ul>
-							          <a href="login.aspx"><li>Login</li></a>
-							          <a href="signup.aspx"><li>Register</li></a>
+							          <% if(Page.Session["email"] == null) { %>
+                                    <a href="login.aspx"><li>Login</li></a>
+                                    <a href="signup.aspx"><li>Register</li></a>
+                                <% } %>
+                                <% else { %>
+                                    <a href="Profile.aspx"><li>Profile</li></a>
+                                    <a href="login.aspx"><li>Log Out</li></a>
+                                <% } %>
 							        </ul>
 						          </li>
 						          <li>
@@ -829,7 +835,7 @@ function clearMCMC()//clear default MCMC '10,000'
 							          <a href="viewJobs.aspx"><li>View Queries</li></a>
 							        </ul>
 						          </li>
-						          <a href="about.aspx"><li>About</li></a>
+						          <a href="Default.aspx"><li>About</li></a>
 						          <a href="contact.aspx"><li>Contact</li></a>
 						        </ul>
 					        </div>
