@@ -6,6 +6,7 @@ body {
 }
 
 .container {
+    padding-top: 10px;
     width: 406px;
     max-width: 406px;
     margin: 0 auto;
@@ -95,7 +96,7 @@ input:-moz-placeholder {
     height: 25px;
     margin-top: 10px;
     clear: both;
-    background: blue;
+    background: #ffffff;
 
 }
 
