@@ -5,7 +5,14 @@
 
 <html>
 <head>
+    <!-- Icon Link -->
+	<link rel="icon" href="imageFolder/zoophy.ico" />
+
+	<!-- Link tags for CSS -->
+	<link type="text/css" rel="stylesheet" href="style/main_style.css" />
+
     <title>Zoophy Search</title>
+
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCPcnzLBmwkbqGeldpjr2X3yY74c_uPXpg&sensor=false"></script>
     <script type="text/javascript">
         var invisColor = "#FFFFFF";
@@ -789,10 +796,47 @@ function clearMCMC()//clear default MCMC '10,000'
             width: 208px;
         }
     </style>
-    </head>
+</head>
+
 <body onload="">
     <form id="form1" runat="server">
-    <asp:Image ID="Image1" runat="server" ImageUrl="~/logo.png" />
+        <div id="page">
+			 
+				        <div class="feature-inner">
+					        <span class="maintext">
+						        <a href="Default.aspx"><img src="imageFolder/zoophy.png" /></a>	
+					        </span>
+				        </div>
+           
+                    <header id="header">
+				        <div id="header-inner">	
+					        <div id="logo">	
+					        </div>
+					        <div id="top-nav">
+						        <ul>
+                                    <li>
+							        Profile
+							        <ul>
+							          <a href="login.aspx"><li>Login</li></a>
+							          <a href="signup.aspx"><li>Register</li></a>
+							        </ul>
+						          </li>
+						          <li>
+							        Queries
+							        <ul>
+							          <a href="search.aspx"><li>New Query</li></a>
+							          <a href="viewJobs.aspx"><li>View Queries</li></a>
+							        </ul>
+						          </li>
+						          <a href="about.aspx"><li>About</li></a>
+						          <a href="contact.aspx"><li>Contact</li></a>
+						        </ul>
+					        </div>
+					        </div>
+					
+				        </div>
+			        </header>
+
         
     <asp:Panel ID="VirusPanel" runat="server" Wrap="False">
         <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
@@ -1498,6 +1542,33 @@ function clearMCMC()//clear default MCMC '10,000'
        
         <br />
     </asp:Panel>
+
+        <nav id="sidebar">
+						<div class="widget">						
+						</div>
+						
+					</nav>			
+					
+					<div class="clr">
+					</div>
+				</div>
+			</div>
+
+			<div id="footerblurb">
+				<div id="footerblurb-inner">			
+					<div class="clr">
+					</div>
+				</div>
+			</div>
+		
+			<footer id="footer">
+				<div id="footer-inner">
+					<p>&copy; Copyright Zoophy &#124; <a href="terms.aspx">Terms of Use</a> &#124; <a href="privacy.aspx">Privacy Policy</a></p>
+					<div class="clr">
+					</div>
+				</div>
+			</footer>
+		</div>
     </form>
 </body>
 </html>
