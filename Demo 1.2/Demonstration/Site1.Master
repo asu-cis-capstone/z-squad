@@ -19,7 +19,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
         <div id="page">
 			 
 				<div class="feature-inner">
@@ -88,6 +88,6 @@
 				</div>
 			</footer>
 		</div>
-    </form>
+    
 </body>
 </html>
