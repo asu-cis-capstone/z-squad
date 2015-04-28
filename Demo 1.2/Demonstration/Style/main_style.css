@@ -72,6 +72,9 @@
 			/* Search Form */
 			#search { background:#d3d3f9;color:blue; width:750px;margin:auto; text-align:center;}
 			.search { padding-top:10px;}
+			
+			#VirusPanel{ width:750px; margin:auto; text-align:center;}/* 
+			.VirusPanel{ background:#d3d3f9; color:blue; width:750px; margin:auto; text-align:center; padding-top:2000px} */
 
 			#top-nav { float: right; }
 						

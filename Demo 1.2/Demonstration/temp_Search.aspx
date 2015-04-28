@@ -2,6 +2,7 @@
 
 <%@ Register Assembly="EO.Web" Namespace="EO.Web" TagPrefix="eo" %>
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+<%@ Register TagPrefix="asp" Namespace="Saplin.Controls" Assembly="DropDownCheckBoxes" %>
 
 <html>
 <head>
@@ -783,7 +784,7 @@ function clearMCMC()//clear default MCMC '10,000'
         .style2
         {
             font-weight: bold;
-            width: 97px;
+            width: 105px;
         }
         .style3
         {
@@ -845,20 +846,20 @@ function clearMCMC()//clear default MCMC '10,000'
         <br />
         <table style="width:100%;">
             <tr>
-                <td class="style2">
+                <td class="style2" align ="center">
                     <asp:Label ID="VirusLbl" runat="server" Font-Bold="True" Text="1. Virus"></asp:Label>
                 </td>
                
-                <td class="style1" colspan="2">
+                <td class="style1" colspan ="1" align ="center">
                     <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
                     <ContentTemplate>
-                    <asp:ListBox ID="VirusLstBox" runat="server" AutoPostBack="false" Height="85px">
+                    <asp:DropDownList ID="VirusLstBox" runat="server" AutoPostBack="false">
                         <asp:ListItem Selected="True" Value="119210">H3N2 Influenza A</asp:ListItem>
                         <asp:ListItem Value="114727">H1N1 pdm09 Influenza A</asp:ListItem>
                         <asp:ListItem Value="102793">H5N1 Influenza A</asp:ListItem>
                         <asp:ListItem Value="11292">Rabies</asp:ListItem>
                         <asp:ListItem Value="11082">West Nile Virus</asp:ListItem>
-                    </asp:ListBox>
+                    </asp:DropDownList>
                     </ContentTemplate>
                    </asp:UpdatePanel>
                 </td>
@@ -866,10 +867,10 @@ function clearMCMC()//clear default MCMC '10,000'
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="style2" align ="center">
                     <asp:Label ID="GeneLbl" runat="server" style="font-weight: 700" Text="2. Gene"></asp:Label>
                 </td>
-                <td class="style1" colspan="2">
+                <td class="style1" colspan="1" align ="center">
                     <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
                     <ContentTemplate>
                     <asp:ListBox ID="GeneLstBox" runat="server" Height="150px" Width="118px" 
@@ -892,10 +893,10 @@ function clearMCMC()//clear default MCMC '10,000'
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="style2" align ="center">
                     <asp:Label ID="HostLbl" runat="server" style="font-weight: 700" Text="3. Host"></asp:Label>
                 </td>
-                <td class="style3">
+                <td class="style3" align ="center">
                     <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">
                    <ContentTemplate>
                     <asp:ListBox ID="hostLst" runat="server" Height="150px" Width="118px" 
@@ -921,7 +922,7 @@ function clearMCMC()//clear default MCMC '10,000'
                     </ContentTemplate>
                      </asp:UpdatePanel>
                 </td>
-                <td class="style4">
+                <td class="style4" align ="center">
                   <asp:UpdatePanel ID="UpdatePanel4" runat="server" UpdateMode="Conditional">
                     <ContentTemplate>
                     <asp:ListBox ID="avesLst" runat="server" Height="150px" Width="204px" 
@@ -1152,12 +1153,12 @@ function clearMCMC()//clear default MCMC '10,000'
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="style2" align ="center">
                     <asp:Label ID="YearsLbl" runat="server" style="font-weight: 700" Text="4. Years"></asp:Label>
                 </td>
-                <td class="style3">
+                <td class="style3" align ="center">
                     From</td>
-                <td class="style4">
+                <td class="style4" align ="center">
                     To</td>
                 <td class="style1">
                     &nbsp;</td>
@@ -1165,30 +1166,30 @@ function clearMCMC()//clear default MCMC '10,000'
             <tr>
                 <td class="style2">
                     &nbsp;</td>
-                <td class="style3">
+                <td class="style3" align ="center">
                     <asp:TextBox ID="fromTxtBox" runat="server" MaxLength="4">YYYY</asp:TextBox>
                 </td>
-                <td class="style4">
+                <td class="style4" align ="center">
                     <asp:TextBox ID="toTxtBox" runat="server" MaxLength="4">YYYY</asp:TextBox>
                 </td>
                 <td class="style1">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="style2">
+                <td class="style2" align ="center">
                     5. Geography</td>
-                <td class="style3">
+                <td class="style3" align ="center">
                     Continent</td>
-                <td class="style4">
+                <td class="style4" align ="center">
                     Country</td>
-                <td class="style1">
+                <td class="style1" align ="center">
                     <asp:Label ID="StatesLbl" runat="server" style="font-weight: 700" Text="States"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="style2">
                     &nbsp;</td>
-                <td class="style3">
+                <td class="style3" align ="center">
                     <asp:UpdatePanel ID="UpdatePanel5" runat="server" UpdateMode="Conditional">
                     <ContentTemplate>
                     <asp:ListBox ID="continentLstBox" runat="server" Height="138px">
@@ -1204,7 +1205,7 @@ function clearMCMC()//clear default MCMC '10,000'
                     </ContentTemplate>
                     </asp:UpdatePanel>
                 </td>
-                <td class="style4">
+                <td class="style4" align ="center">
                     <asp:UpdatePanel ID="UpdatePanel6" runat="server" UpdateMode="Conditional">
                    <ContentTemplate> 
                     <asp:ListBox ID="countryLstBox" runat="server" Height="138px" 
@@ -1391,7 +1392,7 @@ function clearMCMC()//clear default MCMC '10,000'
                     </ContentTemplate> 
                     </asp:UpdatePanel> 
                 </td>
-                <td class="style1">
+                <td class="style1" align ="center">
                     <asp:UpdatePanel ID="UpdatePanel7" runat="server" UpdateMode="Conditional">
                    <ContentTemplate>
                     <asp:ListBox ID="stateLstBox" runat="server" Height="138px" 
@@ -1526,14 +1527,15 @@ function clearMCMC()//clear default MCMC '10,000'
             <tr>
                 <td class="style2">
                     &nbsp;</td>
-                <td class="style3">
-                    &nbsp;</td>
                 <td align="right" class="style4">
                     <asp:Button ID="clearBtn" runat="server" style="font-weight: 700" Text="Clear" />
-                </td>
                 <td class="style1">
                     <asp:Button ID="nextBtn" runat="server" style="font-weight: 700" Text="Next" 
-                        onclick="nextBtn_Click" />
+                        onclick="nextBtn_Click" /></td>
+                <td class="style3">
+                    &nbsp;</td>
+                
+                
                     
                 </td>
             </tr>
