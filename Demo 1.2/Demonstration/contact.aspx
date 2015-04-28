@@ -12,7 +12,7 @@
 						<div class="article">
 							<h1>Contact ZooPhy</h1>
 							<br />
-                            <p><b><u>Mailing Adress</u></b>:</p>
+                            <p><b><u>Mailing Address</u></b>:</p>
                             <p class="address">ASU Department of Biomedical Informatics<br />
                                 13212 East Shea Blvd<br />
                                 Scottsdale, AZ 85259 <br />
