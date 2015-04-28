@@ -116,6 +116,7 @@
     <Content Include="privacy.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="README.txt" />
+    <Content Include="WebForm3.aspx" />
     <None Include="Scripts\jquery-2.1.3-vsdoc.js" />
     <Content Include="Sample Page.aspx" />
     <Content Include="Scripts\jquery-2.1.3.js" />
@@ -298,6 +299,13 @@
     </Compile>
     <Compile Include="viewJobs.aspx.designer.cs">
       <DependentUpon>viewJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
