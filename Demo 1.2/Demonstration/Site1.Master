@@ -47,7 +47,7 @@
                                 <% } %>
                                 <% else { %>
                                     <a href="Profile.aspx"><li>Profile</li></a>
-                                    <a href="Logout.aspx"><li>Log Out</li></a>
+                                    <a href="login.aspx"><li>Log Out</li></a>
                                 <% } %>
 
 							  
