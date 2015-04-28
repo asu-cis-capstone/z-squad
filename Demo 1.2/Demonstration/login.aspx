@@ -4,6 +4,7 @@
     <!-- Link tags for CSS -->
 	<link type="text/css" rel="stylesheet" href="Style/signup_form.css" />
 
+    <!-- title -->
     <title>ZooPhy | Login</title>
 </asp:Content>
 
