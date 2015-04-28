@@ -25,7 +25,8 @@
 
 							        <div class="inputs">
 							        
-
+                                        <asp:Label ID="errorMsg" Text="" Visible="true" runat="server" />
+                                        <br />
                                         <asp:TextBox ID="email" runat="server" placeholder="Email" autofocus required pattern="[a-z0-9.$-]+@[a-z0-9-]+\.[a-z]{2,16}"></asp:TextBox>
 							           
 							       

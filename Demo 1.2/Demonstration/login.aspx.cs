@@ -71,8 +71,8 @@ namespace Demonstration
                 else
                 {
                     //login failed
-                    Response.Redirect("http://www.isitchristmas.com");
-
+                    errorMsg.Text = "Incorrect Email/Password";
+                    //Response.Redirect("login.aspx");
                 }
             }
             catch (Exception ex)
