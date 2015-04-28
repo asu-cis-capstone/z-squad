@@ -10,37 +10,6 @@
 namespace Demonstration {
     
     
-    public partial class Default {
-        
-        /// <summary>
-        /// callService control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button callService;
-        
-        /// <summary>
-        /// something control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink something;
-        
-        /// <summary>
-        /// Master property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new Demonstration.Site1 Master {
-            get {
-              //return ((Demonstration.Site1)(base.Master)); 
-                return ((Demonstration.Site1)(Master));
-            }
-        }
+    public partial class WebForm1 {
     }
 }
