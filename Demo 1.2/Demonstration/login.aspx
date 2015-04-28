@@ -13,10 +13,10 @@
 				<div id="content-inner">
 				
 					<main id="contentbar">
-						<div class="article">
+						<div class="article">a
 							<div class="container">
 
-							    <form id="signup" action="" method="post">
+							    <form id="signup" method="post" runat="server">
 
 							        <div class="header">
 							            <h3>Log In</h3>

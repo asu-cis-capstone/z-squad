@@ -1,6 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Demonstration.Site1" %>
 
 <!DOCTYPE html>
+<!-- On this page you will find the code for the header, site navigation, and footer for every page except temp_Search.aspx
+    unique content will be taken from each page and be fitted through the asp:ContentPlaceHolders -->
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
@@ -14,12 +16,13 @@
 	<!-- Link tags for CSS -->
 	<link type="text/css" rel="stylesheet" href="style/main_style.css" />
 
+    <!-- unique page specific head info will be drawn from pages using this -->
     <asp:ContentPlaceHolder ID="head" runat="server">
         
     </asp:ContentPlaceHolder>
 </head>
-<body>
-    <form id="form1" runat="server">
+
+<body>   
         <div id="page">
 			 
 				<div class="feature-inner">
@@ -32,6 +35,7 @@
 				<div id="header-inner">	
 					<div id="logo">	
 					</div>
+                    <!-- universal site navigation -->
 					<div id="top-nav">
 						<ul>
                             <li>
@@ -48,7 +52,7 @@
 							  <a href="viewJobs.aspx"><li>View Queries</li></a>
 							</ul>
 						  </li>
-						  <a href="about.aspx"><li>About</li></a>
+						  <a href="Default.aspx"><li>About</li></a>
 						  <a href="contact.aspx"><li>Contact</li></a>
 						</ul>
 					</div>
@@ -61,7 +65,8 @@
             <asp:Contentplaceholder ID="Contentplaceholder1" runat="server">
 
             </asp:Contentplaceholder>
-		
+		    
+            <!-- this is empty now but is needed to keep the page formatting in line -->
             <nav id="sidebar">
 						<div class="widget">						
 						</div>
@@ -72,7 +77,8 @@
 					</div>
 				</div>
 			</div>
-
+            
+            <!-- this is the gray bar that appears at the bottom -->
 			<div id="footerblurb">
 				<div id="footerblurb-inner">			
 					<div class="clr">
@@ -88,6 +94,6 @@
 				</div>
 			</footer>
 		</div>
-    </form>
+    
 </body>
 </html>
