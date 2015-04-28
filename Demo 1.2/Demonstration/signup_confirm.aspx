@@ -15,7 +15,7 @@
 						<div class="article">
 							<div class="container">
 								<p>Thank you for registering!</p>
-								<p>We have sent you a confirmation email.</p>
+								<p>You may now log in.</p>
 							    
 
 							</div>

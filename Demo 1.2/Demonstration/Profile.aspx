@@ -14,12 +14,11 @@
 						<div class="article">
 							<!-- MAIN/CENTER -->
 			<div id="profile">
-				<span class="profPic"><img src="imageFolder/defaultProfile.jpg" alt=""/></span>
-				<span class="profHead"><h2><asp:Label ID="user_name" Text="" runat="server" /></h2></span>
+				Name: <asp:Label ID="user_name" Text="" runat="server" />
 				<br/>
-				<asp:Label ID="email" Text="" runat="server" />
+				Email: <asp:Label ID="email" Text="" runat="server" />
 				<br/>
-				<asp:Label ID="institution" Text="" runat="server" />
+				Institution: <asp:Label ID="institution" Text="" runat="server" />
 				<br/>
 				Open Queries: 2
 				</br>
