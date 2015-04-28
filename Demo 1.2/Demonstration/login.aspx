@@ -16,7 +16,7 @@
 						<div class="article">
 							<div class="container">
 
-							    <form id="signup" method="post">
+							    <form id="signup" method="post" runat="server">
 
 							        <div class="header">
 							            <h3>Log In</h3>
