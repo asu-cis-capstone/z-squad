@@ -6,9 +6,7 @@
 	<title>ZooPhy | Phylogeography for Zoonotic Disease Surveillance</title>
 </asp:Content>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="Contentplaceholder1" runat="server">
-
-	
+<asp:Content ID="Content2" ContentPlaceHolderID="Contentplaceholder1" runat="server">	
 			<div id="content">
 				<div id="content-inner-jobs">
 				To view Phylogenic Tree, please click <a href="http://tree.bio.ed.ac.uk/software/figtree/" onclick="window.open(this.href); return false;">here</a> to download FigTree.
