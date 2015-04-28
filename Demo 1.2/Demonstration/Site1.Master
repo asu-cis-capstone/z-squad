@@ -56,7 +56,7 @@
 						  <li>
 							Queries
 							<ul>
-							  <a href="search.aspx"><li>New Query</li></a>
+							  <a href="temp_search.aspx"><li>New Query</li></a>
 							  <a href="viewJobs.aspx"><li>View Queries</li></a>
 							</ul>
 						  </li>

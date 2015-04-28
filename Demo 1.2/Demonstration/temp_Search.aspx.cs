@@ -47,6 +47,10 @@ namespace Demonstration
             }
             catch (System.IO.FileNotFoundException fnf) { System.Diagnostics.Debug.WriteLine(fnf.StackTrace); }
         }//end if !Page.IsPostBack
+        if (Page.Session["email"] == null)
+        {
+            Response.Redirect("login.aspx");
+        }
     }//end Page_Load
   
     protected void nextBtn_Click(object sender, EventArgs e)
