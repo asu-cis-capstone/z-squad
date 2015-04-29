@@ -2,10 +2,17 @@
 session_name("user");
 session_start("user");
 
+include("connect/dbConnect.php");
+
 if (!isset($_SESSION["loggedIn"]))
 {
-	header('Location: login.php');
+	header('Location: login');
 	exit;
+}
+
+if ($_GET["qc"] == 1)
+{
+	echo '<script type="text/javascript">alert("Your ZooPhy query has commenced. You will also receive a notification email upon the query\'s completion.");</script>';
 }
 ?>
 
@@ -38,7 +45,7 @@ if (!isset($_SESSION["loggedIn"]))
 	<script>
 		function confLogout()
 		{
-			var href="logout.php";
+			var href="logout";
 			if (confirm("Are you sure you want to Logout of ZooPhy?") == true)
 			{
 				window.location=href;
@@ -53,7 +60,7 @@ if (!isset($_SESSION["loggedIn"]))
 	<div id="page">
 		<header id="header">
 			<div id="banner">
-				<a href="index.php"><img src="imageFolder/zoophy.png"></a>	
+				<a href="index"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 			<div id="header-inner">	
 				<div id="top-nav">
@@ -63,17 +70,17 @@ if (!isset($_SESSION["loggedIn"]))
 							<ul>
 								<?php
 								if(!isset($_SESSION["loggedIn"])) {
-									echo "<a href='login.php'><li>Login</li></a>";
+									echo "<a href='login'><li>Login</li></a>";
 								}
 								?>
 								<?php
 								if(!isset($_SESSION["loggedIn"])) {
-									echo "<a href='signup.php'><li>Register</li></a>";
+									echo "<a href='signup'><li>Register</li></a>";
 								}	
 								?>
 								<?php
 								if(isset($_SESSION["loggedIn"])) {
-									echo "<a href='profile.php'><li>My Account</li></a>";
+									echo "<a href='profile'><li>My Account</li></a>";
 								}	
 								?>
 								<?php
@@ -86,12 +93,12 @@ if (!isset($_SESSION["loggedIn"]))
 						<li>
 							Queries
 							<ul>
-								<a href="main.php"><li>New Query</li></a>
-								<a href="viewJobs.php"><li>View Queries</li></a>
+								<a href="main"><li>New Query</li></a>
+								<a href="viewJobs"><li>View Queries</li></a>
 							</ul>
 						</li>
-						<a href="index.php"><li>About</li></a>
-						<a href="contact.php"><li>Contact</li></a>
+						<a href="index"><li>About</li></a>
+						<a href="contact"><li>Contact</li></a>
 					</ul>
 				</div>
 			</div>
@@ -99,32 +106,118 @@ if (!isset($_SESSION["loggedIn"]))
 		<!-- Header Spacing -->
 		<div class="clr">
 		</div>
-	</div>
-</body>
 
-<div id="content">
-	<div id="content-inner-jobs">
-		<div class="currentjobs">
-			<h2>Current Jobs</h2>
-			<div id="daterun">
-				<p>Date Run: 12/24/2014</p>
-				<p>Status: complete</p>
-				<p>Query Info: </p>
-				<p>Percent complete: 100%</p>
-				<p><a href="kml.html">Phylogeographic Map</a></p>
+		<div id="content">
+			<div id="content-inner-jobs">
+			To view Phylogenic Trees, please download FigTree by clicking <a id="link" href="http://tree.bio.ed.ac.uk/software/figtree/" onclick="window.open(this.href); return false;">here.</a>
+				<div class="userQueries">
+					<h2>Active Queries</h2>
+					<table id="query_table">
+						<?php
+							$userId = $_SESSION['loggedIn'];
+							$query = "SELECT * FROM query WHERE user_id = '$userId' AND queryEnd IS NULL";
+							$result = mysqli_query($dbc, $query) or die ("Error reading database");
+							
+							if (count($result)) 
+							{
+								echo '<tr>
+								<th>Query Number</th>
+								<th>Virus</th>
+								<th>Gene</th>
+								<th>Host</th>
+								<th>From</th>
+								<th>To</th>
+								<th>Country</th>
+								<th>State</th>						
+								</tr>';					
+
+								while($row = mysqli_fetch_array($result))
+								{
+									echo '<tr>			
+									<td>' . $row['id'] . '</td>
+									<td>' . $row['virus'] . '</td>
+									<td>' . $row['gene'] . '</td>
+									<td>' . $row['host'] . '</td>
+									<td>' . $row['startYear'] . '</td>
+									<td>' . $row['endYear'] . '</td>
+									<td>' . $row['country'] . '</td>
+									<td>' . $row['state'] . '</td>																							
+									</tr>
+									</br>
+									<tr>
+									<th>Date Run: ' . $row['queryStart'] . '</th>
+									<th>Status: ' . (($row['queryEnd'] == NULL)?'In Process':""). '</th>
+									<th>KML Map: <a href="download/kmlDownload">Download /</a><a href="kmlMap" onclick="window.open(this.href); return false;"> View</a></th>
+									<th>Phylogenic Tree: <a href="download/treeDownload">Download</a></th>
+									</tr>';
+								}
+							}
+							else
+							{
+								echo '<tr><td>You have no active queries.</td></tr>';
+							}
+						?>
+					</table>
+					<h2>Completed Queries</h2>
+					<table id="query_table">
+						<?php
+							$userId = $_SESSION['loggedIn'];
+							$query = "SELECT * FROM query WHERE user_id = '$userId' AND queryEnd IS NOT NULL";
+							$result = mysqli_query($dbc, $query) or die ("Error reading database");
+							
+							if (count($result)) 
+							{
+								echo '<tr>
+								<th>Query Number</th>
+								<th>Virus</th>
+								<th>Gene</th>
+								<th>Host</th>
+								<th>From</th>
+								<th>To</th>
+								<th>Country</th>
+								<th>State</th>						
+								</tr>';					
+
+								while($row = mysqli_fetch_array($result))
+								{
+									echo '<tr>			
+									<td>' . $row['id'] . '</td>
+									<td>' . $row['virus'] . '</td>
+									<td>' . $row['gene'] . '</td>
+									<td>' . $row['host'] . '</td>
+									<td>' . $row['startYear'] . '</td>
+									<td>' . $row['endYear'] . '</td>
+									<td>' . $row['country'] . '</td>
+									<td>' . $row['state'] . '</td>																							
+									</tr>
+									</br>
+									<tr>
+									<th>Date Run: ' . $row['queryStart'] . '</th>
+									<th>Status: ' . (($row['queryEnd'] != NULL)?'Completed':""). '</th>
+									<th>KML Map: <a href="download/kmlDownload">Download /</a><a href="kmlMap" onclick="window.open(this.href); return false;"> View</a></th>
+									<th>Phylogenic Tree: <a href="download/treeDownload">Download</a></th>
+									</tr>';
+								}
+							}
+							else
+							{
+								echo '<tr><td>You have no completed queries.</td></tr>';
+							}
+						?>
+					</table>
+				</div>
+				<div class="clr">
+				</div>
 			</div>
 		</div>
-		<div class="clr">
-		</div>
-	</div>
-</div>
 
-<footer id="footer">
-	<div id="footer-inner">
-		<p>&copy; Copyright Zoophy &#124; <a href="terms.php">Terms of Use</a> &#124; <a href="privacy.php">Privacy Policy</a></p>
-		<div class="clr">
-		</div>
+		<footer id="footer">
+			<div id="footer-inner">
+				<p>&copy; Copyright Zoophy &#124; <a href="terms">Terms of Use</a> &#124; <a href="privacy">Privacy Policy</a></p>
+				<div class="clr">
+				</div>
+			</div>
+		</footer>
 	</div>
-</footer>
 </body>
 </html>

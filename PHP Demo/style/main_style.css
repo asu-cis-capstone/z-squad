@@ -1,8 +1,9 @@
-html, #page { padding:0; margin:0;}
-body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
+html{ padding:0; margin:0; height: 100%; overflow-y: scroll;}
+body { margin:0; padding:0; height: 100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
 h1, h2, h3, h4, h5, h6 {color:darkblue;}
-#page { background:#fff;}
-#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+#page { background:#fff; min-height: 100%; position: relative;}
+/*#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}*/
+#header_meta {display: none;}
 
 /* Logo */
 #logo { padding:0; width:auto; float:left;}
@@ -10,25 +11,21 @@ h1, h2, h3, h4, h5, h6 {color:darkblue;}
 #logo h1 span { color:#d3d3f9;}
 
 /* Header */
-#header { background:#fff; }
+#header { background:#fff; padding: 10px;}
 #header-inner { margin:0 auto; padding:0; width:970px;}
 
 /* Menu */
-#banner {text-align: center; height: 108px;}
+#banner {text-align: center; height: 108px; margin-top: 0;}
 
 
 /* Content */
-#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
+#content {padding-bottom: 50px;}
+#content a {border-bottom: 1px dotted #959595;}
+#content-inner { margin:0 auto; width:970px;background:#fff;}
 #content #contentbar { margin:0 auto; padding:0; width:760px;}
 #content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
 .container {font-size: 1.5em; text-align: center;} /* Specific to signupConfirm */
 
-/* For the view Jobs page */
-#content #content-inner-jobs { margin:auto; padding:0; width:760px;}
-#content #content-inner-jobs #article { margin:0 0 24px; padding:0 20px 0 15px; float:right; border:	thin solid #4169e1;}
-#daterun {clear:both; float:left;}
-#queryinfo {clear:both; float:right;}
-#content #sidebar img {opacity: 0.6; float: left}
 
 /* Specific to the KML page */
 #content #content-innerKML { margin:0; padding:0; float:right; width:760px;}
@@ -36,8 +33,8 @@ h1, h2, h3, h4, h5, h6 {color:darkblue;}
 #map-canvas { width: 550px; height: 450px; }
 
 /* Footer */
-#footer { background:#fff; position: absolute; bottom: 0; width: 100%;}
-#footer-inner { margin:auto; text-align:center; padding:12px; width:922px;}
+#footer { background:#fff; position: absolute; bottom: 0; left: 0; width: 100%; height: 50px;}
+#footer-inner { margin:auto; text-align:center;}
 #footer a {color:blue;text-decoration:none;}
 
 /* Clear both sides to assist with div alignment  */
@@ -73,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {color:darkblue;}
 }
 
 #top-nav ul li:hover {
-	background: rgba(85, 85, 85, 0.5);
+	background: rgb(51, 133, 255);
 	color: #fff;
 }
 
@@ -97,14 +94,19 @@ h1, h2, h3, h4, h5, h6 {color:darkblue;}
 }
 
 #top-nav ul li ul li { 
-	background: rgba(85, 85, 85, 0.5); 
+	background: rgb(51, 133, 255);
 	display: block; 
 	color: #fff;
 	text-shadow: 0 -1px 0 #000;
 }
 
-#top-nav ul li ul li:hover { background: #666;
-	text-decoration: none; }
+#top-nav ul li ul li:hover { 
+	background: rgb(51, 133, 255);
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	text-decoration: none;
+}
 
 	#top-nav ul li:hover ul {
 		display: block;
@@ -125,6 +127,38 @@ a:visited {
 #advSearchLink {border-bottom: 1px dotted blue; text-decoration: none;}
 
 #advSearch {display: none;}
+
+#profile {text-align: center;}
+
+#profile .profPic {float: left;}
+
+/* For the view Jobs page */
+#content #content-inner-jobs { margin:auto; padding:0; width:760px;}
+
+#query_table {
+	width: 				90%;
+	margin: 			0px 0px 0px 40px;
+	/*background-color: 	#00FFFF*/
+}
+
+table, th, td {
+	border:				1px solid black;
+}
+
+#query_table {
+	text-align: 		center;
+}
+
+/*#container tr {
+	text-align: 		center;
+}*/
+
+th {
+	padding: 			20px;
+	margin: 			20px;
+}
+
+
 
 
 

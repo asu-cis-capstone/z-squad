@@ -10,7 +10,7 @@
 
 	if(mysqli_num_rows($result) == 0)
 	{
-		header('Location: login.php?rc=1');
+		header('Location: login?rc=1');
 		exit;
 	}
 
@@ -20,7 +20,7 @@
 
 	if(mysqli_num_rows($result) == 0)
 	{
-		header('Location: login.php?rc=2');
+		header('Location: login?rc=2');
 		exit;
 	}
 
@@ -35,9 +35,6 @@
 	$_SESSION["name"] = $fullName;
 	$_SESSION["email"] = $row['email'];
 	$_SESSION["institution"] = $row['institution'];
-	header('Location: main.php');
-	exit;
-
-	header('Location: login.php?rc=3');
+	header('Location: main');
 	exit;
 ?>

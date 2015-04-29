@@ -29,10 +29,11 @@
 
 		if ($result2)
 		{
-			echo "Your account has been activated.";
-			
 			$sql3 = "DELETE FROM temp_user WHERE confirmation = '$passkey'";
 			$result3 = mysqli_query($dbc, $sql3);
+
+			header('Location: login?rc=3');
+			exit;
 		}
 
 	}

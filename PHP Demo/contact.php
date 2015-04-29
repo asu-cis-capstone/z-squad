@@ -1,12 +1,6 @@
 <?php
 session_name("user");
 session_start("user");
-
-if (!isset($_SESSION["loggedIn"]))
-{
-	header('Location: login.php');
-	exit;
-}
 ?>
 
 <!DOCTYPE html>
@@ -17,16 +11,15 @@ if (!isset($_SESSION["loggedIn"]))
 
 	<!-- Icon Link -->
 	<link rel="icon" href="imageFolder/zoophy.ico" />
-	
+
 	<!-- CSS Link -->
 	<link type="text/css" rel="stylesheet" href="style/main_style.css" />
-	<link type="text/css" rel="stylesheet" href="style/signup_form.css" />
-	
-<!-- Java Sript -->
+
+	<!-- Java Sript -->
 	<script>
 		function confLogout()
 		{
-			var href="logout.php";
+			var href="logout";
 			if (confirm("Are you sure you want to Logout of ZooPhy?") == true)
 			{
 				window.location=href;
@@ -41,7 +34,7 @@ if (!isset($_SESSION["loggedIn"]))
 	<div id="page">
 		<header id="header">
 			<div id="banner">
-				<a href="index.php"><img src="imageFolder/zoophy.png"></a>	
+				<a href="index"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 			<div id="header-inner">	
 				<div id="top-nav">
@@ -51,17 +44,17 @@ if (!isset($_SESSION["loggedIn"]))
 							<ul>
 								<?php
 								if(!isset($_SESSION["loggedIn"])) {
-									echo "<a href='login.php'><li>Login</li></a>";
+									echo "<a href='login'><li>Login</li></a>";
 								}
 								?>
 								<?php
 								if(!isset($_SESSION["loggedIn"])) {
-									echo "<a href='signup.php'><li>Register</li></a>";
+									echo "<a href='signup'><li>Register</li></a>";
 								}	
 								?>
 								<?php
 								if(isset($_SESSION["loggedIn"])) {
-									echo "<a href='profile.php'><li>My Account</li></a>";
+									echo "<a href='profile'><li>My Account</li></a>";
 								}	
 								?>
 								<?php
@@ -74,12 +67,12 @@ if (!isset($_SESSION["loggedIn"]))
 						<li>
 							Queries
 							<ul>
-								<a href="main.php"><li>New Query</li></a>
-								<a href="viewJobs.php"><li>View Queries</li></a>
+								<a href="main"><li>New Query</li></a>
+								<a href="viewJobs"><li>View Queries</li></a>
 							</ul>
 						</li>
-						<a href="index.php"><li>About</li></a>
-						<a href="contact.php"><li>Contact</li></a>
+						<a href="index"><li>About</li></a>
+						<a href="contact"><li>Contact</li></a>
 					</ul>
 				</div>
 			</div>
@@ -87,68 +80,36 @@ if (!isset($_SESSION["loggedIn"]))
 		<!-- Header Spacing -->
 		<div class="clr">
 		</div>
-	</div>
-</body>
 
-<div id="content">
-	<div id="content-inner">	
-		<main id="contentbar">
-			<!--<div class="inputs">
-	        	<h3><?php echo $_SESSION["name"] ?></h3>
-	        	<h3><?php echo $_SESSION["email"] ?></h3>					        	
-	        	<label for="institution"><?php echo $_SESSION["institution"] ?></label>
-
-	            <div class="checkboxy">
-	                <input name="cecky" id="checky" value="1" type="checkbox" required /><label class="terms">I accept the <a href="terms.html" onclick="window.open(this.href); return false">Terms of Use</a></label>
-	            </div>
-	            Comments:
-	            <br />
-	            <textarea name="comments" id="comments" rows="2" cols="49" required maxlength "500" title="500 character limit.."></textarea>
-
-	            <input type="submit" id="submit" value="REGISTER" />
-		        
-		    </div>
-
-		    </form> -->
-
-		    <form id="signup" action="support@asu" method="post">
-		        <div class="header">
-		        
-		            <h3>Comments? Questions? Feedback?</h3>
-		            
-		        </div>
-		        
-		        <div class="sep"></div>
-
-
-		        <div class="inputs">
-		        	<h3><?php echo $_SESSION["name"] ?></h3>
-		        	<h3><?php echo $_SESSION["email"] ?></h3>					        	
-		        	<label for="institution"><?php echo $_SESSION["institution"] ?></label>
-
-		            <div class="checkboxy">
-		                <input name="cecky" id="checky" value="1" type="checkbox" required /><label class="terms">I accept the <a href="terms.html" onclick="window.open(this.href); return false">Terms of Use</a></label>
-		            </div>
-		            <br />
-		            <textarea name="comments" id="comments" rows="5" cols="50" required maxlength "500" placeholder="Comments (500 word max)..."></textarea>
-		            <br />
-		            <input type="submit" id="submit" value="Submit" />					            
-		        </div>
-		        </div>
-
-		    </form>
-		</main>				
-		<div class="clr">
+		<div id="content">
+			<div id="content-inner">	
+				<main id="contentbar">
+					<div class="article">
+						<h1>Contact ZooPhy</h1>
+						<br />
+		                <p><b><u>Mailing Address</u></b>:</p>
+		                <p class="address">ASU Department of Biomedical Informatics<br />
+		                    13212 East Shea Blvd<br />
+		                    Scottsdale, AZ 85259 <br />
+		                </p>
+		                
+		                <p><b>Phone</b>: 480-884-0220<br />
+		                 <b>Fax</b>: 480-884-0239</p>
+						<p>Email us at: <a href="#"><b>ZooPhy@asu.edu</b></a></p>
+					</div>
+				</main>		
+				<div class="clr">
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
 	
-<footer id="footer">
-	<div id="footer-inner">
-		<p>&copy; Copyright Zoophy &#124; <a href="terms.php">Terms of Use</a> &#124; <a href="privacy.php">Privacy Policy</a></p>
-		<div class="clr">
-		</div>
+		<footer id="footer">
+			<div id="footer-inner">
+				<p>&copy; Copyright Zoophy &#124; <a href="terms">Terms of Use</a> &#124; <a href="privacy">Privacy Policy</a></p>
+				<div class="clr">
+				</div>
+			</div>
+		</footer>
 	</div>
-</footer>
 </body>
 </html>

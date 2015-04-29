@@ -4,7 +4,7 @@ session_start("user");
 
 if (isset($_SESSION["loggedIn"]))
 {
-	header('Location: profile.php');
+	header('Location: profile');
 	exit;
 }
 
@@ -30,7 +30,7 @@ $result = mysqli_query($dbc, $query) or die('Email write error');
 
 if(mysqli_num_rows($result) != 0)
 {
-	header('Location: signup.php?sc=1');
+	header('Location: signup?sc=1');
 	exit;
 }
 
@@ -59,7 +59,7 @@ mysqli_close($dbc);
 	<script>
 		function confLogout()
 		{
-			var href="logout.php";
+			var href="logout";
 			if (confirm("Are you sure you want to Logout of ZooPhy?") == true)
 			{
 				window.location=href;
@@ -74,7 +74,7 @@ mysqli_close($dbc);
 	<div id="page">
 		<header id="header">
 			<div id="banner">
-				<a href="index.php"><img src="imageFolder/zoophy.png"></a>	
+				<a href="index"><img src="imageFolder/zoophy.png"></a>	
 			</div>
 			<div id="header-inner">	
 				<div id="top-nav">
@@ -84,17 +84,17 @@ mysqli_close($dbc);
 							<ul>
 								<?php
 								if(!isset($_SESSION["loggedIn"])) {
-									echo "<a href='login.php'><li>Login</li></a>";
+									echo "<a href='login'><li>Login</li></a>";
 								}
 								?>
 								<?php
 								if(!isset($_SESSION["loggedIn"])) {
-									echo "<a href='signup.php'><li>Register</li></a>";
+									echo "<a href='signup'><li>Register</li></a>";
 								}	
 								?>
 								<?php
 								if(isset($_SESSION["loggedIn"])) {
-									echo "<a href='profile.php'><li>My Account</li></a>";
+									echo "<a href='profile'><li>My Account</li></a>";
 								}	
 								?>
 								<?php
@@ -107,12 +107,12 @@ mysqli_close($dbc);
 						<li>
 							Queries
 							<ul>
-								<a href="main.php"><li>New Query</li></a>
-								<a href="viewJobs.php"><li>View Queries</li></a>
+								<a href="main"><li>New Query</li></a>
+								<a href="viewJobs"><li>View Queries</li></a>
 							</ul>
 						</li>
-						<a href="index.php"><li>About</li></a>
-						<a href="contact.php"><li>Contact</li></a>
+						<a href="index"><li>About</li></a>
+						<a href="contact"><li>Contact</li></a>
 					</ul>
 				</div>
 			</div>
@@ -120,53 +120,52 @@ mysqli_close($dbc);
 		<!-- Header Spacing -->
 		<div class="clr">
 		</div>
-	</div>
-</body>
 
-<div id="content">
-	<div id="content-inner">
-		<main id="contentbar">
-			<div class="article">
-				<div class="container">
-					<?php
-					if($result)
-					{
-						$to=$email;
-						$subject="ZooPhy Registration Confirmation";
-						$header="From: ZooPhy | Phylogeography for Zoonotic Disease Surveillance <support@bamercado.com>";
-						$message="Your ZooPhy Confirmation Link \r\n";
-						$message.="Click on this link to activate your account \r\n";
-						$message.="http://www.bamercado.com/confirmation.php?passkey=$confirm_code";
-						$sentmail=mail($to, $subject, $message, $header);
-					}
-					else
-					{
-						echo "<p>User Email not found.</p>";
-					}
+		<div id="content">
+			<div id="content-inner">
+				<main id="contentbar">
+					<div class="article">
+						<div class="container">
+							<?php
+							if($result)
+							{
+								$to=$email;
+								$subject="ZooPhy Registration Confirmation";
+								$header="From: ZooPhy | Phylogeography for Zoonotic Disease Surveillance <support@bamercado.com>";
+								$message="Your ZooPhy Confirmation Link \r\n";
+								$message.="Click on this link to activate your account \r\n";
+								$message.="http://www.bamercado.com/confirmation?passkey=$confirm_code";
+								$sentmail=mail($to, $subject, $message, $header);
+							}
+							else
+							{
+								echo "<p>User Email not found.</p>";
+							}
 
-					if($sentmail)
-					{
-						echo "<p>Thank you for registering!</p>
-						<p>We have sent you a confirmation email.</p>";
-					}
-					else
-					{
-						echo "Cannot Send Confirmation Link to your Email Address.";
-					}
-					?>					
+							if($sentmail)
+							{
+								echo "<p>Thank you for registering!</p>
+								<p>We have sent you a confirmation email.</p>";
+							}
+							else
+							{
+								echo "Cannot Send Confirmation Link to your Email Address.";
+							}
+							?>					
+						</div>
+					</div>
+				</main>		
+				<div class="clr"></div>
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div id="footer-inner">
+				<p>&copy; Copyright Zoophy &#124; <a href="terms">Terms of Use</a> &#124; <a href="privacy">Privacy Policy</a></p>
+				<div class="clr">
 				</div>
 			</div>
-		</main>		
-		<div class="clr"></div>
+		</footer>
 	</div>
-</div>
-
-<footer id="footer">
-	<div id="footer-inner">
-		<p>&copy; Copyright Zoophy &#124; <a href="terms.php">Terms of Use</a> &#124; <a href="privacy.php">Privacy Policy</a></p>
-		<div class="clr">
-		</div>
-	</div>
-</footer>
 </body>
 </html>
